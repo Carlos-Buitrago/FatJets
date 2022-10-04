@@ -1,0 +1,5 @@
+# ignore all .root files
+*.root
+
+#ignore all files in /temp/
+temp/

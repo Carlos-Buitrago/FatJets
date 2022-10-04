@@ -1,0 +1,27 @@
+usar alias python=python2
+
+***
+
+al momento de generar eventos:
+
+./bin/generate_events --nb_core=1
+
+
+***
+
+Event display (en la carpeta Delphes de MG):
+
+make display
+root -l examples/EventDisplay.C'("cards/delphes_card_CMS.tcl","pp_tt_Cut.root")'
+
+***
+
+Correr Delphes con un hepmc de pythia (en la carpeta Delphes de MG):
+
+./DelphesHepMC cards/delphes_card_ATLAS_FatJets.tcl pp_WW_100kEvtsCutW250_RFatJet10_ATLAS.root pp_WW100kEvtsCutW250_pythia8_events.hepmc
+
+***
+
+CAMBIOS EN
+FastJetfinder.cc
+DelphesClasses.cc/.h
