@@ -1,12 +1,11 @@
 //////////////////////////////////////////////////////////
 // This class has been automatically generated on
-// Mon Oct  3 17:54:16 2022 by ROOT version 6.26/06
-// from TTree Delphes/Analysis tree
-// found on file: pp_WW_100kEvtsGenCutW250_RFatJet10_ATLAS.root
+// Wed Oct  5 17:46:44 2022 by ROOT version 6.26/06
+// from TChain Delphes/
 //////////////////////////////////////////////////////////
 
-#ifndef SelectorClass_h
-#define SelectorClass_h
+#ifndef TopTaggerClass_h
+#define TopTaggerClass_h
 
 #include <TROOT.h>
 #include <TChain.h>
@@ -16,7 +15,7 @@
 #include "TClonesArray.h"
 #include "TObject.h"
 
-class SelectorClass {
+class TopTaggerClass {
 public :
    TTree          *fChain;   //!pointer to the analyzed TTree or TChain
    Int_t           fCurrent; //!current Tree number in a TChain
@@ -24,18 +23,18 @@ public :
 // Fixed size dimensions of array or collections stored in the TTree if any.
    static constexpr Int_t kMaxEvent = 1;
    static constexpr Int_t kMaxWeight = 2;
-   static constexpr Int_t kMaxParticle = 3858;
-   static constexpr Int_t kMaxTrack = 248;
-   static constexpr Int_t kMaxTower = 526;
-   static constexpr Int_t kMaxEFlowTrack = 248;
-   static constexpr Int_t kMaxEFlowPhoton = 318;
-   static constexpr Int_t kMaxEFlowNeutralHadron = 188;
-   static constexpr Int_t kMaxGenJet = 12;
+   static constexpr Int_t kMaxParticle = 4727;
+   static constexpr Int_t kMaxTrack = 310;
+   static constexpr Int_t kMaxTower = 611;
+   static constexpr Int_t kMaxEFlowTrack = 310;
+   static constexpr Int_t kMaxEFlowPhoton = 374;
+   static constexpr Int_t kMaxEFlowNeutralHadron = 194;
+   static constexpr Int_t kMaxGenJet = 15;
    static constexpr Int_t kMaxGenMissingET = 1;
-   static constexpr Int_t kMaxJet = 13;
-   static constexpr Int_t kMaxElectron = 4;
+   static constexpr Int_t kMaxJet = 14;
+   static constexpr Int_t kMaxElectron = 3;
    static constexpr Int_t kMaxPhoton = 3;
-   static constexpr Int_t kMaxMuon = 3;
+   static constexpr Int_t kMaxMuon = 2;
    static constexpr Int_t kMaxFatJet = 5;
    static constexpr Int_t kMaxMissingET = 1;
    static constexpr Int_t kMaxScalarHT = 1;
@@ -876,8 +875,8 @@ public :
    TBranch        *b_ScalarHT_HT;   //!
    TBranch        *b_ScalarHT_size;   //!
 
-   SelectorClass(TTree *tree=0);
-   virtual ~SelectorClass();
+   TopTaggerClass(TTree *tree=0);
+   virtual ~TopTaggerClass();
    virtual Int_t    Cut(Long64_t entry);
    virtual Int_t    GetEntry(Long64_t entry);
    virtual Long64_t LoadTree(Long64_t entry);
@@ -889,35 +888,49 @@ public :
 
 #endif
 
-#ifdef SelectorClass_cxx
-SelectorClass::SelectorClass(TTree *tree) : fChain(0) 
+#ifdef TopTaggerClass_cxx
+TopTaggerClass::TopTaggerClass(TTree *tree) : fChain(0) 
 {
 // if parameter tree is not specified (or zero), connect the file
 // used to generate this class and read the Tree.
    if (tree == 0) {
-      TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("pp_WW_100kEvtsGenCutW250_RFatJet10_ATLAS.root");
+
+#ifdef SINGLE_TREE
+      // The following code should be used if you want this class to access
+      // a single tree instead of a chain
+      TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("Memory Directory");
       if (!f || !f->IsOpen()) {
-         f = new TFile("pp_WW_100kEvtsGenCutW250_RFatJet10_ATLAS.root");
+         f = new TFile("Memory Directory");
       }
       f->GetObject("Delphes",tree);
+
+#else // SINGLE_TREE
+
+      // The following code should be used if you want this class to access a chain
+      // of trees.
+      TChain * chain = new TChain("Delphes","");
+      chain->Add("pp_tt_hadronic_14TeV100kEvtsGenCutT200_delphes_events.root/Delphes");
+      chain->Add("pp_QCD_14TeV100kEvtsGenCutQCD200_delphes_events.root/Delphes");
+      tree = chain;
+#endif // SINGLE_TREE
 
    }
    Init(tree);
 }
 
-SelectorClass::~SelectorClass()
+TopTaggerClass::~TopTaggerClass()
 {
    if (!fChain) return;
    delete fChain->GetCurrentFile();
 }
 
-Int_t SelectorClass::GetEntry(Long64_t entry)
+Int_t TopTaggerClass::GetEntry(Long64_t entry)
 {
 // Read contents of entry.
    if (!fChain) return 0;
    return fChain->GetEntry(entry);
 }
-Long64_t SelectorClass::LoadTree(Long64_t entry)
+Long64_t TopTaggerClass::LoadTree(Long64_t entry)
 {
 // Set the environment to read one entry
    if (!fChain) return -5;
@@ -930,7 +943,7 @@ Long64_t SelectorClass::LoadTree(Long64_t entry)
    return centry;
 }
 
-void SelectorClass::Init(TTree *tree)
+void TopTaggerClass::Init(TTree *tree)
 {
    // The Init() function is called when the selector needs to initialize
    // a new tree or chain. Typically here the branch addresses and branch
@@ -1365,7 +1378,7 @@ void SelectorClass::Init(TTree *tree)
    Notify();
 }
 
-Bool_t SelectorClass::Notify()
+Bool_t TopTaggerClass::Notify()
 {
    // The Notify() function is called when a new file is opened. This
    // can be either for a new TTree in a TChain or when when a new TTree
@@ -1376,18 +1389,18 @@ Bool_t SelectorClass::Notify()
    return kTRUE;
 }
 
-void SelectorClass::Show(Long64_t entry)
+void TopTaggerClass::Show(Long64_t entry)
 {
 // Print contents of entry.
 // If entry is not specified, print current entry
    if (!fChain) return;
    fChain->Show(entry);
 }
-Int_t SelectorClass::Cut(Long64_t entry)
+Int_t TopTaggerClass::Cut(Long64_t entry)
 {
 // This function may be called from Loop.
 // returns  1 if entry is accepted.
 // returns -1 otherwise.
    return 1;
 }
-#endif // #ifdef SelectorClass_cxx
+#endif // #ifdef TopTaggerClass_cxx
