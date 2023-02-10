@@ -1,0 +1,7 @@
+Si la idea es obtener un tagger, se debería hacer un MVA por cada región cinemática, o coger la de menor pt y ver si funciona para pts más altos?
+
+Deberíamos enfocarnos en ver cual classifier de MVA es mejor (también comparandolos con las neural networks de TensorFlow) o coger solo uno y analizar cual rango cinemático es mejor? o una combinación de las dos? Para ver cual es mejor se podria usar la opcion de optimizar el MVA usando las lineas de Factory->OptimizeAllMethods (sólo válido para BDT)
+
+Se deberían hacer cortes (por ejemplo del eta de los fatjets) a los archivos de entrenamiento (señal y background), se puede hacer usando las lineas de TCut
+
+No valdría la pena hacer el entrenamiento con archivos de signal y background para diferentes regiones cinemáticas de los fatjets? (Usando las líneas de dataloader->AddSignalTree y dataloader->AddBackgroundTree)

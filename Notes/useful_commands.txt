@@ -18,10 +18,8 @@ root -l examples/EventDisplay.C'("cards/delphes_card_CMS.tcl","pp_tt_Cut.root")'
 
 Correr Delphes con un hepmc de pythia (en la carpeta Delphes de MG):
 
-./DelphesHepMC cards/delphes_card_ATLAS_FatJets.tcl pp_WW_100kEvtsCutW250_RFatJet10_ATLAS.root pp_WW100kEvtsCutW250_pythia8_events.hepmc
+./DelphesHepMC cards/delphes_card_ATLAS_FatJets_modified.tcl pp_tt_hadronic_14TeV100kEvtsCutT200_RFatJet08_ATLAS.root pp_tt_hadronic_14TeV100kEvtsGenCutT200_pythia8_events.hepmc
 
 ***
 
-CAMBIOS EN
-FastJetfinder.cc
-DelphesClasses.cc/.h
+GIT TOKEN: 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 

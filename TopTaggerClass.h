@@ -909,8 +909,8 @@ TopTaggerClass::TopTaggerClass(TTree *tree) : fChain(0)
       // The following code should be used if you want this class to access a chain
       // of trees.
       TChain * chain = new TChain("Delphes","");
-      chain->Add("pp_tt_hadronic_14TeV100kEvtsGenCutT200_delphes_events.root/Delphes");
-      chain->Add("pp_QCD_14TeV100kEvtsGenCutQCD200_delphes_events.root/Delphes");
+      chain->Add("pp_tt_hadronic_14TeV500kEvtsGenCutT350_CutQCD350_InclusiveCut350_delphes_events.root/Delphes");
+      chain->Add("pp_QCD_14TeV500kEvtsGenCutQCD350_InclusiveCut350_delphes_events.root/Delphes");
       tree = chain;
 #endif // SINGLE_TREE
 

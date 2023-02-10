@@ -1,5 +1,11 @@
 # ignore all .root files
 *.root
 
-#ignore all files in /temp/
+# ignore files in /temp/
 temp/
+
+# ignore files in .vscode/
+.vscode/
+
+# ignore files in /weights/
+*.xml
