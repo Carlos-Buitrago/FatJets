@@ -59,7 +59,7 @@
 #include "TMVA/Tools.h"
 #include "TMVA/TMVAGui.h"
 
-int TMVAClassificationNsubjettiness( TString myMethodList = "" )
+int TMVAClassificationTowerInfo( TString myMethodList = "" )
 {
    // The explicit loading of the shared libTMVA is done in TMVAlogon.C, defined in .rootrc
    // if you use your private .rootrc, or run from a different directory, please copy the
@@ -224,19 +224,20 @@ int TMVAClassificationNsubjettiness( TString myMethodList = "" )
 
    // Define the input variables that shall be used for the MVA training
    // note that you may also use variable expressions, such as: "3*var1/var2*abs(var3)"
-   // [all types of expressions that can also be parsed by TTree::Draw( "expression" )]
+ // [all types of expressions that can also be parsed by TTree::Draw( "expression" )]
 
    // VARIABLES REFERING TO THE CALO TOWERS
-   /* dataloader->AddVariable( "towerET := Tower.ET[]", "TowerET", "", 'F' ); */
-   /* dataloader->AddVariable( "towerEta := Tower.Eta[]", "TowerEta", "", 'F' ); */
-   /* dataloader->AddVariable( "towerPhi := Tower.Phi[]", "TowerPhi", "", 'F' ); */
+
+   dataloader->AddVariable( "towerET := Tower.ET[i]", "TowerET", "", 'F' );
+   dataloader->AddVariable( "towerEta := Tower.Eta[]", "TowerEta", "", 'F' );
+   dataloader->AddVariable( "towerPhi := Tower.Phi[]", "TowerPhi", "", 'F' );
 
    // ALL VARIABLES REFER TO THE LEADING FATJET
-   dataloader->AddVariable( "mass := FatJet.Mass[0]", "Mass", "", 'F' );
-   dataloader->AddVariable( "tau1 := FatJet.Tau[0][0]", "Tau1", "", 'F' );
-   dataloader->AddVariable( "tau2 := FatJet.Tau[0][1]", "Tau2", "", 'F' );
-   dataloader->AddVariable( "tau3 := FatJet.Tau[0][2]", "Tau3", "", 'F' );
-   dataloader->AddVariable( "tau4 := FatJet.Tau[0][3]", "Tau4", "", 'F' );
+   /* dataloader->AddVariable( "mass := FatJet.Mass[0]", "Mass", "", 'F' ); */
+   /* dataloader->AddVariable( "tau1 := FatJet.Tau[0][0]", "Tau1", "", 'F' ); */
+   /* dataloader->AddVariable( "tau2 := FatJet.Tau[0][1]", "Tau2", "", 'F' ); */
+   /* dataloader->AddVariable( "tau3 := FatJet.Tau[0][2]", "Tau3", "", 'F' ); */
+   /* dataloader->AddVariable( "tau4 := FatJet.Tau[0][3]", "Tau4", "", 'F' ); */
    /* dataloader->AddVariable( "tau21 := (FatJet.Tau[0][1]/FatJet.Tau[0][0])", "Tau2/Tau1", "", 'F' ); */
    /* dataloader->AddVariable( "tau32 := (FatJet.Tau[0][2]/FatJet.Tau[0][1])", "Tau3/Tau2", "", 'F' ); */
    /* dataloader->AddVariable( "tau43 := (FatJet.Tau[0][3]/FatJet.Tau[0][2])", "Tau4/Tau3", "", 'F' ); */
@@ -583,5 +584,5 @@ int main( int argc, char** argv )
       if (!methodList.IsNull()) methodList += TString(",");
       methodList += regMethod;
    }
-   return TMVAClassificationNsubjettiness(methodList);
+   return TMVAClassificationTowerInfo(methodList);
 }

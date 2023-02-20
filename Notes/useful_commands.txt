@@ -22,4 +22,4 @@ Correr Delphes con un hepmc de pythia (en la carpeta Delphes de MG):
 
 ***
 
-GIT TOKEN: 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 
+GIT TOKEN: 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

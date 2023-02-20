@@ -1,0 +1,455 @@
+--- TMVAClassification       : Using input files: ./pp_WW_hadronic_14TeV500kEvtsGenCutW350_CutQCD350_InclusiveCut350_delphes_events.root and ./pp_QCD_14TeV500kEvtsGenCutQCD350_InclusiveCut350_delphes_events.root
+DataSetInfo              : [dataset] : Added class "Signal"
+                         : Add Tree Delphes of type Signal with 500000 events
+DataSetInfo              : [dataset] : Added class "Background"
+                         : Add Tree Delphes of type Background with 447443 events
+Factory                  : Booking method: DNN_CPU
+                         : 
+                         : Parsing option string: 
+                         : ... "!H:V:ErrorStrategy=CROSSENTROPY:VarTransform=N:WeightInitialization=XAVIERUNIFORM:Layout=TANH|128,TANH|128,TANH|128,LINEAR:TrainingStrategy=LearningRate=1e-2,Momentum=0.9,ConvergenceSteps=20,BatchSize=100,TestRepetitions=1,WeightDecay=1e-4,Regularization=None,DropConfig=0.0+0.5+0.5+0.5:Architecture=CPU"
+                         : The following options are set:
+                         : - By User:
+                         :     <none>
+                         : - Default:
+                         :     Boost_num: "0" [Number of times the classifier will be boosted]
+                         : Parsing option string: 
+                         : ... "!H:V:ErrorStrategy=CROSSENTROPY:VarTransform=N:WeightInitialization=XAVIERUNIFORM:Layout=TANH|128,TANH|128,TANH|128,LINEAR:TrainingStrategy=LearningRate=1e-2,Momentum=0.9,ConvergenceSteps=20,BatchSize=100,TestRepetitions=1,WeightDecay=1e-4,Regularization=None,DropConfig=0.0+0.5+0.5+0.5:Architecture=CPU"
+                         : The following options are set:
+                         : - By User:
+                         :     V: "True" [Verbose output (short form of "VerbosityLevel" below - overrides the latter one)]
+                         :     VarTransform: "N" [List of variable transformations performed before training, e.g., "D_Background,P_Signal,G,N_AllClasses" for: "Decorrelation, PCA-transformation, Gaussianisation, Normalisation, each for the given class of events ('AllClasses' denotes all events of all classes, if no class indication is given, 'All' is assumed)"]
+                         :     H: "False" [Print method-specific help message]
+                         :     Layout: "TANH|128,TANH|128,TANH|128,LINEAR" [Layout of the network.]
+                         :     ErrorStrategy: "CROSSENTROPY" [Loss function: Mean squared error (regression) or cross entropy (binary classification).]
+                         :     WeightInitialization: "XAVIERUNIFORM" [Weight initialization strategy]
+                         :     Architecture: "CPU" [Which architecture to perform the training on.]
+                         :     TrainingStrategy: "LearningRate=1e-2,Momentum=0.9,ConvergenceSteps=20,BatchSize=100,TestRepetitions=1,WeightDecay=1e-4,Regularization=None,DropConfig=0.0+0.5+0.5+0.5" [Defines the training strategies.]
+                         : - Default:
+                         :     VerbosityLevel: "Default" [Verbosity level]
+                         :     CreateMVAPdfs: "False" [Create PDFs for classifier outputs (signal and background)]
+                         :     IgnoreNegWeightsInTraining: "False" [Events with negative weights are ignored in the training (but are included for testing and performance evaluation)]
+                         :     InputLayout: "0|0|0" [The Layout of the input]
+                         :     BatchLayout: "0|0|0" [The Layout of the batch]
+                         :     RandomSeed: "0" [Random seed used for weight initialization and batch shuffling]
+                         :     ValidationSize: "20%" [Part of the training data to use for validation. Specify as 0.2 or 20% to use a fifth of the data set as validation set. Specify as 100 to use exactly 100 events. (Default: 20%)]
+DNN_CPU                  : [dataset] : Create Transformation "N" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'mass' <---> Output : variable 'mass'
+                         : Input : variable 'tau1' <---> Output : variable 'tau1'
+                         : Input : variable 'tau2' <---> Output : variable 'tau2'
+                         : Input : variable 'tau3' <---> Output : variable 'tau3'
+                         : Input : variable 'tau4' <---> Output : variable 'tau4'
+                         : Input : variable 'tau21' <---> Output : variable 'tau21'
+                         : Input : variable 'tau32' <---> Output : variable 'tau32'
+                         : Input : variable 'tau43' <---> Output : variable 'tau43'
+                         : Will now use the CPU architecture with BLAS and IMT support !
+Factory                  : Booking method: BDT
+                         : 
+                         : Rebuilding Dataset dataset
+                         : Building event vectors for type 2 Signal
+                         : Dataset[dataset] :  create input formulas for tree Delphes
+                         : Building event vectors for type 2 Background
+                         : Dataset[dataset] :  create input formulas for tree Delphes
+DataSetFactory           : [dataset] : Number of events in input trees
+                         : 
+                         : 
+                         : Number of training and testing events
+                         : ---------------------------------------------------------------------------
+                         : Signal     -- training events            : 225000
+                         : Signal     -- testing events             : 274999
+                         : Signal     -- training and testing events: 499999
+                         : Background -- training events            : 225000
+                         : Background -- testing events             : 222441
+                         : Background -- training and testing events: 447441
+                         : 
+DataSetInfo              : Correlation matrix (Signal):
+                         : ------------------------------------------------------------------------
+                         :             mass    tau1    tau2    tau3    tau4   tau21   tau32   tau43
+                         :    mass:  +1.000  +0.641  +0.529  +0.426  +0.394  -0.135  -0.228  -0.085
+                         :    tau1:  +0.641  +1.000  +0.696  +0.612  +0.589  -0.348  -0.229  -0.082
+                         :    tau2:  +0.529  +0.696  +1.000  +0.900  +0.854  +0.335  -0.342  -0.179
+                         :    tau3:  +0.426  +0.612  +0.900  +1.000  +0.969  +0.328  +0.038  -0.127
+                         :    tau4:  +0.394  +0.589  +0.854  +0.969  +1.000  +0.308  +0.076  +0.089
+                         :   tau21:  -0.135  -0.348  +0.335  +0.328  +0.308  +1.000  -0.112  -0.106
+                         :   tau32:  -0.228  -0.229  -0.342  +0.038  +0.076  -0.112  +1.000  +0.200
+                         :   tau43:  -0.085  -0.082  -0.179  -0.127  +0.089  -0.106  +0.200  +1.000
+                         : ------------------------------------------------------------------------
+DataSetInfo              : Correlation matrix (Background):
+                         : ------------------------------------------------------------------------
+                         :             mass    tau1    tau2    tau3    tau4   tau21   tau32   tau43
+                         :    mass:  +1.000  +0.827  +0.665  +0.615  +0.600  -0.486  -0.266  -0.038
+                         :    tau1:  +0.827  +1.000  +0.823  +0.778  +0.767  -0.553  -0.285  -0.040
+                         :    tau2:  +0.665  +0.823  +1.000  +0.951  +0.928  -0.112  -0.321  -0.089
+                         :    tau3:  +0.615  +0.778  +0.951  +1.000  +0.983  -0.093  -0.069  -0.056
+                         :    tau4:  +0.600  +0.767  +0.928  +0.983  +1.000  -0.101  -0.046  +0.097
+                         :   tau21:  -0.486  -0.553  -0.112  -0.093  -0.101  +1.000  +0.117  -0.016
+                         :   tau32:  -0.266  -0.285  -0.321  -0.069  -0.046  +0.117  +1.000  +0.159
+                         :   tau43:  -0.038  -0.040  -0.089  -0.056  +0.097  -0.016  +0.159  +1.000
+                         : ------------------------------------------------------------------------
+DataSetFactory           : [dataset] :  
+                         : 
+Factory                  : Train all methods
+Factory                  : [dataset] : Create Transformation "I" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'mass' <---> Output : variable 'mass'
+                         : Input : variable 'tau1' <---> Output : variable 'tau1'
+                         : Input : variable 'tau2' <---> Output : variable 'tau2'
+                         : Input : variable 'tau3' <---> Output : variable 'tau3'
+                         : Input : variable 'tau4' <---> Output : variable 'tau4'
+                         : Input : variable 'tau21' <---> Output : variable 'tau21'
+                         : Input : variable 'tau32' <---> Output : variable 'tau32'
+                         : Input : variable 'tau43' <---> Output : variable 'tau43'
+Factory                  : [dataset] : Create Transformation "D" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'mass' <---> Output : variable 'mass'
+                         : Input : variable 'tau1' <---> Output : variable 'tau1'
+                         : Input : variable 'tau2' <---> Output : variable 'tau2'
+                         : Input : variable 'tau3' <---> Output : variable 'tau3'
+                         : Input : variable 'tau4' <---> Output : variable 'tau4'
+                         : Input : variable 'tau21' <---> Output : variable 'tau21'
+                         : Input : variable 'tau32' <---> Output : variable 'tau32'
+                         : Input : variable 'tau43' <---> Output : variable 'tau43'
+Factory                  : [dataset] : Create Transformation "P" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'mass' <---> Output : variable 'mass'
+                         : Input : variable 'tau1' <---> Output : variable 'tau1'
+                         : Input : variable 'tau2' <---> Output : variable 'tau2'
+                         : Input : variable 'tau3' <---> Output : variable 'tau3'
+                         : Input : variable 'tau4' <---> Output : variable 'tau4'
+                         : Input : variable 'tau21' <---> Output : variable 'tau21'
+                         : Input : variable 'tau32' <---> Output : variable 'tau32'
+                         : Input : variable 'tau43' <---> Output : variable 'tau43'
+Factory                  : [dataset] : Create Transformation "G" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'mass' <---> Output : variable 'mass'
+                         : Input : variable 'tau1' <---> Output : variable 'tau1'
+                         : Input : variable 'tau2' <---> Output : variable 'tau2'
+                         : Input : variable 'tau3' <---> Output : variable 'tau3'
+                         : Input : variable 'tau4' <---> Output : variable 'tau4'
+                         : Input : variable 'tau21' <---> Output : variable 'tau21'
+                         : Input : variable 'tau32' <---> Output : variable 'tau32'
+                         : Input : variable 'tau43' <---> Output : variable 'tau43'
+Factory                  : [dataset] : Create Transformation "D" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'mass' <---> Output : variable 'mass'
+                         : Input : variable 'tau1' <---> Output : variable 'tau1'
+                         : Input : variable 'tau2' <---> Output : variable 'tau2'
+                         : Input : variable 'tau3' <---> Output : variable 'tau3'
+                         : Input : variable 'tau4' <---> Output : variable 'tau4'
+                         : Input : variable 'tau21' <---> Output : variable 'tau21'
+                         : Input : variable 'tau32' <---> Output : variable 'tau32'
+                         : Input : variable 'tau43' <---> Output : variable 'tau43'
+TFHandler_Factory        : Variable        Mean        RMS   [        Min        Max ]
+                         : -----------------------------------------------------------
+                         :     mass:     94.816     44.503   [-2.1579e-05     958.86 ]
+                         :     tau1:    0.11590   0.076417   [     0.0000    0.65185 ]
+                         :     tau2:   0.056885   0.035985   [     0.0000    0.43728 ]
+                         :     tau3:   0.041296   0.024847   [     0.0000    0.27865 ]
+                         :     tau4:   0.033825   0.020228   [     0.0000    0.23027 ]
+                         :    tau21:    0.54020    0.18900   [     0.0000    0.98311 ]
+                         :    tau32:    0.74517    0.12275   [     0.0000     1.1451 ]
+                         :    tau43:    0.82088   0.079290   [     0.0000     1.2272 ]
+                         : -----------------------------------------------------------
+                         : Preparing the Decorrelation transformation...
+TFHandler_Factory        : Variable        Mean        RMS   [        Min        Max ]
+                         : -----------------------------------------------------------
+                         :     mass:     2.1394     1.0000   [-4.8597e-07     21.585 ]
+                         :     tau1:     2.5045     1.0000   [    -9.7988     12.134 ]
+                         :     tau2:     3.5697     1.0000   [    -8.4154     22.722 ]
+                         :     tau3:     1.4866     1.0000   [    -17.620     19.751 ]
+                         :     tau4:    -15.222     1.0000   [    -38.633 1.2815e-08 ]
+                         :    tau21:     4.2395     1.0000   [-1.4358e-07     9.4794 ]
+                         :    tau32:     6.5531     1.0000   [-1.0017e-07     10.859 ]
+                         :    tau43:     10.476     1.0000   [   -0.38736     15.824 ]
+                         : -----------------------------------------------------------
+                         : Preparing the Principle Component (PCA) transformation...
+TFHandler_Factory        : Variable        Mean        RMS   [        Min        Max ]
+                         : -----------------------------------------------------------
+                         :     mass:-1.4052e-09     44.503   [    -864.05     94.815 ]
+                         :     tau1:-7.7580e-12    0.18099   [   -0.93026    0.64582 ]
+                         :     tau2:-4.5875e-12    0.12139   [   -0.56518    0.96574 ]
+                         :     tau3:-4.2791e-12   0.076570   [   -0.74784    0.40085 ]
+                         :     tau4: 3.8211e-12   0.056042   [   -0.84411    0.49729 ]
+                         :    tau21: 9.2114e-13   0.015504   [   -0.18027    0.11178 ]
+                         :    tau32: 1.2013e-13  0.0047427   [   -0.11319   0.054404 ]
+                         :    tau43: 4.0687e-15  0.0015082   [  -0.021280   0.037968 ]
+                         : -----------------------------------------------------------
+                         : Preparing the Gaussian transformation...
+                         : Preparing the Decorrelation transformation...
+TFHandler_Factory        : Variable        Mean        RMS   [        Min        Max ]
+                         : -----------------------------------------------------------
+                         :     mass:  0.0033880     1.0000   [    -4.1581     7.3863 ]
+                         :     tau1:   0.011463     1.0000   [    -10.916     15.855 ]
+                         :     tau2:  0.0029636     1.0000   [    -11.965     19.541 ]
+                         :     tau3: 0.00068763     1.0000   [    -18.369     34.114 ]
+                         :     tau4: -0.0082018     1.0000   [    -23.321     28.832 ]
+                         :    tau21:  0.0097288     1.0000   [    -9.0094     11.477 ]
+                         :    tau32:  0.0062996     1.0000   [    -5.9692     7.9528 ]
+                         :    tau43:  0.0044451     1.0000   [    -4.3512     6.5527 ]
+                         : -----------------------------------------------------------
+                         : Ranking input variables (method unspecific)...
+IdTransformation         : Ranking result (top variable is best ranked)
+                         : ----------------------------------
+                         : Rank : Variable  : Separation
+                         : ----------------------------------
+                         :    1 : Mass      : 1.783e-01
+                         :    2 : Tau2/Tau1 : 1.589e-01
+                         :    3 : Tau4      : 1.319e-01
+                         :    4 : Tau3      : 1.137e-01
+                         :    5 : Tau1      : 8.388e-02
+                         :    6 : Tau2      : 6.918e-02
+                         :    7 : Tau3/Tau2 : 4.140e-02
+                         :    8 : Tau4/Tau3 : 1.443e-02
+                         : ----------------------------------
+Factory                  : Train method: DNN_CPU for Classification
+                         : 
+TFHandler_DNN_CPU        : Variable        Mean        RMS   [        Min        Max ]
+                         : -----------------------------------------------------------
+                         :     mass:   -0.80223   0.092824   [    -1.0000     1.0000 ]
+                         :     tau1:   -0.64439    0.23446   [    -1.0000     1.0000 ]
+                         :     tau2:   -0.73982    0.16459   [    -1.0000     1.0000 ]
+                         :     tau3:   -0.70360    0.17834   [    -1.0000     1.0000 ]
+                         :     tau4:   -0.70622    0.17568   [    -1.0000     1.0000 ]
+                         :    tau21:   0.098964    0.38449   [    -1.0000     1.0000 ]
+                         :    tau32:    0.30148    0.21438   [    -1.0000     1.0000 ]
+                         :    tau43:    0.33778    0.12922   [    -1.0000     1.0000 ]
+                         : -----------------------------------------------------------
+                         : Start of deep neural network training on CPU using MT,  nthreads = 1
+                         : 
+TFHandler_DNN_CPU        : Variable        Mean        RMS   [        Min        Max ]
+                         : -----------------------------------------------------------
+                         :     mass:   -0.80223   0.092824   [    -1.0000     1.0000 ]
+                         :     tau1:   -0.64439    0.23446   [    -1.0000     1.0000 ]
+                         :     tau2:   -0.73982    0.16459   [    -1.0000     1.0000 ]
+                         :     tau3:   -0.70360    0.17834   [    -1.0000     1.0000 ]
+                         :     tau4:   -0.70622    0.17568   [    -1.0000     1.0000 ]
+                         :    tau21:   0.098964    0.38449   [    -1.0000     1.0000 ]
+                         :    tau32:    0.30148    0.21438   [    -1.0000     1.0000 ]
+                         :    tau43:    0.33778    0.12922   [    -1.0000     1.0000 ]
+                         : -----------------------------------------------------------
+                         : *****   Deep Learning Network *****
+DEEP NEURAL NETWORK:   Depth = 4  Input = ( 1, 1, 8 )  Batch size = 100  Loss function = C
+	Layer 0	 DENSE Layer: 	 ( Input =     8 , Width =   128 ) 	Output = (  1 ,   100 ,   128 ) 	 Activation Function = Tanh
+	Layer 1	 DENSE Layer: 	 ( Input =   128 , Width =   128 ) 	Output = (  1 ,   100 ,   128 ) 	 Activation Function = Tanh	 Dropout prob. = 0.5
+	Layer 2	 DENSE Layer: 	 ( Input =   128 , Width =   128 ) 	Output = (  1 ,   100 ,   128 ) 	 Activation Function = Tanh	 Dropout prob. = 0.5
+	Layer 3	 DENSE Layer: 	 ( Input =   128 , Width =     1 ) 	Output = (  1 ,   100 ,     1 ) 	 Activation Function = Identity	 Dropout prob. = 0.5
+                         : Using 360000 events for training and 90000 for testing
+                         : Compute initial loss  on the validation data 
+                         : Training phase 1 of 1:  Optimizer ADAM (beta1=0.9,beta2=0.999,eps=1e-07) Learning rate = 0.01 regularization 0 minimum error = 0.688672
+                         : --------------------------------------------------------------
+                         :      Epoch |   Train Err.   Val. Err.  t(s)/epoch   t(s)/Loss   nEvents/s Conv. Steps
+                         : --------------------------------------------------------------
+                         :    Start epoch iteration ...
+                         :          1 Minimum Test error found - save the configuration 
+                         :          1 |     0.545767    0.510943     26.7172     2.18845     14676.7           0
+                         :          2 Minimum Test error found - save the configuration 
+                         :          2 |     0.521372    0.467363     26.3396     2.08405       14842           0
+                         :          3 Minimum Test error found - save the configuration 
+                         :          3 |     0.507836    0.460428     26.0721     2.05683     14990.5           0
+                         :          4 |     0.505133    0.469519     25.8949     2.02634     15082.6           1
+                         :          5 |     0.503069    0.465091     25.6348     2.00036       15232           2
+                         :          6 |      0.50446    0.484868     25.4569     1.99506     15344.1           3
+                         :          7 |     0.503333    0.481402     25.3973     1.97549     15370.3           4
+                         :          8 |     0.505114    0.481848     25.2809     1.97182     15444.6           5
+                         :          9 |     0.503835    0.470822     25.5441     2.03539     15313.4           6
+                         :         10 |     0.505585    0.464023     25.4884     2.03908     15352.2           7
+                         :         11 |     0.503476    0.465382     25.4819     2.04967     15363.5           8
+                         :         12 |     0.503174    0.463318     25.3564     2.02015     15426.7           9
+                         :         13 |     0.503059    0.461266     25.3727     2.02772     15420.9          10
+                         :         14 |     0.502071    0.462829     25.3487     2.03061     15438.6          11
+                         :         15 |      0.50155    0.476044     25.3164     2.01784     15451.6          12
+                         :         16 |     0.503934    0.467522     24.9227      1.9415       15665          13
+                         :         17 |     0.505863    0.476784      24.888     1.94527     15691.2          14
+                         :         18 |     0.503062    0.503608     25.1684     2.00439     15541.3          15
+                         :         19 |     0.502377    0.464864     25.0769     2.00845     15605.7          16
+                         :         20 |     0.502352    0.465109     25.1718     2.00713     15540.9          17
+                         :         21 |     0.502745    0.461918     25.0054     1.93731       15606          18
+                         :         22 Minimum Test error found - save the configuration 
+                         :         22 |     0.502757    0.460403     25.0999     2.00294     15586.5           0
+                         :         23 |     0.502807    0.469488     25.1058     1.99635       15578           1
+                         :         24 |     0.501921    0.462141     24.8695     1.92618     15690.8           2
+                         :         25 |     0.503555    0.468925     24.8429     1.92842     15710.6           3
+                         :         26 |     0.506108    0.468395      24.949     2.01759       15699           4
+                         :         27 |     0.502568    0.460543     25.0454     2.00198     15622.7           5
+                         :         28 |     0.503846    0.474794     25.1674     2.00138       15540           6
+                         :         29 Minimum Test error found - save the configuration 
+                         :         29 |     0.503086    0.458883     25.1242     2.00164     15569.2           0
+                         :         30 |     0.504182     0.46583     24.9142     1.91763     15654.5           1
+                         :         31 |     0.504639    0.477197     24.9185      1.9923     15702.6           2
+                         :         32 |     0.504123    0.486744     25.1318     2.00359     15565.4           3
+                         :         33 |     0.505009     0.48083     25.0385     1.99722     15624.1           4
+                         :         34 |     0.501023    0.470164     25.1108     1.99124     15571.2           5
+                         :         35 |     0.499926     0.46047      25.103     2.00845     15588.1           6
+                         :         36 |     0.501237    0.467614     25.0585     1.99386     15608.3           7
+                         :         37 |       0.5024    0.480325      25.093     1.98877     15581.5           8
+                         :         38 |     0.502022    0.470827     25.0583     1.98987     15605.7           9
+                         :         39 |     0.503474    0.470509     24.8934     1.98372     15713.9          10
+                         :         40 Minimum Test error found - save the configuration 
+                         :         40 |     0.504052    0.458449     24.9874     1.93195     15614.6           0
+                         :         41 |     0.502897    0.458752     24.7155      1.9143     15788.6           1
+                         :         42 |     0.505052    0.471506     24.7386     1.95206     15798.8           2
+                         :         43 |     0.505068    0.469323     25.0437     1.99136     15616.6           3
+                         :         44 |     0.506938    0.473628     25.0798     2.00409     15600.8           4
+                         :         45 |     0.502806    0.462196      24.977     1.96331     15642.9           5
+                         :         46 |     0.500684     0.47663     24.9174     1.99623       15706           6
+                         :         47 |      0.50473    0.466742     25.0552     1.98816     15606.7           7
+                         :         48 |     0.503249    0.461572     24.7032     1.91074     15794.7           8
+                         :         49 |     0.502115    0.467442     24.9258     1.99569     15699.9           9
+                         :         50 |     0.504074    0.463929     24.7802     1.91011     15741.1          10
+                         :         51 |     0.507374    0.479207     24.9663     1.98173     15662.7          11
+                         :         52 |     0.502889    0.529195     25.0311     1.97835     15616.4          12
+                         :         53 |     0.499794    0.464625     25.0314      1.9893     15623.6          13
+                         :         54 |     0.501874    0.460277     25.0448      1.9927     15616.8          14
+                         :         55 |     0.501443    0.464139      25.061     1.99517     15607.5          15
+                         :         56 |     0.503535    0.466891     24.7874     1.91276     15737.9          16
+                         :         57 |     0.504993    0.460964      24.979     2.00129     15667.3          17
+                         :         58 |     0.505205    0.468919     24.7608     1.91559     15758.3          18
+                         :         59 |     0.506459    0.466444     24.6634     1.91792     15827.3          19
+                         :         60 |     0.506306    0.473288     24.9646     2.00431     15679.3          20
+                         :         61 |      0.50054    0.462462     25.0099     1.98449     15634.9          21
+                         : 
+                         : Elapsed time for training with 450000 events: 1.54e+03 sec         
+                         : Evaluate deep neural network on CPU using batches with size = 100
+                         : 
+DNN_CPU                  : [dataset] : Evaluation of DNN_CPU on training sample (450000 events)
+                         : Elapsed time for evaluation of 450000 events: 9.98 sec       
+                         : Creating xml weight file: dataset/weights/TMVAClassification_DNN_CPU.weights.xml
+                         : Creating standalone class: dataset/weights/TMVAClassification_DNN_CPU.class.C
+Factory                  : Training finished
+                         : 
+Factory                  : Train method: BDT for Classification
+                         : 
+BDT                      : #events: (reweighted) sig: 225000 bkg: 225000
+                         : #events: (unweighted) sig: 225000 bkg: 225000
+                         : Training 850 Decision Trees ... patience please
+                         : Elapsed time for training with 450000 events: 205 sec         
+BDT                      : [dataset] : Evaluation of BDT on training sample (450000 events)
+                         : Elapsed time for evaluation of 450000 events: 17.9 sec       
+                         : Creating xml weight file: dataset/weights/TMVAClassification_BDT.weights.xml
+                         : Creating standalone class: dataset/weights/TMVAClassification_BDT.class.C
+                         : TMVA.root:/dataset/Method_BDT/BDT
+Factory                  : Training finished
+                         : 
+                         : Ranking input variables (method specific)...
+                         : No variable ranking supplied by classifier: DNN_CPU
+BDT                      : Ranking result (top variable is best ranked)
+                         : ---------------------------------------
+                         : Rank : Variable  : Variable Importance
+                         : ---------------------------------------
+                         :    1 : tau21     : 1.952e-01
+                         :    2 : mass      : 1.741e-01
+                         :    3 : tau4      : 1.451e-01
+                         :    4 : tau1      : 1.291e-01
+                         :    5 : tau32     : 1.070e-01
+                         :    6 : tau2      : 8.744e-02
+                         :    7 : tau43     : 8.499e-02
+                         :    8 : tau3      : 7.713e-02
+                         : ---------------------------------------
+TH1.Print Name  = TrainingHistory_DNN_CPU_trainingError, Entries= 0, Total sum= 30.7759
+TH1.Print Name  = TrainingHistory_DNN_CPU_valError, Entries= 0, Total sum= 28.7056
+Factory                  : === Destroy and recreate all methods via weight files for testing ===
+                         : 
+                         : Reading weight file: dataset/weights/TMVAClassification_DNN_CPU.weights.xml
+                         : Reading weight file: dataset/weights/TMVAClassification_BDT.weights.xml
+Factory                  : Test all methods
+Factory                  : Test method: DNN_CPU for Classification performance
+                         : 
+                         : Evaluate deep neural network on CPU using batches with size = 1000
+                         : 
+TFHandler_DNN_CPU        : Variable        Mean        RMS   [        Min        Max ]
+                         : -----------------------------------------------------------
+                         :     mass:   -0.80162    0.10873   [    -1.0000     1.3313 ]
+                         :     tau1:   -0.62850    0.28215   [    -1.0000    0.88112 ]
+                         :     tau2:   -0.70084    0.18925   [    -1.0000    0.76818 ]
+                         :     tau3:   -0.64863    0.20486   [    -1.0000    0.97908 ]
+                         :     tau4:   -0.64782    0.20180   [    -1.0000     1.0948 ]
+                         :    tau21:    0.24957    0.35621   [    -1.0000     1.0094 ]
+                         :    tau32:    0.34473    0.18332   [    -1.0000     1.0692 ]
+                         :    tau43:    0.35351    0.11653   [    -1.0000    0.88189 ]
+                         : -----------------------------------------------------------
+DNN_CPU                  : [dataset] : Evaluation of DNN_CPU on testing sample (497440 events)
+                         : Elapsed time for evaluation of 497440 events: 9.87 sec       
+Factory                  : Test method: BDT for Classification performance
+                         : 
+BDT                      : [dataset] : Evaluation of BDT on testing sample (497440 events)
+                         : Elapsed time for evaluation of 497440 events: 15.8 sec       
+Factory                  : Evaluate all methods
+Factory                  : Evaluate classifier: DNN_CPU
+                         : 
+DNN_CPU                  : [dataset] : Loop over test events and fill histograms with classifier response...
+                         : 
+                         : Evaluate deep neural network on CPU using batches with size = 1000
+                         : 
+TFHandler_DNN_CPU        : Variable        Mean        RMS   [        Min        Max ]
+                         : -----------------------------------------------------------
+                         :     mass:   -0.80223   0.092824   [    -1.0000     1.0000 ]
+                         :     tau1:   -0.64439    0.23446   [    -1.0000     1.0000 ]
+                         :     tau2:   -0.73982    0.16459   [    -1.0000     1.0000 ]
+                         :     tau3:   -0.70360    0.17834   [    -1.0000     1.0000 ]
+                         :     tau4:   -0.70622    0.17568   [    -1.0000     1.0000 ]
+                         :    tau21:   0.098964    0.38449   [    -1.0000     1.0000 ]
+                         :    tau32:    0.30148    0.21438   [    -1.0000     1.0000 ]
+                         :    tau43:    0.33778    0.12922   [    -1.0000     1.0000 ]
+                         : -----------------------------------------------------------
+TFHandler_DNN_CPU        : Variable        Mean        RMS   [        Min        Max ]
+                         : -----------------------------------------------------------
+                         :     mass:   -0.80162    0.10873   [    -1.0000     1.3313 ]
+                         :     tau1:   -0.62850    0.28215   [    -1.0000    0.88112 ]
+                         :     tau2:   -0.70084    0.18925   [    -1.0000    0.76818 ]
+                         :     tau3:   -0.64863    0.20486   [    -1.0000    0.97908 ]
+                         :     tau4:   -0.64782    0.20180   [    -1.0000     1.0948 ]
+                         :    tau21:    0.24957    0.35621   [    -1.0000     1.0094 ]
+                         :    tau32:    0.34473    0.18332   [    -1.0000     1.0692 ]
+                         :    tau43:    0.35351    0.11653   [    -1.0000    0.88189 ]
+                         : -----------------------------------------------------------
+Factory                  : Evaluate classifier: BDT
+                         : 
+BDT                      : [dataset] : Loop over test events and fill histograms with classifier response...
+                         : 
+TFHandler_BDT            : Variable        Mean        RMS   [        Min        Max ]
+                         : -----------------------------------------------------------
+                         :     mass:     95.109     52.128   [-1.8688e-05     1117.7 ]
+                         :     tau1:    0.12108   0.091961   [     0.0000    0.61311 ]
+                         :     tau2:   0.065408   0.041377   [     0.0000    0.38660 ]
+                         :     tau3:   0.048956   0.028542   [     0.0000    0.27574 ]
+                         :     tau4:   0.040549   0.023235   [     0.0000    0.24119 ]
+                         :    tau21:    0.61423    0.17510   [     0.0000    0.98771 ]
+                         :    tau32:    0.76993    0.10496   [     0.0000     1.1847 ]
+                         :    tau43:    0.83054   0.071504   [     0.0000     1.1548 ]
+                         : -----------------------------------------------------------
+                         : 
+                         : Evaluation results ranked by best signal efficiency and purity (area)
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : DataSet       MVA                       
+                         : Name:         Method:          ROC-integ
+                         : dataset       BDT            : 0.872
+                         : dataset       DNN_CPU        : 0.864
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : 
+                         : Testing efficiency compared to training efficiency (overtraining check)
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : DataSet              MVA              Signal efficiency: from test sample (from training sample) 
+                         : Name:                Method:          @B=0.01             @B=0.10            @B=0.30   
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : dataset              BDT            : 0.277 (0.280)       0.672 (0.672)      0.852 (0.852)
+                         : dataset              DNN_CPU        : 0.235 (0.235)       0.662 (0.661)      0.846 (0.846)
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : 
+Dataset:dataset          : Created tree 'TestTree' with 497440 events
+                         : 
+Dataset:dataset          : Created tree 'TrainTree' with 450000 events
+                         : 
+Factory                  : Thank you for using TMVA!
+                         : For citation information, please visit: http://tmva.sf.net/citeTMVA.html
+==> Wrote root file: TMVA.root
+==> TMVAClassification is done!
+--- Launch TMVA GUI to view input file: TMVA.root
+=== Note: inactive buttons indicate classifiers that were not trained, ===
+===       or functionalities that were not invoked during the training ===
+

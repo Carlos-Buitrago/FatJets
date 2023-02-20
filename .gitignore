@@ -7,5 +7,5 @@ temp/
 # ignore files in .vscode/
 .vscode/
 
-# ignore files in /weights/
+# ignore .xml files in dataset/weights/
 *.xml
