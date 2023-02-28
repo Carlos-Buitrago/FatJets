@@ -228,7 +228,7 @@ int TMVAClassificationTowerInfo( TString myMethodList = "" )
 
    // VARIABLES REFERING TO THE CALO TOWERS
 
-   dataloader->AddVariable( "towerET := Tower.ET[i]", "TowerET", "", 'F' );
+   dataloader->AddVariable( "towerET := Tower.ET[]", "TowerET", "", 'F' );
    dataloader->AddVariable( "towerEta := Tower.Eta[]", "TowerEta", "", 'F' );
    dataloader->AddVariable( "towerPhi := Tower.Phi[]", "TowerPhi", "", 'F' );
 
