@@ -1,12 +1,12 @@
 //////////////////////////////////////////////////////////
 // This class has been automatically generated on
-// Mon Feb 27 17:51:18 2023 by ROOT version 6.26/10
+// Tue Feb 28 14:16:36 2023 by ROOT version 6.26/10
 // from TTree Delphes/Analysis tree
-// found on file: pp_tt_hadronic_14TeV500kEvtsGenCutT350_CutQCD350_InclusiveCut350_delphes_events.root
+// found on file: pp_QCD_14TeV500kEvtsGenCutQCD350_InclusiveCut350_delphes_events.root
 //////////////////////////////////////////////////////////
 
-#ifndef TreeModifierClass_h
-#define TreeModifierClass_h
+#ifndef TreeModifierClass_QCD_h
+#define TreeModifierClass_QCD_h
 
 #include <TROOT.h>
 #include <TChain.h>
@@ -16,7 +16,7 @@
 #include "TClonesArray.h"
 #include "TObject.h"
 
-class TreeModifierClass {
+class TreeModifierClass_QCD {
 public :
    TTree          *fChain;   //!pointer to the analyzed TTree or TChain
    Int_t           fCurrent; //!current Tree number in a TChain
@@ -24,19 +24,19 @@ public :
 // Fixed size dimensions of array or collections stored in the TTree if any.
    static constexpr Int_t kMaxEvent = 1;
    static constexpr Int_t kMaxWeight = 2;
-   static constexpr Int_t kMaxParticle = 4740;
-   static constexpr Int_t kMaxTrack = 351;
-   static constexpr Int_t kMaxTower = 684;
-   static constexpr Int_t kMaxEFlowTrack = 351;
-   static constexpr Int_t kMaxEFlowPhoton = 402;
-   static constexpr Int_t kMaxEFlowNeutralHadron = 204;
-   static constexpr Int_t kMaxGenJet = 16;
+   static constexpr Int_t kMaxParticle = 4828;
+   static constexpr Int_t kMaxTrack = 348;
+   static constexpr Int_t kMaxTower = 652;
+   static constexpr Int_t kMaxEFlowTrack = 348;
+   static constexpr Int_t kMaxEFlowPhoton = 414;
+   static constexpr Int_t kMaxEFlowNeutralHadron = 197;
+   static constexpr Int_t kMaxGenJet = 18;
    static constexpr Int_t kMaxGenMissingET = 1;
    static constexpr Int_t kMaxJet = 16;
    static constexpr Int_t kMaxElectron = 2;
    static constexpr Int_t kMaxPhoton = 2;
    static constexpr Int_t kMaxMuon = 2;
-   static constexpr Int_t kMaxFatJet = 7;
+   static constexpr Int_t kMaxFatJet = 9;
    static constexpr Int_t kMaxMissingET = 1;
    static constexpr Int_t kMaxScalarHT = 1;
 
@@ -876,10 +876,8 @@ public :
    TBranch        *b_ScalarHT_HT;   //!
    TBranch        *b_ScalarHT_size;   //!
 
-
-
-   TreeModifierClass(TTree *tree=0);
-   virtual ~TreeModifierClass();
+   TreeModifierClass_QCD(TTree *tree=0);
+   virtual ~TreeModifierClass_QCD();
    virtual Int_t    Cut(Long64_t entry);
    virtual Int_t    GetEntry(Long64_t entry);
    virtual Long64_t LoadTree(Long64_t entry);
@@ -891,36 +889,36 @@ public :
 
 #endif
 
-#ifdef TreeModifierClass_cxx
-TreeModifierClass::TreeModifierClass(TTree *tree) : fChain(0) 
+#ifdef TreeModifierClass_QCD_cxx
+TreeModifierClass_QCD::TreeModifierClass_QCD(TTree *tree) : fChain(0) 
 {
 // if parameter tree is not specified (or zero), connect the file
 // used to generate this class and read the Tree.
    if (tree == 0) {
-      TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("pp_tt_hadronic_14TeV500kEvtsGenCutT350_CutQCD350_InclusiveCut350_delphes_events.root");
+      TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("../pp_QCD_14TeV500kEvtsGenCutQCD350_InclusiveCut350_delphes_events.root");
       if (!f || !f->IsOpen()) {
          std::cout << "Opening file now" << std::endl;
-         f = new TFile("pp_tt_hadronic_14TeV500kEvtsGenCutT350_CutQCD350_InclusiveCut350_delphes_events.root", "UPDATE");
+         f = new TFile("../pp_QCD_14TeV500kEvtsGenCutQCD350_InclusiveCut350_delphes_events.root", "UPDATE");
       }
-      f->GetObject("Delphes",tree);
+      f->GetObject("Delphes;1",tree);
 
    }
    Init(tree);
 }
 
-TreeModifierClass::~TreeModifierClass()
+TreeModifierClass_QCD::~TreeModifierClass_QCD()
 {
    if (!fChain) return;
    delete fChain->GetCurrentFile();
 }
 
-Int_t TreeModifierClass::GetEntry(Long64_t entry)
+Int_t TreeModifierClass_QCD::GetEntry(Long64_t entry)
 {
 // Read contents of entry.
    if (!fChain) return 0;
    return fChain->GetEntry(entry);
 }
-Long64_t TreeModifierClass::LoadTree(Long64_t entry)
+Long64_t TreeModifierClass_QCD::LoadTree(Long64_t entry)
 {
 // Set the environment to read one entry
    if (!fChain) return -5;
@@ -933,7 +931,7 @@ Long64_t TreeModifierClass::LoadTree(Long64_t entry)
    return centry;
 }
 
-void TreeModifierClass::Init(TTree *tree)
+void TreeModifierClass_QCD::Init(TTree *tree)
 {
    // The Init() function is called when the selector needs to initialize
    // a new tree or chain. Typically here the branch addresses and branch
@@ -1368,7 +1366,7 @@ void TreeModifierClass::Init(TTree *tree)
    Notify();
 }
 
-Bool_t TreeModifierClass::Notify()
+Bool_t TreeModifierClass_QCD::Notify()
 {
    // The Notify() function is called when a new file is opened. This
    // can be either for a new TTree in a TChain or when when a new TTree
@@ -1379,18 +1377,18 @@ Bool_t TreeModifierClass::Notify()
    return kTRUE;
 }
 
-void TreeModifierClass::Show(Long64_t entry)
+void TreeModifierClass_QCD::Show(Long64_t entry)
 {
 // Print contents of entry.
 // If entry is not specified, print current entry
    if (!fChain) return;
    fChain->Show(entry);
 }
-Int_t TreeModifierClass::Cut(Long64_t entry)
+Int_t TreeModifierClass_QCD::Cut(Long64_t entry)
 {
 // This function may be called from Loop.
 // returns  1 if entry is accepted.
 // returns -1 otherwise.
    return 1;
 }
-#endif // #ifdef TreeModifierClass_cxx
+#endif // #ifdef TreeModifierClass_QCD_cxx

@@ -122,13 +122,13 @@ int TMVAClassificationTowerInfo( TString myMethodList = "" )
    Use["CFMlpANN"]        = 0; // Depreciated ANN from ALEPH
    Use["TMlpANN"]         = 0; // ROOT's own ANN
 #ifdef R__HAS_TMVAGPU
-   Use["DNN_GPU"]         = 1; // CUDA-accelerated DNN training.
+   Use["DNN_GPU"]         = 1; // CUDA-accelerated DNN training. APAGUE ESTE
 #else
    Use["DNN_GPU"]         = 0;
 #endif
 
 #ifdef R__HAS_TMVACPU
-   Use["DNN_CPU"]         = 1; // Multi-core accelerated DNN.
+   Use["DNN_CPU"]         = 1; // Multi-core accelerated DNN. APAGUE ESTE
 #else
    Use["DNN_CPU"]         = 0;
 #endif
@@ -195,8 +195,8 @@ int TMVAClassificationTowerInfo( TString myMethodList = "" )
 
    // Register the training and test trees
 
-   TTree *signalTree     = (TTree*)input1->Get("Delphes");
-   TTree *background     = (TTree*)input2->Get("Delphes");
+   TTree *signalTree     = (TTree*)input1->Get("Delphes;8");
+   TTree *background     = (TTree*)input2->Get("Delphes;5");
 
    // Create a ROOT output file where TMVA will store ntuples, histograms, etc.
    TString outfileName( "TMVA.root" );
@@ -226,11 +226,17 @@ int TMVAClassificationTowerInfo( TString myMethodList = "" )
    // note that you may also use variable expressions, such as: "3*var1/var2*abs(var3)"
  // [all types of expressions that can also be parsed by TTree::Draw( "expression" )]
 
-   // VARIABLES REFERING TO THE CALO TOWERS
+   dataloader->AddVariable( "towerET := myTowerET[]", "TowerET", "", 'F' );
+   dataloader->AddVariable( "towerEta := myTowerEta[]", "TowerEta", "", 'F' );
+   dataloader->AddVariable( "towerPhi := myTowerPhi[]", "TowerPhi", "", 'F' );
 
-   dataloader->AddVariable( "towerET := Tower.ET[]", "TowerET", "", 'F' );
-   dataloader->AddVariable( "towerEta := Tower.Eta[]", "TowerEta", "", 'F' );
-   dataloader->AddVariable( "towerPhi := Tower.Phi[]", "TowerPhi", "", 'F' );
+   /* dataloader->AddVariable( "trackPT := myTrackPT[]", "TrackPT", "", 'F' ); */
+   /* dataloader->AddVariable( "trackEta := myTrackEta[]", "TrackEta", "", 'F' ); */
+   /* dataloader->AddVariable( "trackPhi := myTrackPhi[]", "TrackPhi", "", 'F' ); */
+   
+   /* dataloader->AddVariable( "particlePT := myParticlePT[]", "ParticlePT", "", 'F' ); */
+   /* dataloader->AddVariable( "particleEta := myParticleEta[]", "ParticleEta", "", 'F' ); */
+   /* dataloader->AddVariable( "particlePhi := myParticlePhi[]", "ParticlePhi", "", 'F' ); */
 
    // ALL VARIABLES REFER TO THE LEADING FATJET
    /* dataloader->AddVariable( "mass := FatJet.Mass[0]", "Mass", "", 'F' ); */
@@ -255,8 +261,8 @@ int TMVAClassificationTowerInfo( TString myMethodList = "" )
    Double_t backgroundWeight = 1.0;
 
    // You can add an arbitrary number of signal or background trees
-   dataloader->AddSignalTree    ( signalTree,     signalWeight );
-   dataloader->AddBackgroundTree( background, backgroundWeight );
+   dataloader->AddSignalTree    ( signalTree,     signalWeight);
+   dataloader->AddBackgroundTree( background, backgroundWeight);
 
    // To give different trees for training and testing, do as follows:
    //

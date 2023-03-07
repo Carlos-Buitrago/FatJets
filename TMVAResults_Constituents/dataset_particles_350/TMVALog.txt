@@ -1,0 +1,327 @@
+--- TMVAClassification       : Using input files: ./pp_tt_hadronic_14TeV500kEvtsGenCutT350_CutQCD350_InclusiveCut350_delphes_events.root and ./pp_QCD_14TeV500kEvtsGenCutQCD350_InclusiveCut350_delphes_events.root
+DataSetInfo              : [dataset] : Added class "Signal"
+                         : Add Tree Delphes of type Signal with 500000 events
+DataSetInfo              : [dataset] : Added class "Background"
+                         : Add Tree Delphes of type Background with 447443 events
+Factory                  : Booking method: DNN_CPU
+                         : 
+                         : Parsing option string: 
+                         : ... "!H:V:ErrorStrategy=CROSSENTROPY:VarTransform=N:WeightInitialization=XAVIERUNIFORM:Layout=TANH|128,TANH|128,TANH|128,LINEAR:TrainingStrategy=LearningRate=1e-2,Momentum=0.9,ConvergenceSteps=20,BatchSize=100,TestRepetitions=1,WeightDecay=1e-4,Regularization=None,DropConfig=0.0+0.5+0.5+0.5:Architecture=CPU"
+                         : The following options are set:
+                         : - By User:
+                         :     <none>
+                         : - Default:
+                         :     Boost_num: "0" [Number of times the classifier will be boosted]
+                         : Parsing option string: 
+                         : ... "!H:V:ErrorStrategy=CROSSENTROPY:VarTransform=N:WeightInitialization=XAVIERUNIFORM:Layout=TANH|128,TANH|128,TANH|128,LINEAR:TrainingStrategy=LearningRate=1e-2,Momentum=0.9,ConvergenceSteps=20,BatchSize=100,TestRepetitions=1,WeightDecay=1e-4,Regularization=None,DropConfig=0.0+0.5+0.5+0.5:Architecture=CPU"
+                         : The following options are set:
+                         : - By User:
+                         :     V: "True" [Verbose output (short form of "VerbosityLevel" below - overrides the latter one)]
+                         :     VarTransform: "N" [List of variable transformations performed before training, e.g., "D_Background,P_Signal,G,N_AllClasses" for: "Decorrelation, PCA-transformation, Gaussianisation, Normalisation, each for the given class of events ('AllClasses' denotes all events of all classes, if no class indication is given, 'All' is assumed)"]
+                         :     H: "False" [Print method-specific help message]
+                         :     Layout: "TANH|128,TANH|128,TANH|128,LINEAR" [Layout of the network.]
+                         :     ErrorStrategy: "CROSSENTROPY" [Loss function: Mean squared error (regression) or cross entropy (binary classification).]
+                         :     WeightInitialization: "XAVIERUNIFORM" [Weight initialization strategy]
+                         :     Architecture: "CPU" [Which architecture to perform the training on.]
+                         :     TrainingStrategy: "LearningRate=1e-2,Momentum=0.9,ConvergenceSteps=20,BatchSize=100,TestRepetitions=1,WeightDecay=1e-4,Regularization=None,DropConfig=0.0+0.5+0.5+0.5" [Defines the training strategies.]
+                         : - Default:
+                         :     VerbosityLevel: "Default" [Verbosity level]
+                         :     CreateMVAPdfs: "False" [Create PDFs for classifier outputs (signal and background)]
+                         :     IgnoreNegWeightsInTraining: "False" [Events with negative weights are ignored in the training (but are included for testing and performance evaluation)]
+                         :     InputLayout: "0|0|0" [The Layout of the input]
+                         :     BatchLayout: "0|0|0" [The Layout of the batch]
+                         :     RandomSeed: "0" [Random seed used for weight initialization and batch shuffling]
+                         :     ValidationSize: "20%" [Part of the training data to use for validation. Specify as 0.2 or 20% to use a fifth of the data set as validation set. Specify as 100 to use exactly 100 events. (Default: 20%)]
+DNN_CPU                  : [dataset] : Create Transformation "N" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'particlePT' <---> Output : variable 'particlePT'
+                         : Input : variable 'particleEta' <---> Output : variable 'particleEta'
+                         : Input : variable 'particlePhi' <---> Output : variable 'particlePhi'
+                         : Will now use the CPU architecture with BLAS and IMT support !
+Factory                  : Booking method: BDT
+                         : 
+                         : Rebuilding Dataset dataset
+                         : Building event vectors for type 2 Signal
+                         : Dataset[dataset] :  create input formulas for tree Delphes
+                         : Building event vectors for type 2 Background
+                         : Dataset[dataset] :  create input formulas for tree Delphes
+DataSetFactory           : [dataset] : Number of events in input trees
+                         : 
+                         : 
+                         : Number of training and testing events
+                         : ---------------------------------------------------------------------------
+                         : Signal     -- training events            : 225000
+                         : Signal     -- testing events             : 11749406
+                         : Signal     -- training and testing events: 11974406
+                         : Background -- training events            : 225000
+                         : Background -- testing events             : 4490343
+                         : Background -- training and testing events: 4715343
+                         : 
+DataSetInfo              : Correlation matrix (Signal):
+                         : -----------------------------------------------
+                         :              particlePT particleEta particlePhi
+                         :  particlePT:     +1.000      +0.001      +0.002
+                         : particleEta:     +0.001      +1.000      -0.001
+                         : particlePhi:     +0.002      -0.001      +1.000
+                         : -----------------------------------------------
+DataSetInfo              : Correlation matrix (Background):
+                         : -----------------------------------------------
+                         :              particlePT particleEta particlePhi
+                         :  particlePT:     +1.000      +0.002      -0.000
+                         : particleEta:     +0.002      +1.000      +0.004
+                         : particlePhi:     -0.000      +0.004      +1.000
+                         : -----------------------------------------------
+DataSetFactory           : [dataset] :  
+                         : 
+Factory                  : Train all methods
+Factory                  : [dataset] : Create Transformation "I" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'particlePT' <---> Output : variable 'particlePT'
+                         : Input : variable 'particleEta' <---> Output : variable 'particleEta'
+                         : Input : variable 'particlePhi' <---> Output : variable 'particlePhi'
+Factory                  : [dataset] : Create Transformation "D" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'particlePT' <---> Output : variable 'particlePT'
+                         : Input : variable 'particleEta' <---> Output : variable 'particleEta'
+                         : Input : variable 'particlePhi' <---> Output : variable 'particlePhi'
+Factory                  : [dataset] : Create Transformation "P" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'particlePT' <---> Output : variable 'particlePT'
+                         : Input : variable 'particleEta' <---> Output : variable 'particleEta'
+                         : Input : variable 'particlePhi' <---> Output : variable 'particlePhi'
+Factory                  : [dataset] : Create Transformation "G" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'particlePT' <---> Output : variable 'particlePT'
+                         : Input : variable 'particleEta' <---> Output : variable 'particleEta'
+                         : Input : variable 'particlePhi' <---> Output : variable 'particlePhi'
+Factory                  : [dataset] : Create Transformation "D" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'particlePT' <---> Output : variable 'particlePT'
+                         : Input : variable 'particleEta' <---> Output : variable 'particleEta'
+                         : Input : variable 'particlePhi' <---> Output : variable 'particlePhi'
+TFHandler_Factory        :    Variable           Mean           RMS   [        Min           Max ]
+                         : --------------------------------------------------------------------------
+                         :  particlePT:       494.27       137.55   [       350.00       2237.5 ]
+                         : particleEta:   -0.0013661       1.0859   [      -3.3677       3.4566 ]
+                         : particlePhi:    0.0016911       1.8036   [      -3.1416       3.1416 ]
+                         : --------------------------------------------------------------------------
+                         : Preparing the Decorrelation transformation...
+TFHandler_Factory        :    Variable           Mean           RMS   [        Min           Max ]
+                         : --------------------------------------------------------------------------
+                         :  particlePT:       3.5934       1.0000   [       2.5445       16.267 ]
+                         : particleEta:   -0.0053808       1.0000   [      -3.1047       3.1796 ]
+                         : particlePhi:    0.0012188       1.0000   [      -1.7426       1.7427 ]
+                         : --------------------------------------------------------------------------
+                         : Preparing the Principle Component (PCA) transformation...
+TFHandler_Factory        :    Variable           Mean           RMS   [        Min           Max ]
+                         : --------------------------------------------------------------------------
+                         :  particlePT:   1.5706e-07       137.55   [      -1743.2       144.27 ]
+                         : particleEta:   4.6069e-11       1.8036   [      -3.1463       3.1424 ]
+                         : particlePhi:  -6.6538e-11       1.0859   [      -3.4580       3.3663 ]
+                         : --------------------------------------------------------------------------
+                         : Preparing the Gaussian transformation...
+                         : Preparing the Decorrelation transformation...
+TFHandler_Factory        :    Variable           Mean           RMS   [        Min           Max ]
+                         : --------------------------------------------------------------------------
+                         :  particlePT:    0.0034262       1.0000   [      -3.1937       5.7465 ]
+                         : particleEta:    0.0035087       1.0000   [      -3.3031       5.7470 ]
+                         : particlePhi:    0.0039210       1.0000   [      -3.2895       5.7345 ]
+                         : --------------------------------------------------------------------------
+                         : Ranking input variables (method unspecific)...
+IdTransformation         : Ranking result (top variable is best ranked)
+                         : ------------------------------------
+                         : Rank : Variable    : Separation
+                         : ------------------------------------
+                         :    1 : ParticlePT  : 1.793e-01
+                         :    2 : ParticleEta : 3.601e-02
+                         :    3 : ParticlePhi : 1.636e-04
+                         : ------------------------------------
+Factory                  : Train method: DNN_CPU for Classification
+                         : 
+TFHandler_DNN_CPU        :    Variable           Mean           RMS   [        Min           Max ]
+                         : --------------------------------------------------------------------------
+                         :  particlePT:     -0.84713      0.14575   [      -1.0000       1.0000 ]
+                         : particleEta:    -0.013419      0.31825   [      -1.0000       1.0000 ]
+                         : particlePhi:   0.00054250      0.57411   [      -1.0000       1.0000 ]
+                         : --------------------------------------------------------------------------
+                         : Start of deep neural network training on CPU using MT,  nthreads = 1
+                         : 
+TFHandler_DNN_CPU        :    Variable           Mean           RMS   [        Min           Max ]
+                         : --------------------------------------------------------------------------
+                         :  particlePT:     -0.84713      0.14575   [      -1.0000       1.0000 ]
+                         : particleEta:    -0.013419      0.31825   [      -1.0000       1.0000 ]
+                         : particlePhi:   0.00054250      0.57411   [      -1.0000       1.0000 ]
+                         : --------------------------------------------------------------------------
+                         : *****   Deep Learning Network *****
+DEEP NEURAL NETWORK:   Depth = 4  Input = ( 1, 1, 3 )  Batch size = 100  Loss function = C
+	Layer 0	 DENSE Layer: 	 ( Input =     3 , Width =   128 ) 	Output = (  1 ,   100 ,   128 ) 	 Activation Function = Tanh
+	Layer 1	 DENSE Layer: 	 ( Input =   128 , Width =   128 ) 	Output = (  1 ,   100 ,   128 ) 	 Activation Function = Tanh	 Dropout prob. = 0.5
+	Layer 2	 DENSE Layer: 	 ( Input =   128 , Width =   128 ) 	Output = (  1 ,   100 ,   128 ) 	 Activation Function = Tanh	 Dropout prob. = 0.5
+	Layer 3	 DENSE Layer: 	 ( Input =   128 , Width =     1 ) 	Output = (  1 ,   100 ,     1 ) 	 Activation Function = Identity	 Dropout prob. = 0.5
+                         : Using 360000 events for training and 90000 for testing
+                         : Compute initial loss  on the validation data 
+                         : Training phase 1 of 1:  Optimizer ADAM (beta1=0.9,beta2=0.999,eps=1e-07) Learning rate = 0.01 regularization 0 minimum error = 0.703022
+                         : --------------------------------------------------------------
+                         :      Epoch |   Train Err.   Val. Err.  t(s)/epoch   t(s)/Loss   nEvents/s Conv. Steps
+                         : --------------------------------------------------------------
+                         :    Start epoch iteration ...
+                         :          1 Minimum Test error found - save the configuration 
+                         :          1 |     0.627827    0.604271     25.7581     2.10746     15221.6           0
+                         :          2 |     0.625627    0.614022     25.7488       2.025     15174.6           1
+                         :          3 Minimum Test error found - save the configuration 
+                         :          3 |     0.623999    0.602473     26.0674     2.11858       15032           0
+                         :          4 Minimum Test error found - save the configuration 
+                         :          4 |     0.623842    0.599174     25.8461     2.00442     15099.6           0
+                         :          5 |     0.623638    0.616615     25.3861      1.9718     15375.2           1
+                         :          6 Minimum Test error found - save the configuration 
+                         :          6 |     0.624043    0.599071     25.3858     2.05591     15430.8           0
+                         :          7 |     0.623135    0.601927     25.4571     2.01788     15358.9           1
+                         :          8 |     0.622225     0.60653     25.2179     2.00458     15508.3           2
+                         :          9 |     0.622116    0.630924     25.2256     2.01108     15507.5           3
+                         :         10 |     0.623066    0.599994     25.1294     1.99839     15563.5           4
+                         :         11 Minimum Test error found - save the configuration 
+                         :         11 |     0.624037    0.596227     25.1205      1.9994     15570.2           0
+                         :         12 Minimum Test error found - save the configuration 
+                         :         12 |      0.62348    0.593686     25.0128      1.9895     15636.4           0
+                         :         13 |     0.624844    0.605642     25.0551     1.99745       15613           1
+                         :         14 |     0.623471    0.598626     25.1977      2.0191     15531.6           2
+                         :         15 |     0.623021     0.59877     25.1898     2.01394     15533.4           3
+                         :         16 |      0.62277     0.59697     25.1088     2.01324     15587.4           4
+                         :         17 |      0.62482    0.599907     25.0339     2.00452     15632.2           5
+                         :         18 |     0.622989    0.599325     25.0278     1.99946     15632.9           6
+                         :         19 |     0.623447    0.606225     24.7333     2.00127     15836.7           7
+                         :         20 |     0.622684     0.60516     24.9794     1.98638     15656.9           8
+                         :         21 |     0.621857    0.624752     24.5479      1.8941     15891.4           9
+                         :         22 |     0.622325    0.638585     24.5405     1.89058     15894.1          10
+                         :         23 |     0.623408    0.597927      24.583     1.90375     15873.6          11
+                         :         24 |       0.6241    0.595933     24.5145     1.87927     15904.4          12
+                         :         25 |     0.624345    0.602197     24.4783     1.89902     15943.8          13
+                         :         26 |     0.623211    0.600338     24.7049     1.97193       15836          14
+                         :         27 |     0.624175    0.600705     24.8802     1.92934     15685.7          15
+                         :         28 |     0.622555    0.600395     24.6712      1.9122     15817.9          16
+                         :         29 |     0.622036    0.599793     24.7587     1.88253     15736.9          17
+                         :         30 |     0.622119    0.613787     24.7104      1.8864     15772.8          18
+                         :         31 |     0.621983    0.603368     24.5395     1.92692     15920.3          19
+                         :         32 |     0.624078    0.611093     24.4977      1.8891     15923.2          20
+                         :         33 |     0.622241     0.60218      24.545     1.92622       15916          21
+                         : 
+                         : Elapsed time for training with 450000 events: 828 sec         
+                         : Evaluate deep neural network on CPU using batches with size = 100
+                         : 
+DNN_CPU                  : [dataset] : Evaluation of DNN_CPU on training sample (450000 events)
+                         : Elapsed time for evaluation of 450000 events: 9.72 sec       
+                         : Creating xml weight file: dataset/weights/TMVAClassification_DNN_CPU.weights.xml
+                         : Creating standalone class: dataset/weights/TMVAClassification_DNN_CPU.class.C
+Factory                  : Training finished
+                         : 
+Factory                  : Train method: BDT for Classification
+                         : 
+BDT                      : #events: (reweighted) sig: 225000 bkg: 225000
+                         : #events: (unweighted) sig: 225000 bkg: 225000
+                         : Training 850 Decision Trees ... patience please
+                         : Elapsed time for training with 450000 events: 150 sec         
+BDT                      : [dataset] : Evaluation of BDT on training sample (450000 events)
+                         : Elapsed time for evaluation of 450000 events: 16.5 sec       
+                         : Creating xml weight file: dataset/weights/TMVAClassification_BDT.weights.xml
+                         : Creating standalone class: dataset/weights/TMVAClassification_BDT.class.C
+                         : TMVA.root:/dataset/Method_BDT/BDT
+Factory                  : Training finished
+                         : 
+                         : Ranking input variables (method specific)...
+                         : No variable ranking supplied by classifier: DNN_CPU
+BDT                      : Ranking result (top variable is best ranked)
+                         : ---------------------------------------------
+                         : Rank : Variable    : Variable Importance
+                         : ---------------------------------------------
+                         :    1 : particlePT  : 3.736e-01
+                         :    2 : particleEta : 3.471e-01
+                         :    3 : particlePhi : 2.792e-01
+                         : ---------------------------------------------
+TH1.Print Name  = TrainingHistory_DNN_CPU_trainingError, Entries= 0, Total sum= 20.5735
+TH1.Print Name  = TrainingHistory_DNN_CPU_valError, Entries= 0, Total sum= 19.9666
+Factory                  : === Destroy and recreate all methods via weight files for testing ===
+                         : 
+                         : Reading weight file: dataset/weights/TMVAClassification_DNN_CPU.weights.xml
+                         : Reading weight file: dataset/weights/TMVAClassification_BDT.weights.xml
+Factory                  : Test all methods
+Factory                  : Test method: DNN_CPU for Classification performance
+                         : 
+                         : Evaluate deep neural network on CPU using batches with size = 1000
+                         : 
+TFHandler_DNN_CPU        :    Variable           Mean           RMS   [        Min           Max ]
+                         : --------------------------------------------------------------------------
+                         :  particlePT:     -0.89958      0.10907   [      -1.0000       1.6762 ]
+                         : particleEta:    -0.013455      0.35348   [      -1.0380       1.0008 ]
+                         : particlePhi:  -0.00038446      0.57430   [      -1.0000       1.0000 ]
+                         : --------------------------------------------------------------------------
+DNN_CPU                  : [dataset] : Evaluation of DNN_CPU on testing sample (16239749 events)
+                         : Elapsed time for evaluation of 16239749 events: 320 sec       
+Factory                  : Test method: BDT for Classification performance
+                         : 
+BDT                      : [dataset] : Evaluation of BDT on testing sample (16239749 events)
+                         : Elapsed time for evaluation of 16239749 events: 521 sec       
+Factory                  : Evaluate all methods
+Factory                  : Evaluate classifier: DNN_CPU
+                         : 
+DNN_CPU                  : [dataset] : Loop over test events and fill histograms with classifier response...
+                         : 
+                         : Evaluate deep neural network on CPU using batches with size = 1000
+                         : 
+TFHandler_DNN_CPU        :    Variable           Mean           RMS   [        Min           Max ]
+                         : --------------------------------------------------------------------------
+                         :  particlePT:     -0.84713      0.14575   [      -1.0000       1.0000 ]
+                         : particleEta:    -0.013419      0.31825   [      -1.0000       1.0000 ]
+                         : particlePhi:   0.00054250      0.57411   [      -1.0000       1.0000 ]
+                         : --------------------------------------------------------------------------
+TFHandler_DNN_CPU        :    Variable           Mean           RMS   [        Min           Max ]
+                         : --------------------------------------------------------------------------
+                         :  particlePT:     -0.89958      0.10907   [      -1.0000       1.6762 ]
+                         : particleEta:    -0.013455      0.35348   [      -1.0380       1.0008 ]
+                         : particlePhi:  -0.00038446      0.57430   [      -1.0000       1.0000 ]
+                         : --------------------------------------------------------------------------
+Factory                  : Evaluate classifier: BDT
+                         : 
+BDT                      : [dataset] : Loop over test events and fill histograms with classifier response...
+                         : 
+TFHandler_BDT            :    Variable           Mean           RMS   [        Min           Max ]
+                         : --------------------------------------------------------------------------
+                         :  particlePT:       444.78       102.94   [       350.00       2875.7 ]
+                         : particleEta:   -0.0014892       1.2061   [      -3.4974       3.4594 ]
+                         : particlePhi:   -0.0012210       1.8042   [      -3.1416       3.1416 ]
+                         : --------------------------------------------------------------------------
+                         : 
+                         : Evaluation results ranked by best signal efficiency and purity (area)
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : DataSet       MVA                       
+                         : Name:         Method:          ROC-integ
+                         : dataset       BDT            : 0.753
+                         : dataset       DNN_CPU        : 0.749
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : 
+                         : Testing efficiency compared to training efficiency (overtraining check)
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : DataSet              MVA              Signal efficiency: from test sample (from training sample) 
+                         : Name:                Method:          @B=0.01             @B=0.10            @B=0.30   
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : dataset              BDT            : 0.050 (0.052)       0.359 (0.363)      0.692 (0.694)
+                         : dataset              DNN_CPU        : 0.043 (0.044)       0.352 (0.355)      0.690 (0.691)
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : 
+Dataset:dataset          : Created tree 'TestTree' with 16239749 events
+                         : 
+Dataset:dataset          : Created tree 'TrainTree' with 450000 events
+                         : 
+Factory                  : Thank you for using TMVA!
+                         : For citation information, please visit: http://tmva.sf.net/citeTMVA.html
+==> Wrote root file: TMVA.root
+==> TMVAClassification is done!
+--- Launch TMVA GUI to view input file: TMVA.root
+=== Note: inactive buttons indicate classifiers that were not trained, ===
+===       or functionalities that were not invoked during the training ===
+
