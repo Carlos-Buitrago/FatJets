@@ -1,0 +1,61 @@
+
+%NOTE: to be used with \usepackage{subfiles} in the main file.
+%Subfiles go in folders which live with the main file.
+%Bibliography and preamble go in the main file.
+
+%%%%%%%%%%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%%%%%
+
+\providecommand{\main}{..}
+
+\documentclass[main]{subfiles} %Each instance of `../' elevates one folder to find the main file
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%% DOCUMENT %%%%%%%%%%%%%%%%%%%%%%%
+
+% \tableofcontents % Can be useful to load a TOC while writing
+
+\doublespacing
+
+\schapter{Theoretical aspects}
+
+\hypsection{Jets}
+
+After being produced in a high-energy event, quarks and gluons fragment and hadronize resulting in a collimated spray of hadrons called a jet. The reason behind the process of hadronization lies in the concept of color confinement. In quantum chromodynamics (QCD), color confinement states that only objects with non zero color charge can propagate as free particles, therefore quarks and gluons are only seen bound together in the form of hadrons. When particles carrying color charge (namely quarks and gluons) are separated in a high-energy event, new color carrying particles are spontaneously created from the vaccum in order to form colorless hadrons, thus obeying confinement. While hadronization is not yet fully understood and a theoretical description of the process is not yet available, there is a number of phenomenological models such as the Lund String Model that do a good job of describing it \cite{Andersson1983}. The phenomenon can also be understood qualitatively by taking into account that
+
+\hypsection{The LHC and the ATLAS detector}
+
+\hypsection{Boosted objects and fat jets}
+
+\hypsection{Jet tagging}
+
+\hypsection{Fat jet substructure: Nsubjettiness}
+
+\hypsection{TMVA Classifiers}
+
+\hypsection{Event generators}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% \bibliographystyle{../../PhilReview} %%bib style found in bst folder, in bibtex folder, in texmf folder.
+% \nobibliography{Zotero} %%bib database found in bib folder, in bibtex folder
+% \nobibliography{../../Thesis_bib}
+\biblio
+
+\end{document}

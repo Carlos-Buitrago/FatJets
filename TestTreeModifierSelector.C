@@ -71,22 +71,22 @@ Bool_t TestTreeModifierSelector::Process(Long64_t entry)
    std::cout << "Processing event numer " << entry << std::endl;
 
 
-   /* for (int i = 0; i < Jet_PT.GetSize(); i++){ */
-   /*   std::cout << "pT of Jet number " << i << " is " << Jet_PT[i] << std::endl; */
-   /*   std::cout << "number of constituents for this jet is " << Jet_Constituents[i].GetEntries() << std::endl; */
-   /*   total_constituents += Jet_Constituents[i].GetEntries(); */
-   /*   for (int j = 0; j < Jet_Constituents[i].GetEntries(); j++){ */
-   /*     /1* TRef* ref = (TRef*)Jet_Constituents[i].At(j); *1/ */
-   /*     /1* Int_t index = ref->GetObject()->GetUniqueID(); *1/ */
-   /*     /1* std::cout << "Index for constituent number " << j << " is " << index << std::endl; *1/ */
+   for (int i = 0; i < Jet_PT.GetSize(); i++){
+     /* std::cout << "Analyzing jet number: " << i << std::endl; */ 
+     /* std::cout << "number of constituents for this jet is " << Jet_Constituents[i].GetEntries() << std::endl; */
+     /* total_constituents += Jet_Constituents[i].GetEntries(); */
+     /* for (int j = 0; j < Jet_Constituents[i].GetEntries(); j++){ */
+     /*   TRef* ref = (TRef*)Jet_Constituents[i].At(j); */
+     /*   Int_t index = ref->GetObject()->GetUniqueID(); */
+     /*   std::cout << "Index for constituent number " << j << " is " << index << std::endl; */
        
-   /*     TObject *obj = Jet_Constituents[i].At(j); */
-   /*     if (obj == 0){ */
-   /*       std::cout << "constituent number " << j << " is not accesible" << std::endl; */
-   /*     } */
+       /* TObject *obj = Jet_Constituents[i].At(j); */
+       /* if (obj == 0){ */
+       /*   std::cout << "constituent number " << j << " is not accesible" << std::endl; */
+       /* } */
 
-   /*   } */
-   /* } */
+     }
+   }
 
    for (int i = 0; i < Particle_PT.GetSize(); i++){
      for (int j = 0; j < Jet_PT.GetSize(); j++){
@@ -139,9 +139,9 @@ void TestTreeModifierSelector::Terminate()
    // a query. It always runs on the client, it can be used to present
    // the results graphically or save the results to file.
    
-   /* std::cout << "The total number of constituents across all the events is: " << total_constituents << std::endl; */
-   std::cout << "The total number of particles in jets is: " << particles_in_jets << std::endl;
-   std::cout << "The total number of tracks in jets is: " << tracks_in_jets << std::endl;
-   std::cout << "The total number of towers in jets is: " << towers_in_jets << std::endl;
+   std::cout << "The total number of constituents across all the events is: " << total_constituents << std::endl;
+   /* std::cout << "The total number of particles in jets is: " << particles_in_jets << std::endl; */
+   /* std::cout << "The total number of tracks in jets is: " << tracks_in_jets << std::endl; */
+   /* std::cout << "The total number of towers in jets is: " << towers_in_jets << std::endl; */
 
 }

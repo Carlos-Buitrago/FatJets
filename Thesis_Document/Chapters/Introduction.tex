@@ -5,7 +5,9 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[../../Thesis_Document.tex]{subfiles} %Each instance of `../' elevates one folder to find the main file
+\providecommand{\main}{..}
+
+\documentclass[main]{subfiles} %Each instance of `../' elevates one folder to find the main file
 
 \begin{document}
 
@@ -15,11 +17,9 @@
 
 \doublespacing
 
-\schapter{Event generation}
+\schapter{Introduction}
 
-\hypsection{Event generation chain}
-
-\hypsection{Signal and background events}
+% \hypsection{TITLE}
 
 
 
@@ -38,7 +38,9 @@
 
 
 
-\bibliographystyle{PhilReview} %%bib style found in bst folder, in bibtex folder, in texmf folder.
-\nobibliography{Zotero} %%bib database found in bib folder, in bibtex folder
+% \bibliographystyle{../../PhilReview} %%bib style found in bst folder, in bibtex folder, in texmf folder.
+% \nobibliography{Zotero} %%bib database found in bib folder, in bibtex folder
+% \nobibliography{../../Thesis_bib}
+\biblio
 
 \end{document}

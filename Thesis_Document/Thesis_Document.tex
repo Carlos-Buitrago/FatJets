@@ -19,6 +19,7 @@
 \usepackage{subfiles}
 \usepackage{hyperref}
 \usepackage{bibentry}
+% \usepackage{biblatex}
 
 
 %%% HYPER SECTIONS %%%
@@ -121,8 +122,9 @@
 %%% CITATIONS %%%
 %\usepackage{bibentry} %%Replace \bibliography{} with \nobibliography{} for no bib
 %\usepackage{epigraph} %%Use \epigraph{text}{citation}
-\usepackage[round]{natbib} %%Or change 'round' to 'square' for square backers
-\setcitestyle{aysep={}}
+\usepackage[square]{natbib} %%Or change 'round' to 'square' for square backers
+% \setcitestyle{aysep={}}
+\setcitestyle{numbers}
 \newcommand\citepl[2][]{\citeauthor{#2}'s (\citeyear[#1]{#2})} %%Use \citepl for possessive citation.
 \newcommand\citea[2][]{\citeauthor{#2}#1} %%Use \citea is for author name only, with optional page numbers.
 \newcommand\citeapl[2][]{\citeauthor{#2}'s#1} %%Use \citeapl is for possessive author name only.
@@ -152,12 +154,14 @@
 %%% ENVIRONMENTS %%%
 %\newenvironment{senum}[2][topsep=0in, itemsep=.05in]{\begin{enumerate}[#1,topsep=0in, itemsep=.05in]\begin{singlespace}#2}{\end{singlespace}\end{enumerate}\vspace{.175in}}
 
-
+\providecommand{\main}{.}  % *Modification: define file location
+\def\biblio{\bibliographystyle{plainnat}\bibliography{\main/Thesis_bib}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%% TITLE %%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \begin{document}
+\def\biblio{}
 \title{Boosted particle tagging at the LHC based on large R jet substructure using machine learning techniques.}
 \author{Carlos Fernando Buitrago C\'ardenas}
 \date{\today}
@@ -185,11 +189,11 @@
 % \section*{Introduction} % Turn on to included introduction in TOC
 % \addcontentsline{toc}{chapter}{\protect\numberline{}Introduction}%
 
-\subfile{Chapters/Introduction/Introduction.tex}
+\subfile{Chapters/Introduction.tex}
 
-\subfile{Chapters/Theory/Theory.tex}
+\subfile{Chapters/Theory.tex}
   
-\subfile{Chapters/Datasets/Datasets.tex}
+\subfile{Chapters/Datasets.tex}
 
 % \section*{Conclusion}
 % \addcontentsline{toc}{chapter}{\protect\numberline{}Conclusion}%
@@ -208,9 +212,9 @@
 \newpage
 \begin{small} %%Makes bib small text size
 \singlespacing %%Makes single spaced
-\bibliographystyle{Phil_Review} %%bib style found in bst folder, in bibtex folder, in texmf folder.
+\bibliographystyle{plainnat} %%bib style found in bst folder, in bibtex folder, in texmf folder.
 %\setlength{\bibsep}{0.5pt} %%Changes spacing between bib entries
-\bibliography{Zotero} %%bib database found in bib folder, in bibtex folder
+\bibliography{Thesis_bib} %%bib database found in bib folder, in bibtex folder
 \thispagestyle{empty} %%Removes page numbers
 \end{small} %%End makes bib small text size
 

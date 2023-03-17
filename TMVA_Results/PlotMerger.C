@@ -11,6 +11,10 @@ void PlotMerger(){
   TFile *file_mass_Tau32 = TFile::Open("dataset_mass_32Subjettiness/TMVA.root");
   TFile *file_mass_Tau3 = TFile::Open("dataset_mass_3Subjettiness/TMVA.root");
   TFile *file_mass_Tau1 = TFile::Open("dataset_mass_1Subjettiness/TMVA.root");
+  
+  TFile *file_particles = TFile::Open("../TMVAResults_Constituents/dataset_particles_350/TMVA.root");
+
+  TFile *file_constituentsNum = TFile::Open("../TMVAResults_Constituents/dataset_constituents_number_nocuts/TMVA.root");
 
   TH1F *h_nomass_Tau4321 = (TH1F*)file_nomass_Tau4321->Get("dataset/Method_BDT/BDT/MVA_BDT_rejBvsS");
   TH1F *h_mass_Tau4321 = (TH1F*)file_mass_Tau4321->Get("dataset/Method_BDT/BDT/MVA_BDT_rejBvsS");
@@ -18,8 +22,13 @@ void PlotMerger(){
   TH1F *h_mass_Tau32 = (TH1F*)file_mass_Tau32->Get("dataset/Method_BDT/BDT/MVA_BDT_rejBvsS");
   TH1F *h_mass_Tau3 = (TH1F*)file_mass_Tau3->Get("dataset/Method_BDT/BDT/MVA_BDT_rejBvsS");
   TH1F *h_mass_Tau1 = (TH1F*)file_mass_Tau1->Get("dataset/Method_BDT/BDT/MVA_BDT_rejBvsS");
+  
+  TH1F *h_mass_Tau4321_DNN = (TH1F*)file_mass_Tau4321->Get("dataset/Method_DL/DNN_CPU/MVA_DNN_CPU_rejBvsS");
+  TH1F *h_particles_DNN = (TH1F*)file_particles->Get("dataset/Method_DL/DNN_CPU/MVA_DNN_CPU_rejBvsS");
+  TH1F *h_constituentsNum_DNN = (TH1F*)file_constituentsNum->Get("dataset/Method_DL/DNN_CPU/MVA_DNN_CPU_rejBvsS");
 
-  if (!h_mass_Tau4321 || !h_mass_Tau3 || !h_mass_Tau1){
+
+  if (!h_mass_Tau4321 || !h_mass_Tau3 || !h_mass_Tau1 || !h_particles_DNN){
     std::cout << "histo not found in file" << std::endl;
     return;
   }
@@ -31,6 +40,10 @@ void PlotMerger(){
   h_mass_Tau3->SetLineColor(kOrange+3);
   h_mass_Tau1->SetLineColor(kViolet);
 
+  h_mass_Tau4321_DNN->SetLineColor(kRed);
+  h_particles_DNN->SetLineColor(kBlue);
+  h_constituentsNum_DNN->SetLineWidth(kBlack);
+
   h_nomass_Tau4321->SetLineWidth(3);
   h_mass_Tau4321->SetLineWidth(3);
   h_mass_Tau321->SetLineWidth(3);
@@ -38,12 +51,20 @@ void PlotMerger(){
   h_mass_Tau3->SetLineWidth(3);
   h_mass_Tau1->SetLineWidth(3);
 
+  h_mass_Tau4321_DNN->SetLineWidth(3);
+  h_particles_DNN->SetLineWidth(3);
+  h_constituentsNum_DNN->SetLineWidth(3);
+
   h_nomass_Tau4321->SetStats(false);
   h_mass_Tau4321->SetStats(false);
   h_mass_Tau321->SetStats(false);
   h_mass_Tau32->SetStats(false);
   h_mass_Tau3->SetStats(false);
   h_mass_Tau1->SetStats(false);
+
+  h_mass_Tau4321_DNN->SetStats(false);
+  h_particles_DNN->SetStats(false);
+  h_constituentsNum_DNN->SetStats(false);
 
   TCanvas *canvas_mass_TauN = new TCanvas("Canvas_Mass_TauN", "m+NSubjettiness", 1000, 800);
 
@@ -86,5 +107,31 @@ void PlotMerger(){
   legend_Tau3_Tau1->Draw();
 
   canvas_Tau3_Tau1->Print("Tau3_vs_Tau1.pdf");
+
+
+  TCanvas *canvas_TauN_Particles_DNN = new TCanvas("Canvas_TauN_Particles_DNN", "DNN using m + 4-subjetiness vs using particles", 1000, 800);
+
+  h_mass_Tau4321_DNN->Draw("L");
+  h_particles_DNN->Draw("L SAME");
+
+  TLegend *legend_TauN_Particles_DNN = new TLegend(0.2, 0.3, 0.5, 0.5);
+  legend_TauN_Particles_DNN->AddEntry(h_mass_Tau4321_DNN, "m + 4Subjettiness (DNN)");
+  legend_TauN_Particles_DNN->AddEntry(h_particles_DNN, "particles (DNN)");
+  legend_TauN_Particles_DNN->Draw();
+
+  canvas_TauN_Particles_DNN->Print("TauN_vs_Particles_DNN.pdf");
+
+
+  TCanvas *canvas_TauN_ConstituentsNum_DNN = new TCanvas("Canvas_TauN_ConstituentsNum_DNN", "DNN using m + 4-subjetiness vs using number of constituents", 1000, 800);
+
+  h_mass_Tau4321_DNN->Draw("L");
+  h_constituentsNum_DNN->Draw("L SAME");
+
+  TLegend *legend_TauN_ConstituentsNum_DNN = new TLegend(0.2, 0.3, 0.5, 0.5);
+  legend_TauN_ConstituentsNum_DNN->AddEntry(h_mass_Tau4321_DNN, "m + 4Subjettiness (DNN)");
+  legend_TauN_ConstituentsNum_DNN->AddEntry(h_constituentsNum_DNN, "No. of constituents (DNN)");
+  legend_TauN_ConstituentsNum_DNN->Draw();
+
+  canvas_TauN_ConstituentsNum_DNN->Print("TauN_vs_ConstituentNumberNoCut_DNN.pdf");
 
 }

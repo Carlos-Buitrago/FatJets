@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.9)  14 FEB 2023 20:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.2.26)  17 MAR 2023 12:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -365,24 +365,24 @@ File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
 ) (./Thesis_Document.aux)
 \openout1 = `Thesis_Document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -418,12 +418,12 @@ LaTeX Font Info:    ... okay on input line 160.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 160.
-Package microtype Info: Applying patch `item' on input line 160.
-Package microtype Info: Applying patch `toc' on input line 160.
-Package microtype Info: Applying patch `eqnum' on input line 160.
+LaTeX Info: Redefining \microtypecontext on input line 163.
+Package microtype Info: Applying patch `item' on input line 163.
+Package microtype Info: Applying patch `toc' on input line 163.
+Package microtype Info: Applying patch `eqnum' on input line 163.
 
-Package microtype Warning: Unable to apply patch `footnote' on input line 160.
+Package microtype Warning: Unable to apply patch `footnote' on input line 163.
 
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
@@ -431,14 +431,14 @@ Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 160.
+LaTeX Info: Redefining \showhyphens on input line 163.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
 (/usr/share/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-Package hyperref Info: Link coloring OFF on input line 160.
+Package hyperref Info: Link coloring OFF on input line 163.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
@@ -448,37 +448,37 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count295
 )
-LaTeX Info: Redefining \ref on input line 160.
-LaTeX Info: Redefining \pageref on input line 160.
-LaTeX Info: Redefining \nameref on input line 160.
+LaTeX Info: Redefining \ref on input line 163.
+LaTeX Info: Redefining \pageref on input line 163.
+LaTeX Info: Redefining \nameref on input line 163.
  (./Thesis_Document.out) (./Thesis_Document.out)
 \@outlinefile=\write3
 \openout3 = `Thesis_Document.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 165.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 169.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/share/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 165.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 169.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 165.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 169.
  (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 165.
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 169.
  (/usr/share/texmf-dist/tex/latex/stmaryrd/Ustmry.fd) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.169 \end{abstract}
+l.173 \end{abstract}
                      [1] (./Thesis_Document.toc
 LaTeX Font Info:    Font shape `OT1/cmr/bx/sc' in size <10.95> not available
 (Font)              Font shape `OT1/cmr/b/sc' tried instead on input line 2.
@@ -490,43 +490,48 @@ LaTeX Font Info:    Font shape `OT1/cmr/bx/sc' in size <10.95> not available
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.180 
-       [1] (./Chapters/Introduction/Introduction.tex
+l.184 
+       [1] (./Chapters/Introduction.tex
 Chapter 1.
-No file Thesis_Document.bbl.
-) (./Chapters/Theory/Theory.tex [2
+) (./Chapters/Theory.tex [2
 
 ]
 Chapter 2.
 LaTeX Font Info:    Font shape `OT1/cmr/bx/sc' in size <14.4> not available
-(Font)              Font shape `OT1/cmr/b/sc' tried instead on input line 20.
-No file Thesis_Document.bbl.
-) (./Chapters/Datasets/Datasets.tex [3
+(Font)              Font shape `OT1/cmr/b/sc' tried instead on input line 22.
+) (./Chapters/Datasets.tex [3
 
 ]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[4]
 Chapter 3.
-No file Thesis_Document.bbl.
-) [4
+) [5
 
-]
-No file Thesis_Document.bbl.
-(./Thesis_Document.aux)
+] (./Thesis_Document.bbl) [6
+
+] (./Thesis_Document.aux)
 Package rerunfilecheck Info: File `Thesis_Document.out' has not changed.
-(rerunfilecheck)             Checksum: 9D2A11676D5B2BECDC88CC2D3AF39335;1800.
+(rerunfilecheck)             Checksum: 1B58B84BBDBEB917C3235609C12F5D62;1869.
  ) 
 Here is how much of TeX's memory you used:
- 14100 strings out of 478238
- 223921 string characters out of 5850456
- 578124 words of memory out of 5000000
- 32045 multiletter control sequences out of 15000+600000
- 482078 words of font info for 103 fonts, out of 8000000 for 9000
+ 14183 strings out of 478238
+ 224860 string characters out of 5850456
+ 578239 words of memory out of 5000000
+ 32096 multiletter control sequences out of 15000+600000
+ 486278 words of font info for 131 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,7n,106p,1012b,435s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/carlos/.texlive/texmf-var/fonts/pk/ljfour/public/cm-mf-extra-bold/cmbcsc10.864pk> </home/carlos/.texlive/texmf-var/fonts/pk/ljfour/public/cm-mf-extra-bold/cmbcsc10.657pk></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on Thesis_Document.pdf (6 pages, 97137 bytes).
+ 108i,12n,106p,1082b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/carlos/.texlive/texmf-var/fonts/pk/ljfour/public/cm-mf-extra-bold/cmbcsc10.864pk> </home/carlos/.texlive/texmf-var/fonts/pk/ljfour/public/cm-mf-extra-bold/cmbcsc10.657pk></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Thesis_Document.pdf (8 pages, 128773 bytes).
 PDF statistics:
- 213 PDF objects out of 1000 (max. 8388607)
- 125 compressed objects within 2 object streams
- 18 named destinations out of 1000 (max. 500000)
- 32865 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 239 PDF objects out of 1000 (max. 8388607)
+ 143 compressed objects within 2 object streams
+ 22 named destinations out of 1000 (max. 500000)
+ 41057 words of extra memory for PDF output out of 42996 (max. 10000000)
 
