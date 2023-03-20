@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{5}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -13,5 +13,33 @@ B.~Andersson, G.~Gustafson, G.~Ingelman, and T.~Sj{\"o}strand.
   1983.
 \newblock ISSN 03701573.
 \newblock \doi{10.1016/0370-1573(83)90080-7}.
+
+\bibitem[Thomson(2013)]{Thomson2013}
+Mark Thomson.
+\newblock \emph{Modern Particle Physics}.
+\newblock {Cambridge University Press}, 2013.
+
+\bibitem[Salam(2010)]{Salam2010}
+Gavin~P. Salam.
+\newblock Towards jetography.
+\newblock \emph{The European Physical Journal C}, 67\penalty0 (3):\penalty0
+  637--686, June 2010.
+\newblock ISSN 1434-6052.
+\newblock \doi{10.1140/epjc/s10052-010-1314-6}.
+
+\bibitem[Sterman and Weinberg(1977)]{Sterman1977}
+George Sterman and Steven Weinberg.
+\newblock Jets from {{Quantum Chromodynamics}}.
+\newblock \emph{Physical Review Letters}, 39\penalty0 (23):\penalty0
+  1436--1439, December 1977.
+\newblock \doi{10.1103/PhysRevLett.39.1436}.
+
+\bibitem[Cacciari et~al.(2008)Cacciari, Salam, and Soyez]{Cacciari2008}
+Matteo Cacciari, Gavin~P. Salam, and Gregory Soyez.
+\newblock The anti-k\_t jet clustering algorithm.
+\newblock \emph{Journal of High Energy Physics}, 2008\penalty0 (04):\penalty0
+  063--063, April 2008.
+\newblock ISSN 1029-8479.
+\newblock \doi{10.1088/1126-6708/2008/04/063}.
 
 \end{thebibliography}

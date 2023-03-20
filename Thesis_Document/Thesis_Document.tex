@@ -91,7 +91,7 @@
 \pagestyle{fancy} %%Header style
 \usepackage{titlesec} %%Header style
 \titlespacing*{\subsection}{\parindent}{.25in}{\wordsep}% Reduces spacing after headings
-\rhead{Benjamin Brast-McKie} %%Right header
+\rhead{Carlos Buitrago} %%Right header
 \renewcommand{\sectionmark}[1]{\markright{$\S$\thesection\ #1}} %%Left header command
 \renewcommand{\chaptermark}[1]{\markright{#1}{}}
 \lhead{\nouppercase{\rightmark}} %%Left header
@@ -112,7 +112,7 @@
 %\usepackage{schemata}
 
 %%% GRAPHICS %%%
-%\usepackage{graphicx}
+\usepackage{graphicx}
 %\DeclareGraphicsExtensions{.pdf,.jpeg,.jpg}
 %\usepackage{fancybox}
 	%\begin{figure}[ht]
@@ -155,7 +155,7 @@
 %\newenvironment{senum}[2][topsep=0in, itemsep=.05in]{\begin{enumerate}[#1,topsep=0in, itemsep=.05in]\begin{singlespace}#2}{\end{singlespace}\end{enumerate}\vspace{.175in}}
 
 \providecommand{\main}{.}  % *Modification: define file location
-\def\biblio{\bibliographystyle{plainnat}\bibliography{\main/Thesis_bib}}
+\def\biblio{\bibliographystyle{unsrtnat}\bibliography{\main/Thesis_bib}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%% TITLE %%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -212,7 +212,7 @@
 \newpage
 \begin{small} %%Makes bib small text size
 \singlespacing %%Makes single spaced
-\bibliographystyle{plainnat} %%bib style found in bst folder, in bibtex folder, in texmf folder.
+\bibliographystyle{unsrtnat} %%bib style found in bst folder, in bibtex folder, in texmf folder.
 %\setlength{\bibsep}{0.5pt} %%Changes spacing between bib entries
 \bibliography{Thesis_bib} %%bib database found in bib folder, in bibtex folder
 \thispagestyle{empty} %%Removes page numbers

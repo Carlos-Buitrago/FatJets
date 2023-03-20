@@ -195,8 +195,8 @@ int TMVAClassificationTowerInfo( TString myMethodList = "" )
 
    // Register the training and test trees
 
-   TTree *signalTree     = (TTree*)input1->Get("Delphes;10");
-   TTree *background     = (TTree*)input2->Get("Delphes;7");
+   TTree *signalTree     = (TTree*)input1->Get("Delphes;12");
+   TTree *background     = (TTree*)input2->Get("Delphes;9");
 
    // Create a ROOT output file where TMVA will store ntuples, histograms, etc.
    TString outfileName( "TMVA.root" );
@@ -226,13 +226,13 @@ int TMVAClassificationTowerInfo( TString myMethodList = "" )
    // note that you may also use variable expressions, such as: "3*var1/var2*abs(var3)"
  // [all types of expressions that can also be parsed by TTree::Draw( "expression" )]
 
-   dataloader->AddVariable( "towerNumberTotal := myTowerNumberTotal", "TowerNumberTotal", "", 'I' );
-   dataloader->AddVariable( "trackNumberTotal := myTrackNumberTotal", "TrackNumberTotal", "", 'I' );
+   /* dataloader->AddVariable( "towerNumberTotal := myTowerNumberTotal", "TowerNumberTotal", "", 'I' ); */
+   /* dataloader->AddVariable( "trackNumberTotal := myTrackNumberTotal", "TrackNumberTotal", "", 'I' ); */
    dataloader->AddVariable( "particleNumberTotal := myParticleNumberTotal", "ParticleNumberTotal", "", 'I' );
 
-   dataloader->AddVariable( "towerNumber20 := myTowerNumber20", "TowerNumber20", "", 'I' );
-   dataloader->AddVariable( "trackNumber50 := myTrackNumber50", "TrackNumber50", "", 'I' );
-   dataloader->AddVariable( "particleNumber350 := myParticleNumber350", "ParticleNumber350", "", 'I' );
+   /* dataloader->AddVariable( "towerNumber20 := myTowerNumber20", "TowerNumber20", "", 'I' ); */
+   /* dataloader->AddVariable( "trackNumber50 := myTrackNumber50", "TrackNumber50", "", 'I' ); */
+   /* dataloader->AddVariable( "particleNumber350 := myParticleNumber350", "ParticleNumber350", "", 'I' ); */
 
    dataloader->AddVariable( "particleNumber100 := myParticleNumber100", "ParticleNumber100", "", 'I' );
 
@@ -244,9 +244,9 @@ int TMVAClassificationTowerInfo( TString myMethodList = "" )
    /* dataloader->AddVariable( "trackEta := myTrackEta[]", "TrackEta", "", 'F' ); */
    /* dataloader->AddVariable( "trackPhi := myTrackPhi[]", "TrackPhi", "", 'F' ); */
    
-   /* dataloader->AddVariable( "particlePT := myParticlePT[]", "ParticlePT", "", 'F' ); */
-   /* dataloader->AddVariable( "particleEta := myParticleEta[]", "ParticleEta", "", 'F' ); */
-   /* dataloader->AddVariable( "particlePhi := myParticlePhi[]", "ParticlePhi", "", 'F' ); */
+   dataloader->AddVariable( "particlePT := myParticlePT[]", "ParticlePT", "", 'F' );
+   dataloader->AddVariable( "particleEta := myParticleEta[]", "ParticleEta", "", 'F' );
+   dataloader->AddVariable( "particlePhi := myParticlePhi[]", "ParticlePhi", "", 'F' );
 
    // ALL VARIABLES REFER TO THE LEADING FATJET
    /* dataloader->AddVariable( "mass := FatJet.Mass[0]", "Mass", "", 'F' ); */

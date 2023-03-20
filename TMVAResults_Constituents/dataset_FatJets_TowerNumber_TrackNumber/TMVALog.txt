@@ -1,0 +1,380 @@
+Processing TMVAClassificationTowerInfo.C...
+
+==> Start TMVAClassification
+Warning in <TClass::Init>: no dictionary for class HepMCEvent is available
+Warning in <TClass::Init>: no dictionary for class Event is available
+Warning in <TClass::Init>: no dictionary for class Weight is available
+Warning in <TClass::Init>: no dictionary for class GenParticle is available
+Warning in <TClass::Init>: no dictionary for class SortableObject is available
+Warning in <TClass::Init>: no dictionary for class Track is available
+Warning in <TClass::Init>: no dictionary for class Tower is available
+Warning in <TClass::Init>: no dictionary for class Jet is available
+Warning in <TClass::Init>: no dictionary for class MissingET is available
+Warning in <TClass::Init>: no dictionary for class Electron is available
+Warning in <TClass::Init>: no dictionary for class Photon is available
+Warning in <TClass::Init>: no dictionary for class Muon is available
+Warning in <TClass::Init>: no dictionary for class ScalarHT is available
+--- TMVAClassification       : Using input files: ./pp_tt_hadronic_14TeV500kEvtsGenCutT350_CutQCD350_InclusiveCut350_delphes_events.root and ./pp_QCD_14TeV500kEvtsGenCutQCD350_InclusiveCut350_delphes_events.root
+DataSetInfo              : [dataset] : Added class "Signal"
+                         : Add Tree Delphes of type Signal with 500000 events
+DataSetInfo              : [dataset] : Added class "Background"
+                         : Add Tree Delphes of type Background with 447443 events
+Factory                  : Booking method: DNN_CPU
+                         : 
+                         : Parsing option string: 
+                         : ... "!H:V:ErrorStrategy=CROSSENTROPY:VarTransform=N:WeightInitialization=XAVIERUNIFORM:Layout=TANH|128,TANH|128,TANH|128,LINEAR:TrainingStrategy=LearningRate=1e-2,Momentum=0.9,ConvergenceSteps=20,BatchSize=100,TestRepetitions=1,WeightDecay=1e-4,Regularization=None,DropConfig=0.0+0.5+0.5+0.5:Architecture=CPU"
+                         : The following options are set:
+                         : - By User:
+                         :     <none>
+                         : - Default:
+                         :     Boost_num: "0" [Number of times the classifier will be boosted]
+                         : Parsing option string: 
+                         : ... "!H:V:ErrorStrategy=CROSSENTROPY:VarTransform=N:WeightInitialization=XAVIERUNIFORM:Layout=TANH|128,TANH|128,TANH|128,LINEAR:TrainingStrategy=LearningRate=1e-2,Momentum=0.9,ConvergenceSteps=20,BatchSize=100,TestRepetitions=1,WeightDecay=1e-4,Regularization=None,DropConfig=0.0+0.5+0.5+0.5:Architecture=CPU"
+                         : The following options are set:
+                         : - By User:
+                         :     V: "True" [Verbose output (short form of "VerbosityLevel" below - overrides the latter one)]
+                         :     VarTransform: "N" [List of variable transformations performed before training, e.g., "D_Background,P_Signal,G,N_AllClasses" for: "Decorrelation, PCA-transformation, Gaussianisation, Normalisation, each for the given class of events ('AllClasses' denotes all events of all classes, if no class indication is given, 'All' is assumed)"]
+                         :     H: "False" [Print method-specific help message]
+                         :     Layout: "TANH|128,TANH|128,TANH|128,LINEAR" [Layout of the network.]
+                         :     ErrorStrategy: "CROSSENTROPY" [Loss function: Mean squared error (regression) or cross entropy (binary classification).]
+                         :     WeightInitialization: "XAVIERUNIFORM" [Weight initialization strategy]
+                         :     Architecture: "CPU" [Which architecture to perform the training on.]
+                         :     TrainingStrategy: "LearningRate=1e-2,Momentum=0.9,ConvergenceSteps=20,BatchSize=100,TestRepetitions=1,WeightDecay=1e-4,Regularization=None,DropConfig=0.0+0.5+0.5+0.5" [Defines the training strategies.]
+                         : - Default:
+                         :     VerbosityLevel: "Default" [Verbosity level]
+                         :     CreateMVAPdfs: "False" [Create PDFs for classifier outputs (signal and background)]
+                         :     IgnoreNegWeightsInTraining: "False" [Events with negative weights are ignored in the training (but are included for testing and performance evaluation)]
+                         :     InputLayout: "0|0|0" [The Layout of the input]
+                         :     BatchLayout: "0|0|0" [The Layout of the batch]
+                         :     RandomSeed: "0" [Random seed used for weight initialization and batch shuffling]
+                         :     ValidationSize: "20%" [Part of the training data to use for validation. Specify as 0.2 or 20% to use a fifth of the data set as validation set. Specify as 100 to use exactly 100 events. (Default: 20%)]
+DNN_CPU                  : [dataset] : Create Transformation "N" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'towerNumberTotal' <---> Output : variable 'towerNumberTotal'
+                         : Input : variable 'trackNumberTotal' <---> Output : variable 'trackNumberTotal'
+                         : Input : variable 'towerNumber20' <---> Output : variable 'towerNumber20'
+                         : Input : variable 'trackNumber50' <---> Output : variable 'trackNumber50'
+                         : Will now use the CPU architecture with BLAS and IMT support !
+Factory                  : Booking method: BDT
+                         : 
+                         : Rebuilding Dataset dataset
+                         : Building event vectors for type 2 Signal
+                         : Dataset[dataset] :  create input formulas for tree Delphes
+                         : Building event vectors for type 2 Background
+                         : Dataset[dataset] :  create input formulas for tree Delphes
+DataSetFactory           : [dataset] : Number of events in input trees
+                         : 
+                         : 
+                         : Number of training and testing events
+                         : ---------------------------------------------------------------------------
+                         : Signal     -- training events            : 225000
+                         : Signal     -- testing events             : 275000
+                         : Signal     -- training and testing events: 500000
+                         : Background -- training events            : 225000
+                         : Background -- testing events             : 222443
+                         : Background -- training and testing events: 447443
+                         : 
+DataSetInfo              : Correlation matrix (Signal):
+                         : -------------------------------------------------------------------------------
+                         :                   towerNumberTotal trackNumberTotal towerNumber20 trackNumber50
+                         : towerNumberTotal:           +1.000           +0.779        +0.485        +0.045
+                         : trackNumberTotal:           +0.779           +1.000        +0.525        +0.153
+                         :    towerNumber20:           +0.485           +0.525        +1.000        +0.249
+                         :    trackNumber50:           +0.045           +0.153        +0.249        +1.000
+                         : -------------------------------------------------------------------------------
+DataSetInfo              : Correlation matrix (Background):
+                         : -------------------------------------------------------------------------------
+                         :                   towerNumberTotal trackNumberTotal towerNumber20 trackNumber50
+                         : towerNumberTotal:           +1.000           +0.784        +0.488        -0.151
+                         : trackNumberTotal:           +0.784           +1.000        +0.514        -0.043
+                         :    towerNumber20:           +0.488           +0.514        +1.000        +0.011
+                         :    trackNumber50:           -0.151           -0.043        +0.011        +1.000
+                         : -------------------------------------------------------------------------------
+DataSetFactory           : [dataset] :  
+                         : 
+Factory                  : Train all methods
+Factory                  : [dataset] : Create Transformation "I" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'towerNumberTotal' <---> Output : variable 'towerNumberTotal'
+                         : Input : variable 'trackNumberTotal' <---> Output : variable 'trackNumberTotal'
+                         : Input : variable 'towerNumber20' <---> Output : variable 'towerNumber20'
+                         : Input : variable 'trackNumber50' <---> Output : variable 'trackNumber50'
+Factory                  : [dataset] : Create Transformation "D" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'towerNumberTotal' <---> Output : variable 'towerNumberTotal'
+                         : Input : variable 'trackNumberTotal' <---> Output : variable 'trackNumberTotal'
+                         : Input : variable 'towerNumber20' <---> Output : variable 'towerNumber20'
+                         : Input : variable 'trackNumber50' <---> Output : variable 'trackNumber50'
+Factory                  : [dataset] : Create Transformation "P" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'towerNumberTotal' <---> Output : variable 'towerNumberTotal'
+                         : Input : variable 'trackNumberTotal' <---> Output : variable 'trackNumberTotal'
+                         : Input : variable 'towerNumber20' <---> Output : variable 'towerNumber20'
+                         : Input : variable 'trackNumber50' <---> Output : variable 'trackNumber50'
+Factory                  : [dataset] : Create Transformation "G" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'towerNumberTotal' <---> Output : variable 'towerNumberTotal'
+                         : Input : variable 'trackNumberTotal' <---> Output : variable 'trackNumberTotal'
+                         : Input : variable 'towerNumber20' <---> Output : variable 'towerNumber20'
+                         : Input : variable 'trackNumber50' <---> Output : variable 'trackNumber50'
+Factory                  : [dataset] : Create Transformation "D" with events from all classes.
+                         : 
+                         : Transformation, Variable selection : 
+                         : Input : variable 'towerNumberTotal' <---> Output : variable 'towerNumberTotal'
+                         : Input : variable 'trackNumberTotal' <---> Output : variable 'trackNumberTotal'
+                         : Input : variable 'towerNumber20' <---> Output : variable 'towerNumber20'
+                         : Input : variable 'trackNumber50' <---> Output : variable 'trackNumber50'
+TFHandler_Factory        :         Variable                Mean                RMS        [        Min                Max ]
+                         : ---------------------------------------------------------------------------------------------------
+                         : towerNumberTotal:            81.371            30.190   [            0.0000            336.00 ]
+                         : trackNumberTotal:            64.319            22.577   [            0.0000            254.00 ]
+                         :    towerNumber20:            9.3044            3.5135   [            0.0000            37.000 ]
+                         :    trackNumber50:            2.0893            1.6181   [            0.0000            21.000 ]
+                         : ---------------------------------------------------------------------------------------------------
+                         : Preparing the Decorrelation transformation...
+TFHandler_Factory        :         Variable                Mean                RMS        [        Min                Max ]
+                         : ---------------------------------------------------------------------------------------------------
+                         : towerNumberTotal:            2.0379            1.0000   [          -0.53070            9.8277 ]
+                         : trackNumberTotal:            2.0187            1.0000   [           -2.2756            9.4563 ]
+                         :    towerNumber20:            1.2840            1.0000   [           -2.7676            8.3035 ]
+                         :    trackNumber50:           0.94191            1.0000   [           -1.4383            12.740 ]
+                         : ---------------------------------------------------------------------------------------------------
+                         : Preparing the Principle Component (PCA) transformation...
+TFHandler_Factory        :         Variable                Mean                RMS        [        Min                Max ]
+                         : ---------------------------------------------------------------------------------------------------
+                         : towerNumberTotal:       -8.8739e-10            35.912   [           -103.88            317.62 ]
+                         : trackNumberTotal:       -6.7491e-10            11.641   [           -74.439            64.460 ]
+                         :    towerNumber20:       -9.7780e-11            2.9301   [           -22.662            12.810 ]
+                         :    trackNumber50:       -4.4485e-12            1.5248   [           -17.259            5.0968 ]
+                         : ---------------------------------------------------------------------------------------------------
+                         : Preparing the Gaussian transformation...
+                         : Preparing the Decorrelation transformation...
+TFHandler_Factory        :         Variable                Mean                RMS        [        Min                Max ]
+                         : ---------------------------------------------------------------------------------------------------
+                         : towerNumberTotal:         -0.026219            1.0000   [           -3.8687            6.5605 ]
+                         : trackNumberTotal:          0.015741            1.0000   [           -4.8993            5.3483 ]
+                         :    towerNumber20:          0.031518            1.0000   [           -5.5295            6.1456 ]
+                         :    trackNumber50:          -0.24159            1.0000   [           -2.7553            3.3242 ]
+                         : ---------------------------------------------------------------------------------------------------
+                         : Ranking input variables (method unspecific)...
+IdTransformation         : Ranking result (top variable is best ranked)
+                         : -----------------------------------------
+                         : Rank : Variable         : Separation
+                         : -----------------------------------------
+                         :    1 : TowerNumber20    : 2.243e-01
+                         :    2 : TrackNumberTotal : 8.299e-02
+                         :    3 : TowerNumberTotal : 6.836e-02
+                         :    4 : TrackNumber50    : 5.758e-02
+                         : -----------------------------------------
+Factory                  : Train method: DNN_CPU for Classification
+                         : 
+TFHandler_DNN_CPU        :         Variable                Mean                RMS        [        Min                Max ]
+                         : ---------------------------------------------------------------------------------------------------
+                         : towerNumberTotal:          -0.51565           0.17970   [           -1.0000            1.0000 ]
+                         : trackNumberTotal:          -0.49355           0.17778   [           -1.0000            1.0000 ]
+                         :    towerNumber20:          -0.49706           0.18992   [           -1.0000            1.0000 ]
+                         :    trackNumber50:          -0.80101           0.15410   [           -1.0000            1.0000 ]
+                         : ---------------------------------------------------------------------------------------------------
+                         : Start of deep neural network training on CPU using MT,  nthreads = 1
+                         : 
+TFHandler_DNN_CPU        :         Variable                Mean                RMS        [        Min                Max ]
+                         : ---------------------------------------------------------------------------------------------------
+                         : towerNumberTotal:          -0.51565           0.17970   [           -1.0000            1.0000 ]
+                         : trackNumberTotal:          -0.49355           0.17778   [           -1.0000            1.0000 ]
+                         :    towerNumber20:          -0.49706           0.18992   [           -1.0000            1.0000 ]
+                         :    trackNumber50:          -0.80101           0.15410   [           -1.0000            1.0000 ]
+                         : ---------------------------------------------------------------------------------------------------
+                         : *****   Deep Learning Network *****
+DEEP NEURAL NETWORK:   Depth = 4  Input = ( 1, 1, 4 )  Batch size = 100  Loss function = C
+	Layer 0	 DENSE Layer: 	 ( Input =     4 , Width =   128 ) 	Output = (  1 ,   100 ,   128 ) 	 Activation Function = Tanh
+	Layer 1	 DENSE Layer: 	 ( Input =   128 , Width =   128 ) 	Output = (  1 ,   100 ,   128 ) 	 Activation Function = Tanh	 Dropout prob. = 0.5
+	Layer 2	 DENSE Layer: 	 ( Input =   128 , Width =   128 ) 	Output = (  1 ,   100 ,   128 ) 	 Activation Function = Tanh	 Dropout prob. = 0.5
+	Layer 3	 DENSE Layer: 	 ( Input =   128 , Width =     1 ) 	Output = (  1 ,   100 ,     1 ) 	 Activation Function = Identity	 Dropout prob. = 0.5
+                         : Using 360000 events for training and 90000 for testing
+                         : Compute initial loss  on the validation data 
+                         : Training phase 1 of 1:  Optimizer ADAM (beta1=0.9,beta2=0.999,eps=1e-07) Learning rate = 0.01 regularization 0 minimum error = 0.689654
+                         : --------------------------------------------------------------
+                         :      Epoch |   Train Err.   Val. Err.  t(s)/epoch   t(s)/Loss   nEvents/s Conv. Steps
+                         : --------------------------------------------------------------
+                         :    Start epoch iteration ...
+                         :          1 Minimum Test error found - save the configuration 
+                         :          1 |      0.58283    0.569721     26.0651     2.14195     15048.2           0
+                         :          2 Minimum Test error found - save the configuration 
+                         :          2 |     0.577569    0.554965     26.0463     2.11939     15045.8           0
+                         :          3 |     0.577505    0.561204     25.8825      2.0348     15095.8           1
+                         :          4 Minimum Test error found - save the configuration 
+                         :          4 |     0.576178    0.552609     25.5019     1.98549     15308.4           0
+                         :          5 Minimum Test error found - save the configuration 
+                         :          5 |     0.577181    0.548008     25.5263     1.96453       15279           0
+                         :          6 |     0.577673    0.552326     25.4398     2.04566     15388.5           1
+                         :          7 |     0.577004    0.565461     25.4075     2.04217     15407.4           2
+                         :          8 |     0.576791    0.551913     25.1067     1.93715     15537.6           3
+                         :          9 |     0.576889    0.553623      25.037     1.91766     15571.4           4
+                         :         10 |     0.577529    0.550819     24.9724     1.93793     15628.8           5
+                         :         11 |     0.577172    0.549332     25.0478      2.0281     15638.8           6
+                         :         12 |     0.575346    0.563285     24.9697     1.93103     15625.9           7
+                         :         13 |     0.575491     0.54978     24.8153      1.8975     15708.3           8
+                         :         14 |     0.576592     0.55693     24.7606     1.91739     15759.6           9
+                         :         15 |     0.576293    0.553709     24.9081     1.90628     15650.9          10
+                         :         16 Minimum Test error found - save the configuration 
+                         :         16 |     0.576636     0.54745     24.6858     1.91587     15810.3           0
+                         :         17 |     0.579279    0.556071      25.043     1.91159     15563.3           1
+                         :         18 |     0.576741    0.577605     25.0361     1.91627       15571           2
+                         :         19 |     0.576267    0.559884     24.9632     1.91994     15622.8           3
+                         :         20 |     0.576331    0.549139     25.0024      2.0071     15655.4           4
+                         :         21 |     0.577446    0.550863     24.9046     1.96564     15693.8           5
+                         :         22 |      0.57717    0.562874     24.9855       2.008     15667.5           6
+                         :         23 |     0.577385    0.549694     24.7035     1.90117     15787.9           7
+                         :         24 |      0.57757    0.564488     24.7768     1.96748       15783           8
+                         :         25 |     0.576667    0.552521     24.6275     1.89775     15838.3           9
+                         :         26 |     0.577599    0.553067     24.5992     1.88826     15851.4          10
+                         :         27 |     0.578386    0.557766     24.6723     1.88524     15798.4          11
+                         :         28 |     0.577487    0.550223     24.7967     1.98946     15784.4          12
+                         :         29 |     0.576332    0.552804     24.5777     1.89313     15869.8          13
+                         :         30 |     0.577175    0.552256     24.7948     1.98385     15781.9          14
+                         :         31 |      0.57526    0.550266     24.8999     1.99012     15713.8          15
+                         :         32 |     0.576789    0.550017     24.9511     1.98526     15675.5          16
+                         :         33 |     0.576644    0.588271     25.0567     1.99501     15610.3          17
+                         :         34 |     0.579089    0.550026     25.0975     1.95564     15556.3          18
+                         :         35 |     0.576016     0.55494     25.0019     1.96072     15624.2          19
+                         :         36 |     0.575138    0.548832     24.5871     1.88815     15859.7          20
+                         :         37 |     0.574696    0.551083     24.7719     1.98924     15801.5          21
+                         : 
+                         : Elapsed time for training with 450000 events: 928 sec         
+                         : Evaluate deep neural network on CPU using batches with size = 100
+                         : 
+DNN_CPU                  : [dataset] : Evaluation of DNN_CPU on training sample (450000 events)
+                         : Elapsed time for evaluation of 450000 events: 9.82 sec       
+                         : Creating xml weight file: dataset/weights/TMVAClassification_DNN_CPU.weights.xml
+                         : Creating standalone class: dataset/weights/TMVAClassification_DNN_CPU.class.C
+Factory                  : Training finished
+                         : 
+Factory                  : Train method: BDT for Classification
+                         : 
+BDT                      : #events: (reweighted) sig: 225000 bkg: 225000
+                         : #events: (unweighted) sig: 225000 bkg: 225000
+                         : Training 850 Decision Trees ... patience please
+                         : Elapsed time for training with 450000 events: 154 sec         
+BDT                      : [dataset] : Evaluation of BDT on training sample (450000 events)
+                         : Elapsed time for evaluation of 450000 events: 16.6 sec       
+                         : Creating xml weight file: dataset/weights/TMVAClassification_BDT.weights.xml
+                         : Creating standalone class: dataset/weights/TMVAClassification_BDT.class.C
+                         : TMVA.root:/dataset/Method_BDT/BDT
+Factory                  : Training finished
+                         : 
+                         : Ranking input variables (method specific)...
+                         : No variable ranking supplied by classifier: DNN_CPU
+BDT                      : Ranking result (top variable is best ranked)
+                         : --------------------------------------------------
+                         : Rank : Variable         : Variable Importance
+                         : --------------------------------------------------
+                         :    1 : towerNumber20    : 3.170e-01
+                         :    2 : trackNumberTotal : 2.649e-01
+                         :    3 : towerNumberTotal : 2.598e-01
+                         :    4 : trackNumber50    : 1.583e-01
+                         : --------------------------------------------------
+TH1.Print Name  = TrainingHistory_DNN_CPU_trainingError, Entries= 0, Total sum= 21.3501
+TH1.Print Name  = TrainingHistory_DNN_CPU_valError, Entries= 0, Total sum= 20.5638
+Factory                  : === Destroy and recreate all methods via weight files for testing ===
+                         : 
+                         : Reading weight file: dataset/weights/TMVAClassification_DNN_CPU.weights.xml
+                         : Reading weight file: dataset/weights/TMVAClassification_BDT.weights.xml
+Factory                  : Test all methods
+Factory                  : Test method: DNN_CPU for Classification performance
+                         : 
+                         : Evaluate deep neural network on CPU using batches with size = 1000
+                         : 
+TFHandler_DNN_CPU        :         Variable                Mean                RMS        [        Min                Max ]
+                         : ---------------------------------------------------------------------------------------------------
+                         : towerNumberTotal:          -0.55075           0.18176   [           -1.0000           0.85714 ]
+                         : trackNumberTotal:          -0.53562           0.17661   [           -1.0000           0.92126 ]
+                         :    towerNumber20:          -0.58345           0.14521   [           -1.0000            1.1622 ]
+                         :    trackNumber50:          -0.83727           0.13554   [           -1.0000           0.80952 ]
+                         : ---------------------------------------------------------------------------------------------------
+DNN_CPU                  : [dataset] : Evaluation of DNN_CPU on testing sample (497443 events)
+                         : Elapsed time for evaluation of 497443 events: 9.88 sec       
+Factory                  : Test method: BDT for Classification performance
+                         : 
+BDT                      : [dataset] : Evaluation of BDT on testing sample (497443 events)
+                         : Elapsed time for evaluation of 497443 events: 15.1 sec       
+Factory                  : Evaluate all methods
+Factory                  : Evaluate classifier: DNN_CPU
+                         : 
+DNN_CPU                  : [dataset] : Loop over test events and fill histograms with classifier response...
+                         : 
+                         : Evaluate deep neural network on CPU using batches with size = 1000
+                         : 
+TFHandler_DNN_CPU        :         Variable                Mean                RMS        [        Min                Max ]
+                         : ---------------------------------------------------------------------------------------------------
+                         : towerNumberTotal:          -0.51565           0.17970   [           -1.0000            1.0000 ]
+                         : trackNumberTotal:          -0.49355           0.17778   [           -1.0000            1.0000 ]
+                         :    towerNumber20:          -0.49706           0.18992   [           -1.0000            1.0000 ]
+                         :    trackNumber50:          -0.80101           0.15410   [           -1.0000            1.0000 ]
+                         : ---------------------------------------------------------------------------------------------------
+TFHandler_DNN_CPU        :         Variable                Mean                RMS        [        Min                Max ]
+                         : ---------------------------------------------------------------------------------------------------
+                         : towerNumberTotal:          -0.55075           0.18176   [           -1.0000           0.85714 ]
+                         : trackNumberTotal:          -0.53562           0.17661   [           -1.0000           0.92126 ]
+                         :    towerNumber20:          -0.58345           0.14521   [           -1.0000            1.1622 ]
+                         :    trackNumber50:          -0.83727           0.13554   [           -1.0000           0.80952 ]
+                         : ---------------------------------------------------------------------------------------------------
+Factory                  : Evaluate classifier: BDT
+                         : 
+BDT                      : [dataset] : Loop over test events and fill histograms with classifier response...
+                         : 
+TFHandler_BDT            :         Variable                Mean                RMS        [        Min                Max ]
+                         : ---------------------------------------------------------------------------------------------------
+                         : towerNumberTotal:            75.474            30.536   [            0.0000            312.00 ]
+                         : trackNumberTotal:            58.977            22.430   [            0.0000            244.00 ]
+                         :    towerNumber20:            7.7062            2.6864   [            0.0000            40.000 ]
+                         :    trackNumber50:            1.7087            1.4232   [            0.0000            19.000 ]
+                         : ---------------------------------------------------------------------------------------------------
+                         : 
+                         : Evaluation results ranked by best signal efficiency and purity (area)
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : DataSet       MVA                       
+                         : Name:         Method:          ROC-integ
+                         : dataset       BDT            : 0.806
+                         : dataset       DNN_CPU        : 0.801
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : 
+                         : Testing efficiency compared to training efficiency (overtraining check)
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : DataSet              MVA              Signal efficiency: from test sample (from training sample) 
+                         : Name:                Method:          @B=0.01             @B=0.10            @B=0.30   
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : dataset              BDT            : 0.126 (0.130)       0.482 (0.481)      0.761 (0.760)
+                         : dataset              DNN_CPU        : 0.000 (0.000)       0.474 (0.473)      0.754 (0.753)
+                         : -------------------------------------------------------------------------------------------------------------------
+                         : 
+Dataset:dataset          : Created tree 'TestTree' with 497443 events
+                         : 
+Dataset:dataset          : Created tree 'TrainTree' with 450000 events
+                         : 
+Factory                  : Thank you for using TMVA!
+                         : For citation information, please visit: http://tmva.sf.net/citeTMVA.html
+==> Wrote root file: TMVA.root
+==> TMVAClassification is done!
+--- Launch TMVA GUI to view input file: TMVA.root
+=== Note: inactive buttons indicate classifiers that were not trained, ===
+===       or functionalities that were not invoked during the training ===
+(int) 0
+root [1] --- Opening root file TMVA.root in read mode
++++ Could not open image:  /usr/tutorials/tmva/tmva_logo.gif
++++ Could not open image tmva_logo.gif
+Info in <TCanvas::Print>: file dataset/plots/variables_id_c1.png has been created
+--- Found 2 classifier types
+--- Found 1 instance(s) of the method Method_DL
+--- Found 1 instance(s) of the method Method_BDT
+--- Found 2 classifier types
+--- Found 1 instance(s) of the method Method_DL
+--- Found 1 instance(s) of the method Method_BDT
++++ Could not open image:  /usr/tutorials/tmva/tmva_logo.gif
++++ Could not open image tmva_logo.gif
+Info in <TCanvas::Print>: file dataset/plots/rejBvsS.png has been created
+

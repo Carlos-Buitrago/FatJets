@@ -15,6 +15,10 @@ void PlotMerger(){
   TFile *file_particles = TFile::Open("../TMVAResults_Constituents/dataset_particles_350/TMVA.root");
 
   TFile *file_constituentsNum = TFile::Open("../TMVAResults_Constituents/dataset_constituents_number_nocuts/TMVA.root");
+  
+  TFile *file_towersTracksNum_FatJets = TFile::Open("../TMVAResults_Constituents/dataset_FatJets_TowerNumber_TrackNumber/TMVA.root");
+  TFile *file_towersNumKin_FatJets = TFile::Open("../TMVAResults_Constituents/dataset_FatJets_TowerNumber_TowerKinematics/TMVA.root");
+  TFile *file_particlesNumKin_FatJets = TFile::Open("../TMVAResults_Constituents/dataset_FatJets_ParticleNumber_ParticleKinematics/TMVA.root");
 
   TH1F *h_nomass_Tau4321 = (TH1F*)file_nomass_Tau4321->Get("dataset/Method_BDT/BDT/MVA_BDT_rejBvsS");
   TH1F *h_mass_Tau4321 = (TH1F*)file_mass_Tau4321->Get("dataset/Method_BDT/BDT/MVA_BDT_rejBvsS");
@@ -26,6 +30,10 @@ void PlotMerger(){
   TH1F *h_mass_Tau4321_DNN = (TH1F*)file_mass_Tau4321->Get("dataset/Method_DL/DNN_CPU/MVA_DNN_CPU_rejBvsS");
   TH1F *h_particles_DNN = (TH1F*)file_particles->Get("dataset/Method_DL/DNN_CPU/MVA_DNN_CPU_rejBvsS");
   TH1F *h_constituentsNum_DNN = (TH1F*)file_constituentsNum->Get("dataset/Method_DL/DNN_CPU/MVA_DNN_CPU_rejBvsS");
+
+  TH1F *h_towersTracksNum_DNN = (TH1F*)file_towersTracksNum_FatJets->Get("dataset/Method_DL/DNN_CPU/MVA_DNN_CPU_rejBvsS");
+  TH1F *h_towersNumKin_DNN = (TH1F*)file_towersNumKin_FatJets->Get("dataset/Method_DL/DNN_CPU/MVA_DNN_CPU_rejBvsS");
+  TH1F *h_particlesNumKin_DNN = (TH1F*)file_particlesNumKin_FatJets->Get("dataset/Method_DL/DNN_CPU/MVA_DNN_CPU_rejBvsS");
 
 
   if (!h_mass_Tau4321 || !h_mass_Tau3 || !h_mass_Tau1 || !h_particles_DNN){
@@ -44,6 +52,10 @@ void PlotMerger(){
   h_particles_DNN->SetLineColor(kBlue);
   h_constituentsNum_DNN->SetLineWidth(kBlack);
 
+  h_towersTracksNum_DNN->SetLineColor(kBlack);
+  h_towersNumKin_DNN->SetLineColor(kBlue);
+  h_particlesNumKin_DNN->SetLineColor(kGreen);
+
   h_nomass_Tau4321->SetLineWidth(3);
   h_mass_Tau4321->SetLineWidth(3);
   h_mass_Tau321->SetLineWidth(3);
@@ -55,6 +67,10 @@ void PlotMerger(){
   h_particles_DNN->SetLineWidth(3);
   h_constituentsNum_DNN->SetLineWidth(3);
 
+  h_towersTracksNum_DNN->SetLineWidth(3);
+  h_towersNumKin_DNN->SetLineWidth(3);
+  h_particlesNumKin_DNN->SetLineWidth(3);
+
   h_nomass_Tau4321->SetStats(false);
   h_mass_Tau4321->SetStats(false);
   h_mass_Tau321->SetStats(false);
@@ -65,6 +81,10 @@ void PlotMerger(){
   h_mass_Tau4321_DNN->SetStats(false);
   h_particles_DNN->SetStats(false);
   h_constituentsNum_DNN->SetStats(false);
+
+  h_towersTracksNum_DNN->SetStats(false);
+  h_towersNumKin_DNN->SetStats(false);
+  h_particlesNumKin_DNN->SetStats(false);
 
   TCanvas *canvas_mass_TauN = new TCanvas("Canvas_Mass_TauN", "m+NSubjettiness", 1000, 800);
 
@@ -109,29 +129,57 @@ void PlotMerger(){
   canvas_Tau3_Tau1->Print("Tau3_vs_Tau1.pdf");
 
 
-  TCanvas *canvas_TauN_Particles_DNN = new TCanvas("Canvas_TauN_Particles_DNN", "DNN using m + 4-subjetiness vs using particles", 1000, 800);
+  /* TCanvas *canvas_TauN_Particles_DNN = new TCanvas("Canvas_TauN_Particles_DNN", "DNN using m + 4-subjetiness vs using particles", 1000, 800); */
+
+  /* h_mass_Tau4321_DNN->Draw("L"); */
+  /* h_particles_DNN->Draw("L SAME"); */
+
+  /* TLegend *legend_TauN_Particles_DNN = new TLegend(0.2, 0.3, 0.5, 0.5); */
+  /* legend_TauN_Particles_DNN->AddEntry(h_mass_Tau4321_DNN, "m + 4Subjettiness (DNN)"); */
+  /* legend_TauN_Particles_DNN->AddEntry(h_particles_DNN, "particles (DNN)"); */
+  /* legend_TauN_Particles_DNN->Draw(); */
+
+  /* canvas_TauN_Particles_DNN->Print("TauN_vs_Particles_DNN.pdf"); */
+
+
+  /* TCanvas *canvas_TauN_ConstituentsNum_DNN = new TCanvas("Canvas_TauN_ConstituentsNum_DNN", "DNN using m + 4-subjetiness vs using number of constituents", 1000, 800); */
+
+  /* h_mass_Tau4321_DNN->Draw("L"); */
+  /* h_constituentsNum_DNN->Draw("L SAME"); */
+
+  /* TLegend *legend_TauN_ConstituentsNum_DNN = new TLegend(0.2, 0.3, 0.5, 0.5); */
+  /* legend_TauN_ConstituentsNum_DNN->AddEntry(h_mass_Tau4321_DNN, "m + 4Subjettiness (DNN)"); */
+  /* legend_TauN_ConstituentsNum_DNN->AddEntry(h_constituentsNum_DNN, "No. of constituents (DNN)"); */
+  /* legend_TauN_ConstituentsNum_DNN->Draw(); */
+
+  /* canvas_TauN_ConstituentsNum_DNN->Print("TauN_vs_ConstituentNumberNoCut_DNN.pdf"); */
+
+
+  TCanvas *canvas_TauN_TowersTracksNum_DNN = new TCanvas("Canvas_TauN_TowersTracksNum_DNN", "DNN using m + 4-subjetiness vs using number of constituents", 1000, 800);
 
   h_mass_Tau4321_DNN->Draw("L");
-  h_particles_DNN->Draw("L SAME");
+  h_towersTracksNum_DNN->Draw("L SAME");
 
-  TLegend *legend_TauN_Particles_DNN = new TLegend(0.2, 0.3, 0.5, 0.5);
-  legend_TauN_Particles_DNN->AddEntry(h_mass_Tau4321_DNN, "m + 4Subjettiness (DNN)");
-  legend_TauN_Particles_DNN->AddEntry(h_particles_DNN, "particles (DNN)");
-  legend_TauN_Particles_DNN->Draw();
+  TLegend *legend_TauN_TowersTracksNum_DNN = new TLegend(0.2, 0.3, 0.5, 0.5);
+  legend_TauN_TowersTracksNum_DNN->AddEntry(h_mass_Tau4321_DNN, "m + 4Subjettiness (DNN)");
+  legend_TauN_TowersTracksNum_DNN->AddEntry(h_towersTracksNum_DNN, "No. of constituents (Towers + Tracks) (DNN)");
+  legend_TauN_TowersTracksNum_DNN->Draw();
 
-  canvas_TauN_Particles_DNN->Print("TauN_vs_Particles_DNN.pdf");
+  canvas_TauN_TowersTracksNum_DNN->Print("TauN_vs_TowersTracksNumber_DNN_FATJETS.pdf");
 
 
-  TCanvas *canvas_TauN_ConstituentsNum_DNN = new TCanvas("Canvas_TauN_ConstituentsNum_DNN", "DNN using m + 4-subjetiness vs using number of constituents", 1000, 800);
+  TCanvas *canvas_TauN_TowersNumKin_ParticlesNumKin_DNN = new TCanvas("Canvas_TauN_TowersNumKin_ParticlesNumKin_DNN", "DNN using m + 4-subjetiness vs using number and kinematics of constituents", 1000, 800);
 
   h_mass_Tau4321_DNN->Draw("L");
-  h_constituentsNum_DNN->Draw("L SAME");
+  h_towersNumKin_DNN->Draw("L SAME");
+  h_particlesNumKin_DNN->Draw("L SAME");
 
-  TLegend *legend_TauN_ConstituentsNum_DNN = new TLegend(0.2, 0.3, 0.5, 0.5);
-  legend_TauN_ConstituentsNum_DNN->AddEntry(h_mass_Tau4321_DNN, "m + 4Subjettiness (DNN)");
-  legend_TauN_ConstituentsNum_DNN->AddEntry(h_constituentsNum_DNN, "No. of constituents (DNN)");
-  legend_TauN_ConstituentsNum_DNN->Draw();
+  TLegend *legend_TauN_TowersNumKin_ParticlesNumKin_DNN = new TLegend(0.2, 0.3, 0.5, 0.5);
+  legend_TauN_TowersNumKin_ParticlesNumKin_DNN->AddEntry(h_mass_Tau4321_DNN, "m + 4Subjettiness (DNN)");
+  legend_TauN_TowersNumKin_ParticlesNumKin_DNN->AddEntry(h_towersNumKin_DNN, "No. and Kinematics Towers (DNN)");
+  legend_TauN_TowersNumKin_ParticlesNumKin_DNN->AddEntry(h_particlesNumKin_DNN, "No. and Kinematics Particles (DNN)");
+  legend_TauN_TowersNumKin_ParticlesNumKin_DNN->Draw();
 
-  canvas_TauN_ConstituentsNum_DNN->Print("TauN_vs_ConstituentNumberNoCut_DNN.pdf");
+  canvas_TauN_TowersNumKin_ParticlesNumKin_DNN->Print("TauN_vs_TowersParticlesNumberKinematics_DNN_FATJETS.pdf");
 
 }

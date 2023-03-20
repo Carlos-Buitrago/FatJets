@@ -1,4 +1,4 @@
-usar alias python=python2
+﻿usar alias python=python2
 
 ***
 
@@ -22,4 +22,4 @@ Correr Delphes con un hepmc de pythia (en la carpeta Delphes de MG):
 
 ***
 
-GIT TOKEN: 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
+GIT TOKEN: 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

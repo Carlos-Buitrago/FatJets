@@ -1,13 +1,13 @@
 \hypertarget {toc}{}
 \contentsline {chapter}{\numberline {1}\bfseries {\scshape {Introduction}}}{2}{chapter.1}%
 \contentsline {chapter}{\numberline {2}\bfseries {\scshape {Theoretical aspects}}}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}\bfseries {\scshape {Jets}}}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2}\bfseries {\scshape {The LHC and the ATLAS detector}}}{4}{section.2.2}%
-\contentsline {section}{\numberline {2.3}\bfseries {\scshape {Boosted objects and fat jets}}}{4}{section.2.3}%
-\contentsline {section}{\numberline {2.4}\bfseries {\scshape {Jet tagging}}}{4}{section.2.4}%
-\contentsline {section}{\numberline {2.5}\bfseries {\scshape {Fat jet substructure: Nsubjettiness}}}{4}{section.2.5}%
-\contentsline {section}{\numberline {2.6}\bfseries {\scshape {TMVA Classifiers}}}{4}{section.2.6}%
-\contentsline {section}{\numberline {2.7}\bfseries {\scshape {Event generators}}}{4}{section.2.7}%
-\contentsline {chapter}{\numberline {3}\bfseries {\scshape {Event generation}}}{5}{chapter.3}%
-\contentsline {section}{\numberline {3.1}\bfseries {\scshape {Event generation chain}}}{5}{section.3.1}%
-\contentsline {section}{\numberline {3.2}\bfseries {\scshape {Signal and background events}}}{5}{section.3.2}%
+\contentsline {section}{\numberline {2.1}\bfseries {\scshape {Jets and algorithms}}}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}\bfseries {\scshape {The LHC and the ATLAS detector}}}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}\bfseries {\scshape {Boosted objects and fat jets}}}{6}{section.2.3}%
+\contentsline {section}{\numberline {2.4}\bfseries {\scshape {Jet tagging}}}{6}{section.2.4}%
+\contentsline {section}{\numberline {2.5}\bfseries {\scshape {Fat jet substructure: Nsubjettiness}}}{6}{section.2.5}%
+\contentsline {section}{\numberline {2.6}\bfseries {\scshape {TMVA Classifiers}}}{6}{section.2.6}%
+\contentsline {section}{\numberline {2.7}\bfseries {\scshape {Event generators}}}{6}{section.2.7}%
+\contentsline {chapter}{\numberline {3}\bfseries {\scshape {Event generation}}}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}\bfseries {\scshape {Event generation chain}}}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.2}\bfseries {\scshape {Signal and background events}}}{7}{section.3.2}%
