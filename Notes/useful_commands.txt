@@ -21,5 +21,3 @@ Correr Delphes con un hepmc de pythia (en la carpeta Delphes de MG):
 ./DelphesHepMC cards/delphes_card_ATLAS_FatJets_modified.tcl pp_tt_hadronic_14TeV100kEvtsCutT200_RFatJet08_ATLAS.root pp_tt_hadronic_14TeV100kEvtsGenCutT200_pythia8_events.hepmc
 
 ***
-
-GIT TOKEN: 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

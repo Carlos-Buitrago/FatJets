@@ -45,25 +45,50 @@ The anti-$k_t$ algorithm \cite{Cacciari2008} is a sequential recombination algor
 \end{align}
 where $\Delta_{ij}^2 = (\eta_i - \eta_j)^2 + (\phi_i - \phi_j)^2$ and $R$ is the radius parameter that sets the size scale of the jets found. The algorithm iteratively forms clusters by identifying the smallest of the two distances for all the objects in the input list. If $d_{ij}$ is the smallest, objects $i$ and $j$ are recombined and replaced in the object list by the recombined object. If on the other hand $d_{iB}$ is the smallest, object $i$ is removed from the object list and marked as a jet.\\
 
+\hypsection{Boosted particles and fat jets}
+\vspace{20pt}
 
-\hypsection{The LHC and the ATLAS detector}
-\vspace{15pt}
-The Large Hadron Collider (LHC) is \dots
-
-\hypsection{Boosted objects and fat jets}
-\vspace{15pt}
+Boosted particles are \dots 
 
 \hypsection{Jet tagging}
-\vspace{15pt}
+\vspace{20pt}
 
 \hypsection{Fat jet substructure: Nsubjettiness}
-\vspace{15pt}
+\vspace{20pt}
 
-\hypsection{TMVA Classifiers}
-\vspace{15pt}
+\hypsection{Machine learning and TMVA Classifiers}
+\vspace{20pt}
+
+\hypsection{The LHC and the ATLAS detector}
+\vspace{20pt}
+The Large Hadron Collider (LHC) \cite{Evans2008} is the world's largest particle accelerator. It was built by the European Organization for Nuclear Research (CERN) in the existing 26.7\;km tunnel that was constructed originally for the Large Electron-Positron Collider (LEP), which lies between 50\;m and 175\;m below the surface beneath the France-Switzerland border. The 3.8\;m wide tunnel contains two adjacent beamlines, which allow two high-energy particle beams to travel in opposite directions around the accelerator ring. The beams are guided by about 10.000 superconducting magnets \cite{MYERS2013}, dipole magnets are used to bend the beams, quadrupole magnets are used to focus them and magnets of higher multipole orders are used for smaller corrections in the geometry of the field.\\
+
+The maximum energy that can be reached by the protons in the beam is limited by the peak dipole field, which has a nominal value of 8.33\;T (corresponding to a proton energy of 7\;TeV) \cite{Bruning2004}. However, the actual value of the attainable field depends on external factors that cause beam losses. As such, the highest proton energy achieved as of today is 6.8\;TeV, which in turn means an attained center of mass energy of $\sqrt{s} = $13\;TeV. In order to achieve said energy, before being injected to the LHC the protons are pre-accelerated in a series of steps in which their energy is successively increased (see figure \ref{fig:preaccelerators}). Initially, H$^-$ ions with an energy of 160\;MeV are produced in the linear accelerator LINAC4, which feeds the Proton Synchrotron Booster (PSB), where the electrons are stripped from the ions and the remaining protons are accelerated to 2\;GeV and injected into the Proton Synchrotron (PS), which accelerates them to 26\;GeV and injects them into the Super Proton Synchrotron (SPS) where they are accelerated to 450\;GeV before being finally injected into the main ring.\\
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{../Figures/Theory/LHC_preaccelerators.png}
+    \caption{Schematic representation of the LHC and its pre-accelerators (in 2020 LINAC2 was replaced by LINAC4). Image taken from \cite{Michael2011}.}
+    \label{fig:preaccelerators}
+\end{figure}
+
+It is also worth noting that the protons do not travel in the form of continuous beams, but rather in bunches of 10$^{11}$ protons each. Under nominal operating conditions each proton beam is composed of 2808 bunches, so that interactions take place at discrete intervals each 25\;ns (collision rate of 40\;Hz). Taking into account the previous parameters the design (proton-proton) luminosity of the LHC is 10$^{34}$\;cm$^{-2}$s$^{-1}$.\\ 
+
+The two beams intersect at four different points around the accelerator ring, which is where the collisions occur. Specially strong magnets are used near these points in order to increase the interaction chance. Built around the collision points are seven experiments installed in underground caverns \cite{Lopes2022}. Of these, the main four are the ATLAS, CMS, LHCb and ALICE detectors. These detectors are used to count, track and characterize all the particles that are produced in the collisions in order to reconstruct the different events as a whole. As was stated previously, this study will be carried out using simulated data from ATLAS, therefore an overview of the detector will be given below.\\
+
+The ATLAS (A Toroidal LHC ApparatuS) detector \cite{Aad2008} is a multi-purpose detector designed to cover a wide range of physics at the LHC. The detector is forward-backward symmetric with respect to the interaction point, and it has nearly full coverage in solid angle. In order to reconstruct the particles originated from the collisions, ATLAS is composed of multiple layers, each one of them sensitive to different types of particles. The detector layout is shown in figure \ref{fig:ATLAS_detector}.\\
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{../Figures/Theory/ATLAS_detector.png}
+    \caption{Cut-away view of the ATLAS detector. Image taken from \cite{Aad2008}.}
+    \label{fig:ATLAS_detector}
+\end{figure}
+
+The layers \cite{Airapetian1999} that are closer to the interaction point form what is known as the inner detector, they are immersed in a 2\;T magnetic field generated by a solenoid magnet. Charged particles are curved by this field and their trajectories (tracks) are measured by silicon pixel and microstrip detectors, which are surrounded by a transition radiation tracker. Surrounding the inner detector is the calorimeter system, composed by the liquid argon (LAr) electromagnetic calorimeters and the scintillator-tile hadronic calorimeters. LAr technology is also used in the hadronic end-caps (matching the outer limits of the electromagnetic calorimeters) and forward calorimeters, which extend the detection coverage. Both the electromagnetic and hadronic calorimeters use the same principle: when a particle enters the calorimeter, it showers and deposits energy in the calorimeter cells. The difference between the two kind of calorimeters lies in the materials they are made of and the size of the cells, which determine the particles they target (electromagnetic calorimeters targeting electrons and photons and hadronic calorimeters targeting hadrons). Surrounding the calorimeter system is the muon spectrometer, which is designed to measure the muon tracks (together with neutrinos, muons are the only particles not stopped by the calorimeters). It is composed of high precision tracking chambers immersed in a magnetic field provided by toroid magnets.\\
 
 \hypsection{Event generators}
-\vspace{15pt}
+\vspace{20pt}
 
 
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{12}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -41,5 +41,51 @@ Matteo Cacciari, Gavin~P. Salam, and Gregory Soyez.
   063--063, April 2008.
 \newblock ISSN 1029-8479.
 \newblock \doi{10.1088/1126-6708/2008/04/063}.
+
+\bibitem[Evans and Bryant(2008)]{Evans2008}
+Lyndon Evans and Philip Bryant.
+\newblock {{LHC Machine}}.
+\newblock \emph{Journal of Instrumentation}, 3\penalty0 (08):\penalty0 S08001,
+  August 2008.
+\newblock ISSN 1748-0221.
+\newblock \doi{10.1088/1748-0221/3/08/S08001}.
+
+\bibitem[Myers(2013)]{MYERS2013}
+Stephen Myers.
+\newblock The {{Large Hadron Collider}} 2008\textendash 2013.
+\newblock \emph{International Journal of Modern Physics A}, October 2013.
+\newblock \doi{10.1142/S0217751X13300354}.
+
+\bibitem[Bruning et~al.(2004)Bruning, Collier, Lebrun, Myers, Ostojic, Poole,
+  and Proudlock]{Bruning2004}
+Oliver~S. Bruning, P.~Collier, P.~Lebrun, S.~Myers, R.~Ostojic, J.~Poole, and
+  P.~Proudlock.
+\newblock {{LHC Design Report Vol}}.1: {{The LHC Main Ring}}.
+\newblock August 2004.
+\newblock \doi{10.5170/CERN-2004-003-V-1}.
+
+\bibitem[Michael(2011)]{Michael2011}
+Tino Michael.
+\newblock Determination of muon reconstruction efficiencies in the {{ATLAS}}
+  detector using a tag \& probe approach in {{Z}} to \textmu{} \textmu{}
+  events.
+\newblock Master's thesis, Dresden, Technische Universit\"at Dresden, 2011.
+
+\bibitem[Lopes and Perrey(2022)]{Lopes2022}
+Ana Lopes and Melissa~Loyse Perrey.
+\newblock {{FAQ-LHC The}} guide.
+\newblock Technical report, 2022.
+
+\bibitem[Aad et~al.(2008)]{Aad2008}
+G.~Aad et~al.
+\newblock The {{ATLAS Experiment}} at the {{CERN Large Hadron Collider}}.
+\newblock \emph{JINST}, 3:\penalty0 S08003, 2008.
+\newblock \doi{10.1088/1748-0221/3/08/S08003}.
+
+\bibitem[Airapetian et~al.(1999)]{Airapetian1999}
+A.~Airapetian et~al.
+\newblock {{ATLAS}}: {{Detector}} and physics performance technical design
+  report. {{Volume}} 1.
+\newblock May 1999.
 
 \end{thebibliography}
