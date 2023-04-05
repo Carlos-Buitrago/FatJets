@@ -16,12 +16,20 @@
 
 \doublespacing
 
-\schapter{Event generation}
+\schapter{Sample generation and machine learning techniques}
 
-\hypsection{Event generation chain}
+\hypsection{Generation of signal and background events}
+\vspace{20pt}
+
+The Monte Carlo samples used in the analysis are produced using a generation chain involving multiple steps involving different software. Both signal and background event generation consist of the same steps. Different samples are produced separately in order to obtain the respective signal and background datasets. Two signal processes will be considered, the first one is used to study the tagging of boosted top quarks and the second one to study the tagging of boosted $W$ bosons. These signal samples will be used together with a single QCD background sample of light quarks and gluons, taking into account the discussion of section \ref{sect:substructure}.\\
+
+
+The generation chain begins with the generation of matrix elements at leading order (LO) in QCD and electroweak couplings using \textsc{MadGraph5\_aMC@NLO} v2.9.12 \cite{Alwall2014} with the \textsc{NN23LO1} PDF set \cite{Ball2017}. The process defined to produce the signal top jets consists of top quarks decaying in the fully hadronic channel $pp \rightarrow t \~{t}$
+
+
+\hypsection{Machine learning implementation}
 \label{sect:event-generation-chain}
 
-\hypsection{Signal and background events}
 
 
 

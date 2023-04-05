@@ -1,16 +1,14 @@
-\begin{thebibliography}{12}
+\begin{thebibliography}{24}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Andersson et~al.(1983)Andersson, Gustafson, Ingelman, and
-  Sj{\"o}strand]{Andersson1983}
+\bibitem[Andersson et~al.(1983)Andersson, Gustafson, Ingelman, and Sj{\"o}strand]{Andersson1983}
 B.~Andersson, G.~Gustafson, G.~Ingelman, and T.~Sj{\"o}strand.
 \newblock Parton fragmentation and string dynamics.
-\newblock \emph{Physics Reports}, 97\penalty0 (2-3):\penalty0 31--145, July
-  1983.
+\newblock \emph{Physics Reports}, 97\penalty0 (2-3):\penalty0 31--145, July 1983.
 \newblock ISSN 03701573.
 \newblock \doi{10.1016/0370-1573(83)90080-7}.
 
@@ -22,31 +20,93 @@ Mark Thomson.
 \bibitem[Salam(2010)]{Salam2010}
 Gavin~P. Salam.
 \newblock Towards jetography.
-\newblock \emph{The European Physical Journal C}, 67\penalty0 (3):\penalty0
-  637--686, June 2010.
+\newblock \emph{The European Physical Journal C}, 67\penalty0 (3):\penalty0 637--686, June 2010.
 \newblock ISSN 1434-6052.
 \newblock \doi{10.1140/epjc/s10052-010-1314-6}.
 
 \bibitem[Sterman and Weinberg(1977)]{Sterman1977}
 George Sterman and Steven Weinberg.
 \newblock Jets from {{Quantum Chromodynamics}}.
-\newblock \emph{Physical Review Letters}, 39\penalty0 (23):\penalty0
-  1436--1439, December 1977.
+\newblock \emph{Physical Review Letters}, 39\penalty0 (23):\penalty0 1436--1439, December 1977.
 \newblock \doi{10.1103/PhysRevLett.39.1436}.
 
 \bibitem[Cacciari et~al.(2008)Cacciari, Salam, and Soyez]{Cacciari2008}
 Matteo Cacciari, Gavin~P. Salam, and Gregory Soyez.
 \newblock The anti-k\_t jet clustering algorithm.
-\newblock \emph{Journal of High Energy Physics}, 2008\penalty0 (04):\penalty0
-  063--063, April 2008.
+\newblock \emph{Journal of High Energy Physics}, 2008\penalty0 (04):\penalty0 063--063, April 2008.
 \newblock ISSN 1029-8479.
 \newblock \doi{10.1088/1126-6708/2008/04/063}.
+
+\bibitem[Altheimer et~al.(2014)]{Altheimer2014}
+BOOST2012 participants:~A. Altheimer et~al.
+\newblock Boosted objects and jet substructure at the {{LHC}}.
+\newblock \emph{The European Physical Journal C}, 74\penalty0 (3):\penalty0 2792, March 2014.
+\newblock ISSN 1434-6044, 1434-6052.
+\newblock \doi{10.1140/epjc/s10052-014-2792-8}.
+
+\bibitem[Sch{\"a}tzel(2015)]{Schatzel2015}
+Sebastian Sch{\"a}tzel.
+\newblock Boosted {{Top Quarks}} and {{Jet Structure}}.
+\newblock \emph{The European Physical Journal C}, 75\penalty0 (9):\penalty0 415, September 2015.
+\newblock ISSN 1434-6044, 1434-6052.
+\newblock \doi{10.1140/epjc/s10052-015-3636-x}.
+
+\bibitem[{CMS Collaboration}(2022)]{CMSCollaboration2022}
+{CMS Collaboration}.
+\newblock W, {{Z}}, and {{Higgs}} bosons as portals to exotic physics.
+\newblock https://cms.cern/news/w-z-and-higgs-bosons-portals-exotic-physics, May 2022.
+
+\bibitem[Collaboration(2012)]{ATLASCollaboration2012}
+ATLAS Collaboration.
+\newblock {{ATLAS}} measurements of the properties of jets for boosted particle searches.
+\newblock \emph{Physical Review D}, 86\penalty0 (7):\penalty0 072006, October 2012.
+\newblock ISSN 1550-7998, 1550-2368.
+\newblock \doi{10.1103/PhysRevD.86.072006}.
+
+\bibitem[Plehn et~al.(2010)Plehn, Spannowsky, Takeuchi, and Zerwas]{Plehn2010}
+Tilman Plehn, Michael Spannowsky, Michihisa Takeuchi, and Dirk Zerwas.
+\newblock Stop {{Reconstruction}} with {{Tagged Tops}}.
+\newblock \emph{Journal of High Energy Physics}, 2010\penalty0 (10):\penalty0 78, October 2010.
+\newblock ISSN 1029-8479.
+\newblock \doi{10.1007/JHEP10(2010)078}.
+
+\bibitem[Butterworth et~al.(2008)Butterworth, Davison, Rubin, and Salam]{Butterworth2008}
+Jonathan~M. Butterworth, Adam~R. Davison, Mathieu Rubin, and Gavin~P. Salam.
+\newblock Jet substructure as a new {{Higgs}} search channel at the {{LHC}}.
+\newblock \emph{Physical Review Letters}, 100\penalty0 (24):\penalty0 242001, June 2008.
+\newblock ISSN 0031-9007, 1079-7114.
+\newblock \doi{10.1103/PhysRevLett.100.242001}.
+
+\bibitem[Behr(2014)]{Behr2014}
+Janna~Katharina Behr.
+\newblock Searches with {{Boosted Objects}}.
+\newblock In \emph{34th {{International Symposium}} on {{Physics}} in {{Collision}}}, November 2014.
+
+\bibitem[Thaler and Van~Tilburg(2011)]{Thaler2011}
+Jesse Thaler and Ken Van~Tilburg.
+\newblock Identifying boosted objects with {{N-subjettiness}}.
+\newblock \emph{Journal of High Energy Physics}, 2011\penalty0 (3):\penalty0 15, March 2011.
+\newblock ISSN 1029-8479.
+\newblock \doi{10.1007/JHEP03(2011)015}.
+
+\bibitem[Stewart et~al.(2010)Stewart, Tackmann, and Waalewijn]{Stewart2010}
+Iain~W. Stewart, Frank~J. Tackmann, and Wouter~J. Waalewijn.
+\newblock N-{{Jettiness}}: {{An Inclusive Event Shape}} to {{Veto Jets}}.
+\newblock \emph{Physical Review Letters}, 105\penalty0 (9):\penalty0 092002, August 2010.
+\newblock ISSN 0031-9007, 1079-7114.
+\newblock \doi{10.1103/PhysRevLett.105.092002}.
+
+\bibitem[Thaler and Van~Tilburg(2012)]{Thaler2012}
+Jesse Thaler and Ken Van~Tilburg.
+\newblock Maximizing boosted top identification by minimizing {{N-subjettiness}}.
+\newblock \emph{Journal of High Energy Physics}, 2012\penalty0 (2):\penalty0 93, February 2012.
+\newblock ISSN 1029-8479.
+\newblock \doi{10.1007/JHEP02(2012)093}.
 
 \bibitem[Evans and Bryant(2008)]{Evans2008}
 Lyndon Evans and Philip Bryant.
 \newblock {{LHC Machine}}.
-\newblock \emph{Journal of Instrumentation}, 3\penalty0 (08):\penalty0 S08001,
-  August 2008.
+\newblock \emph{Journal of Instrumentation}, 3\penalty0 (08):\penalty0 S08001, August 2008.
 \newblock ISSN 1748-0221.
 \newblock \doi{10.1088/1748-0221/3/08/S08001}.
 
@@ -56,19 +116,15 @@ Stephen Myers.
 \newblock \emph{International Journal of Modern Physics A}, October 2013.
 \newblock \doi{10.1142/S0217751X13300354}.
 
-\bibitem[Bruning et~al.(2004)Bruning, Collier, Lebrun, Myers, Ostojic, Poole,
-  and Proudlock]{Bruning2004}
-Oliver~S. Bruning, P.~Collier, P.~Lebrun, S.~Myers, R.~Ostojic, J.~Poole, and
-  P.~Proudlock.
+\bibitem[Bruning et~al.(2004)Bruning, Collier, Lebrun, Myers, Ostojic, Poole, and Proudlock]{Bruning2004}
+Oliver~S. Bruning, P.~Collier, P.~Lebrun, S.~Myers, R.~Ostojic, J.~Poole, and P.~Proudlock.
 \newblock {{LHC Design Report Vol}}.1: {{The LHC Main Ring}}.
 \newblock August 2004.
 \newblock \doi{10.5170/CERN-2004-003-V-1}.
 
 \bibitem[Michael(2011)]{Michael2011}
 Tino Michael.
-\newblock Determination of muon reconstruction efficiencies in the {{ATLAS}}
-  detector using a tag \& probe approach in {{Z}} to \textmu{} \textmu{}
-  events.
+\newblock Determination of muon reconstruction efficiencies in the {{ATLAS}} detector using a tag \& probe approach in {{Z}} to \textmu{} \textmu{} events.
 \newblock Master's thesis, Dresden, Technische Universit\"at Dresden, 2011.
 
 \bibitem[Lopes and Perrey(2022)]{Lopes2022}
@@ -84,8 +140,21 @@ G.~Aad et~al.
 
 \bibitem[Airapetian et~al.(1999)]{Airapetian1999}
 A.~Airapetian et~al.
-\newblock {{ATLAS}}: {{Detector}} and physics performance technical design
-  report. {{Volume}} 1.
+\newblock {{ATLAS}}: {{Detector}} and physics performance technical design report. {{Volume}} 1.
 \newblock May 1999.
+
+\bibitem[Alwall et~al.(2014)Alwall, Frederix, Frixione, Hirschi, Maltoni, Mattelaer, Shao, Stelzer, Torrielli, and Zaro]{Alwall2014}
+J.~Alwall, R.~Frederix, S.~Frixione, V.~Hirschi, F.~Maltoni, O.~Mattelaer, H.-S. Shao, T.~Stelzer, P.~Torrielli, and M.~Zaro.
+\newblock The automated computation of tree-level and next-to-leading order differential cross sections, and their matching to parton shower simulations.
+\newblock \emph{Journal of High Energy Physics}, 2014\penalty0 (7):\penalty0 79, July 2014.
+\newblock ISSN 1029-8479.
+\newblock \doi{10.1007/JHEP07(2014)079}.
+
+\bibitem[Ball et~al.(2017)Ball, Bertone, Carrazza, Debbio, Forte, {Groth-Merrild}, Guffanti, Hartland, Kassabov, Latorre, Nocera, Rojo, Rottoli, Slade, and Ubiali]{Ball2017}
+Richard~D. Ball, Valerio Bertone, Stefano Carrazza, Luigi~Del Debbio, Stefano Forte, Patrick {Groth-Merrild}, Alberto Guffanti, Nathan~P. Hartland, Zahari Kassabov, Jos{\'e}~I. Latorre, Emanuele~R. Nocera, Juan Rojo, Luca Rottoli, Emma Slade, and Maria Ubiali.
+\newblock Parton distributions from high-precision collider data.
+\newblock \emph{The European Physical Journal C}, 77\penalty0 (10):\penalty0 663, October 2017.
+\newblock ISSN 1434-6052.
+\newblock \doi{10.1140/epjc/s10052-017-5199-5}.
 
 \end{thebibliography}
