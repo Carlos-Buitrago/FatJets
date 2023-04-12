@@ -1,4 +1,4 @@
-\begin{thebibliography}{24}
+\begin{thebibliography}{33}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -156,5 +156,65 @@ Richard~D. Ball, Valerio Bertone, Stefano Carrazza, Luigi~Del Debbio, Stefano Fo
 \newblock \emph{The European Physical Journal C}, 77\penalty0 (10):\penalty0 663, October 2017.
 \newblock ISSN 1434-6052.
 \newblock \doi{10.1140/epjc/s10052-017-5199-5}.
+
+\bibitem[Maltoni and Stelzer(2003)]{Maltoni2003}
+Fabio Maltoni and Tim Stelzer.
+\newblock {{MadEvent}}: {{Automatic Event Generation}} with {{MadGraph}}.
+\newblock \emph{Journal of High Energy Physics}, 2003\penalty0 (02):\penalty0 027--027, February 2003.
+\newblock ISSN 1029-8479.
+\newblock \doi{10.1088/1126-6708/2003/02/027}.
+
+\bibitem[Sj{\"o}strand et~al.(2015)Sj{\"o}strand, Ask, Christiansen, Corke, Desai, Ilten, Mrenna, Prestel, Rasmussen, and Skands]{Sjostrand2015}
+Torbj{\"o}rn Sj{\"o}strand, Stefan Ask, Jesper~R. Christiansen, Richard Corke, Nishita Desai, Philip Ilten, Stephen Mrenna, Stefan Prestel, Christine~O. Rasmussen, and Peter~Z. Skands.
+\newblock An {{Introduction}} to {{PYTHIA}} 8.2.
+\newblock \emph{Computer Physics Communications}, 191:\penalty0 159--177, June 2015.
+\newblock ISSN 00104655.
+\newblock \doi{10.1016/j.cpc.2015.01.024}.
+
+\bibitem[Dobbs and Hansen(2001)]{Dobbs2001}
+Matt Dobbs and J{\o}rgen~Beck Hansen.
+\newblock The {{HepMC C}}++ {{Monte Carlo}} event record for {{High Energy Physics}}.
+\newblock \emph{Computer Physics Communications}, 134\penalty0 (1):\penalty0 41--46, February 2001.
+\newblock ISSN 0010-4655.
+\newblock \doi{10.1016/S0010-4655(00)00189-2}.
+
+\bibitem[{de Favereau} et~al.(2014){de Favereau}, Delaere, Demin, Giammanco, Lema{\^i}tre, Mertens, and Selvaggi]{deFavereau2014}
+J.~{de Favereau}, C.~Delaere, P.~Demin, A.~Giammanco, V.~Lema{\^i}tre, A.~Mertens, and M.~Selvaggi.
+\newblock {{DELPHES}} 3, {{A}} modular framework for fast simulation of a generic collider experiment.
+\newblock \emph{Journal of High Energy Physics}, 2014\penalty0 (2):\penalty0 57, February 2014.
+\newblock ISSN 1029-8479.
+\newblock \doi{10.1007/JHEP02(2014)057}.
+
+\bibitem[Cacciari et~al.(2012)Cacciari, Salam, and Soyez]{Cacciari2012}
+Matteo Cacciari, Gavin~P. Salam, and Gregory Soyez.
+\newblock {{FastJet}} user manual.
+\newblock \emph{The European Physical Journal C}, 72\penalty0 (3):\penalty0 1896, March 2012.
+\newblock ISSN 1434-6044, 1434-6052.
+\newblock \doi{10.1140/epjc/s10052-012-1896-2}.
+
+\bibitem[{Khelifa-Kerfa} et~al.(2022){Khelifa-Kerfa}, Delenda, and Ziani]{Khelifa-Kerfa2022}
+K.~{Khelifa-Kerfa}, Y.~Delenda, and N.~Ziani.
+\newblock Jet shapes in {{H}}/{{V}} boson + jet with k\_t clustering at hadron colliders, July 2022.
+
+\bibitem[Krohn et~al.(2010)Krohn, Thaler, and Wang]{Krohn2010}
+David Krohn, Jesse Thaler, and Lian-Tao Wang.
+\newblock Jet {{Trimming}}.
+\newblock \emph{Journal of High Energy Physics}, 2010\penalty0 (2):\penalty0 84, February 2010.
+\newblock ISSN 1029-8479.
+\newblock \doi{10.1007/JHEP02(2010)084}.
+
+\bibitem[Ellis et~al.(2009)Ellis, Vermilion, and Walsh]{Ellis2009}
+Stephen~D. Ellis, Christopher~K. Vermilion, and Jonathan~R. Walsh.
+\newblock Techniques for improved heavy particle searches with jet substructure.
+\newblock \emph{Physical Review D}, 80\penalty0 (5):\penalty0 051501, September 2009.
+\newblock ISSN 1550-7998, 1550-2368.
+\newblock \doi{10.1103/PhysRevD.80.051501}.
+
+\bibitem[Larkoski et~al.(2014)Larkoski, Marzani, Soyez, and Thaler]{Larkoski2014}
+Andrew~J. Larkoski, Simone Marzani, Gregory Soyez, and Jesse Thaler.
+\newblock Soft {{Drop}}.
+\newblock \emph{Journal of High Energy Physics}, 2014\penalty0 (5):\penalty0 146, May 2014.
+\newblock ISSN 1029-8479.
+\newblock \doi{10.1007/JHEP05(2014)146}.
 
 \end{thebibliography}

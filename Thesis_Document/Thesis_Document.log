@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.3)  5 APR 2023 15:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.3)  11 APR 2023 22:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -103,7 +103,20 @@ Package caption Info: New subtype `subfigure' on input line 239.
 \c@subfigure=\count270
 Package caption Info: New subtype `subtable' on input line 239.
 \c@subtable=\count271
-) (/usr/share/texmf-dist/tex/latex/subfiles/subfiles.sty
+) (/usr/share/texmf-dist/tex/latex/lipsum/lipsum.sty (/usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty (/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2023-02-22 L3 programming layer (loader) 
+ (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count272
+\l__pdf_internal_box=\box53
+))
+Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count273
+\l__lipsum_a_int=\count274
+\l__lipsum_b_int=\count275
+ (/usr/share/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)) (/usr/share/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
  (/usr/share/texmf-dist/tex/latex/import/import.sty
 Package: import 2020/04/01  v 6.2
@@ -137,14 +150,15 @@ Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
- (/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+
+(/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count272
+\c@section@level=\count276
 )
 \@linkdim=\dimen159
-\Hy@linkcounter=\count273
-\Hy@pagecounter=\count274
+\Hy@linkcounter=\count277
+\Hy@pagecounter=\count278
  (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2023-02-07 v7.00v Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -154,7 +168,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 ) (/usr/share/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count275
+\Hy@SavedSpaceFactor=\count279
  (/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2023-02-07 v7.00v Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -167,20 +181,19 @@ Package hyperref Info: Plain pages OFF on input line 4192.
 Package hyperref Info: Backreferencing OFF on input line 4197.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4425.
-\c@Hy@tempcnt=\count276
+\c@Hy@tempcnt=\count280
  (/usr/share/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4763.
 \XeTeXLinkMargin=\dimen160
-
-(/usr/share/texmf-dist/tex/generic/bitset/bitset.sty
+ (/usr/share/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (/usr/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count277
+\Fld@menulength=\count281
 \Field@Width=\dimen161
 \Fld@charsize=\dimen162
 Package hyperref Info: Hyper figures OFF on input line 6042.
@@ -194,9 +207,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6072.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count278
-\c@Item=\count279
-\c@Hfootnote=\count280
+\Hy@abspage=\count282
+\c@Item=\count283
+\c@Hfootnote=\count284
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
@@ -205,8 +218,8 @@ File: hpdftex.def 2023-02-07 v7.00v Hyperref driver for pdfTeX
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
-\Fld@listcount=\count281
-\c@bookmark@seq@number=\count282
+\Fld@listcount=\count285
+\c@bookmark@seq@number=\count286
  (/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
  (/usr/share/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -221,7 +234,7 @@ Package: bibentry 2007/10/30 1.5 (PWD)
 Package: bold-extra 2001/11/13 v0.1 Use fonts from cm/mf-extra/bold
 ) (/usr/share/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
-\ttl@box=\box53
+\ttl@box=\box54
 \beforetitleunit=\skip53
 \aftertitleunit=\skip54
 \ttl@plus=\dimen163
@@ -262,8 +275,8 @@ Package tocloft Info: The document has chapter divisions on input line 51.
 \cftbeforefigskip=\skip81
 \cftfigindent=\skip82
 \cftfignumwidth=\skip83
-\c@lofdepth=\count283
-\c@lotdepth=\count284
+\c@lofdepth=\count287
+\c@lotdepth=\count288
 \cftbeforelottitleskip=\skip84
 \cftafterlottitleskip=\skip85
 \cftbeforetabskip=\skip86
@@ -277,7 +290,7 @@ Package titlesec Warning: You are using an old interface for page styles
 (titlesec)                into errors.
 
 )
-\c@subsubsubsection=\count285
+\c@subsubsubsection=\count289
  (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@headwidth=\skip89
@@ -336,19 +349,19 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count286
+\inf@bad=\count290
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count287
-\leftroot@=\count288
+\uproot@=\count291
+\leftroot@=\count292
 LaTeX Info: Redefining \overline on input line 399.
 LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count289
-\DOTSCASE@=\count290
+\classnum@=\count293
+\DOTSCASE@=\count294
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box54
-\strutbox@=\box55
+\Mathstrutbox@=\box55
+\strutbox@=\box56
 LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
@@ -356,20 +369,20 @@ LaTeX Info: Redefining \Bigg on input line 725.
 \big@size=\dimen170
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count291
+\macc@depth=\count295
 LaTeX Info: Redefining \bmod on input line 905.
 LaTeX Info: Redefining \pmod on input line 910.
 LaTeX Info: Redefining \smash on input line 940.
 LaTeX Info: Redefining \relbar on input line 970.
 LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count292
+\c@MaxMatrixCols=\count296
 \dotsspace@=\muskip17
-\c@parentequation=\count293
-\dspbrk@lvl=\count294
+\c@parentequation=\count297
+\dspbrk@lvl=\count298
 \tag@help=\toks24
-\row@=\count295
-\column@=\count296
-\maxfields@=\count297
+\row@=\count299
+\column@=\count300
+\maxfields@=\count301
 \andhelp@=\toks25
 \eqnshift@=\dimen171
 \alignsep@=\dimen172
@@ -411,32 +424,28 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip101
 \bibsep=\skip102
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count298
-) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count299
-\l__pdf_internal_box=\box56
+\c@NAT@ctr=\count302
 ) (./Thesis_Document.aux)
 \openout1 = `Thesis_Document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -472,21 +481,21 @@ LaTeX Font Info:    ... okay on input line 165.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 165.
-Package microtype Info: Applying patch `item' on input line 165.
-Package microtype Info: Applying patch `toc' on input line 165.
-Package microtype Info: Applying patch `eqnum' on input line 165.
+LaTeX Info: Redefining \microtypecontext on input line 166.
+Package microtype Info: Applying patch `item' on input line 166.
+Package microtype Info: Applying patch `toc' on input line 166.
+Package microtype Info: Applying patch `eqnum' on input line 166.
 
-Package microtype Warning: Unable to apply patch `footnote' on input line 165.
+Package microtype Warning: Unable to apply patch `footnote' on input line 166.
 
-Package microtype Info: Applying patch `verbatim' on input line 165.
+Package microtype Info: Applying patch `verbatim' on input line 166.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 165.
+LaTeX Info: Redefining \showhyphens on input line 166.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -499,23 +508,23 @@ Package caption Info: scrextend package is loaded.
 \caption@addmargin@hsize=\dimen179
 \caption@addmargin@linewidth=\dimen180
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 165.
+Package hyperref Info: Link coloring OFF on input line 166.
  (./Thesis_Document.out) (./Thesis_Document.out)
 \@outlinefile=\write3
 \openout3 = `Thesis_Document.out'.
 
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count300
+\scratchcounter=\count303
 \scratchdimen=\dimen181
 \scratchbox=\box57
-\nofMPsegments=\count301
-\nofMParguments=\count302
+\nofMPsegments=\count304
+\nofMParguments=\count305
 \everyMPshowfont=\toks28
-\MPscratchCnt=\count303
+\MPscratchCnt=\count306
 \MPscratchDim=\dimen182
-\MPnumerator=\count304
-\makeMPintoPDFobject=\count305
+\MPnumerator=\count307
+\makeMPintoPDFobject=\count308
 \everyMPtoPDFconversion=\toks29
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -529,30 +538,30 @@ Package grfext Info: Graphics extension search list:
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 171.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 172.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/share/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 171.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 172.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 171.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 172.
  (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 171.
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 172.
  (/usr/share/texmf-dist/tex/latex/stmaryrd/Ustmry.fd) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.175 \end{abstract}
+l.177 \end{abstract}
                      [1] (./Thesis_Document.toc
 LaTeX Font Info:    Font shape `OT1/cmr/bx/sc' in size <10.95> not available
 (Font)              Font shape `OT1/cmr/b/sc' tried instead on input line 2.
@@ -564,12 +573,50 @@ LaTeX Font Info:    Font shape `OT1/cmr/bx/sc' in size <10.95> not available
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.186 
+l.188 
        [1] (./Chapters/Introduction.tex
 Chapter 1.
-) (./Chapters/Theory.tex [2
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+
+ []
+
+[2
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
+
+ []
+
+) (./Chapters/Theory.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[3]
 Chapter 2.
 LaTeX Font Info:    Font shape `OT1/cmr/bx/sc' in size <14.4> not available
 (Font)              Font shape `OT1/cmr/b/sc' tried instead on input line 22.
@@ -583,7 +630,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
-<Chapters//../Figures/Theory/hadronization.png, id=102, 983.675pt x 486.81876pt>
+<Chapters//../Figures/Theory/hadronization.png, id=95, 983.675pt x 486.81876pt>
 File: Chapters//../Figures/Theory/hadronization.png Graphic file (type png)
 <use Chapters//../Figures/Theory/hadronization.png>
 Package pdftex.def Info: Chapters//../Figures/Theory/hadronization.png  used on input line 31.
@@ -596,7 +643,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
-[3
+[4
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 38--39
@@ -615,7 +662,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[4 <./Chapters//../Figures/Theory/hadronization.png>]
+[5 <./Chapters//../Figures/Theory/hadronization.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 46--48
 
  []
@@ -632,12 +679,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[5]
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
-<Chapters//../Figures/Theory/boosted_decay.png, id=143, 963.6pt x 433.62pt>
+<Chapters//../Figures/Theory/boosted_decay.png, id=133, 963.6pt x 433.62pt>
 File: Chapters//../Figures/Theory/boosted_decay.png Graphic file (type png)
 <use Chapters//../Figures/Theory/boosted_decay.png>
 Package pdftex.def Info: Chapters//../Figures/Theory/boosted_decay.png  used on input line 59.
@@ -654,12 +701,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[6 <./Chapters//../Figures/Theory/boosted_decay.png (PNG copy)>]
+[7 <./Chapters//../Figures/Theory/boosted_decay.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
  []
 
-<Chapters//../Figures/Theory/DeltaR_top_decay.png, id=158, 410.53375pt x 378.41376pt>
+<Chapters//../Figures/Theory/DeltaR_top_decay.png, id=148, 410.53375pt x 378.41376pt>
 File: Chapters//../Figures/Theory/DeltaR_top_decay.png Graphic file (type png)
 <use Chapters//../Figures/Theory/DeltaR_top_decay.png>
 Package pdftex.def Info: Chapters//../Figures/Theory/DeltaR_top_decay.png  used on input line 74.
@@ -671,7 +718,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[7 <./Chapters//../Figures/Theory/DeltaR_top_decay.png>]
+[8 <./Chapters//../Figures/Theory/DeltaR_top_decay.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
@@ -698,13 +745,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[8]
-<Chapters//../Figures/Theory/eflow_W.png, id=185, 750.805pt x 352.31625pt>
+[9]
+<Chapters//../Figures/Theory/eflow_W.png, id=175, 750.805pt x 352.31625pt>
 File: Chapters//../Figures/Theory/eflow_W.png Graphic file (type png)
 <use Chapters//../Figures/Theory/eflow_W.png>
 Package pdftex.def Info: Chapters//../Figures/Theory/eflow_W.png  used on input line 97.
 (pdftex.def)             Requested size: 346.89732pt x 162.78242pt.
-<Chapters//../Figures/Theory/eflow_QCD.png, id=186, 769.87625pt x 353.32pt>
+<Chapters//../Figures/Theory/eflow_QCD.png, id=176, 769.87625pt x 353.32pt>
 File: Chapters//../Figures/Theory/eflow_QCD.png Graphic file (type png)
 <use Chapters//../Figures/Theory/eflow_QCD.png>
 Package pdftex.def Info: Chapters//../Figures/Theory/eflow_QCD.png  used on input line 104.
@@ -717,7 +764,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[9 <./Chapters//../Figures/Theory/eflow_W.png> <./Chapters//../Figures/Theory/eflow_QCD.png>]
+[10 <./Chapters//../Figures/Theory/eflow_W.png> <./Chapters//../Figures/Theory/eflow_QCD.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 119--121
 
  []
@@ -744,7 +791,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[10]
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 131--133
 
  []
@@ -766,8 +813,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[11]
-<Chapters//../Figures/Theory/LHC_preaccelerators.png, id=218, 853.1875pt x 537.00626pt>
+[12]
+<Chapters//../Figures/Theory/LHC_preaccelerators.png, id=208, 853.1875pt x 537.00626pt>
 File: Chapters//../Figures/Theory/LHC_preaccelerators.png Graphic file (type png)
 <use Chapters//../Figures/Theory/LHC_preaccelerators.png>
 Package pdftex.def Info: Chapters//../Figures/Theory/LHC_preaccelerators.png  used on input line 144.
@@ -789,12 +836,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[12 <./Chapters//../Figures/Theory/LHC_preaccelerators.png>]
+[13 <./Chapters//../Figures/Theory/LHC_preaccelerators.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 153--154
 
  []
 
-<Chapters//../Figures/Theory/ATLAS_detector.png, id=231, 947.54pt x 585.18625pt>
+<Chapters//../Figures/Theory/ATLAS_detector.png, id=221, 947.54pt x 585.18625pt>
 File: Chapters//../Figures/Theory/ATLAS_detector.png Graphic file (type png)
 <use Chapters//../Figures/Theory/ATLAS_detector.png>
 Package pdftex.def Info: Chapters//../Figures/Theory/ATLAS_detector.png  used on input line 157.
@@ -811,7 +858,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[13 <./Chapters//../Figures/Theory/ATLAS_detector.png>]) (./Chapters/Datasets.tex
+[14 <./Chapters//../Figures/Theory/ATLAS_detector.png>]) (./Chapters/Datasets.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -819,7 +866,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[14]
+[15]
 Chapter 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 24--25
@@ -827,50 +874,92 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
  []
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 27.
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
-./Chapters/Datasets.tex:27: Please use \mathaccent for accents in math mode.
-\MT@orig@add@accent ...gnorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.27 ...y hadronic channel $pp \rightarrow t \~{t}
-                                                  $
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
+ []
 
-) (./Chapters/Results.tex [15
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+
+ []
+
+[16
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+
+ []
+
+) (./Chapters/Results.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[18]
 Chapter 4.
-) (./Chapters/Conclusions.tex [16
+) (./Chapters/Conclusions.tex [19
 
 ]
 Chapter 5.
-) [17
+) [20
 
 ] (./Thesis_Document.bbl
 Underfull \hbox (badness 6510) in paragraph at lines 55--58
 []\OT1/cmr/m/n/10 (+20) CMS Col-lab-o-ra-tion.  W, Z, and Higgs bosons as por-tals to ex-otic physics.
  []
 
-[18
+[21
 
-]) [19{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./Thesis_Document.aux)
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[22{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]) [23] (./Thesis_Document.aux)
 Package rerunfilecheck Info: File `Thesis_Document.out' has not changed.
-(rerunfilecheck)             Checksum: 31C50C485DF86DFA773A31F52B76B25A;2574.
+(rerunfilecheck)             Checksum: 1E43A3345A8DB4D4EB612973D7E6172A;2052.
  ) 
 Here is how much of TeX's memory you used:
- 17038 strings out of 476025
- 275611 string characters out of 5796533
- 1863388 words of memory out of 5000000
- 36934 multiletter control sequences out of 15000+600000
- 533673 words of font info for 198 fonts, out of 8000000 for 9000
+ 17540 strings out of 476025
+ 287280 string characters out of 5796533
+ 1866388 words of memory out of 5000000
+ 37390 multiletter control sequences out of 15000+600000
+ 534805 words of font info for 210 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,13n,106p,1544b,707s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/carlos/.texlive/texmf-var/fonts/pk/ljfour/public/cm-mf-extra-bold/cmbcsc10.864pk> </home/carlos/.texlive/texmf-var/fonts/pk/ljfour/public/cm-mf-extra-bold/cmbcsc10.657pk></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on Thesis_Document.pdf (21 pages, 1055608 bytes).
+Output written on Thesis_Document.pdf (25 pages, 1074761 bytes).
 PDF statistics:
- 446 PDF objects out of 1000 (max. 8388607)
- 296 compressed objects within 3 object streams
- 72 named destinations out of 1000 (max. 500000)
- 45204 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 463 PDF objects out of 1000 (max. 8388607)
+ 312 compressed objects within 4 object streams
+ 82 named destinations out of 1000 (max. 500000)
+ 47228 words of extra memory for PDF output out of 51595 (max. 10000000)
 

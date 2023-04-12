@@ -1,15 +1,12 @@
 \hypertarget {toc}{}
 \contentsline {chapter}{\numberline {1}\bfseries {\scshape {Introduction}}}{2}{chapter.1}%
-\contentsline {chapter}{\numberline {2}\bfseries {\scshape {Theoretical aspects}}}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}\bfseries {\scshape {Jets and algorithms}}}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2}\bfseries {\scshape {Boosted particles and fat jets}}}{5}{section.2.2}%
-\contentsline {section}{\numberline {2.3}\bfseries {\scshape {Fat jet substructure: N-subjettiness}}}{8}{section.2.3}%
-\contentsline {section}{\numberline {2.4}\bfseries {\scshape {The LHC and the ATLAS detector}}}{11}{section.2.4}%
-\contentsline {section}{\numberline {2.5}\bfseries {\scshape {Event generators}}}{14}{section.2.5}%
-\contentsline {chapter}{\numberline {3}\bfseries {\scshape {Sample generation and machine learning techniques}}}{15}{chapter.3}%
-\contentsline {section}{\numberline {3.1}\bfseries {\scshape {Generation of signal and background events}}}{15}{section.3.1}%
-\contentsline {section}{\numberline {3.2}\bfseries {\scshape {Machine learning implementation}}}{15}{section.3.2}%
-\contentsline {chapter}{\numberline {4}\bfseries {\scshape {Results}}}{16}{chapter.4}%
-\contentsline {section}{\numberline {4.1}\bfseries {\scshape {Discriminant variables}}}{16}{section.4.1}%
-\contentsline {section}{\numberline {4.2}\bfseries {\scshape {Machine learning implementation}}}{16}{section.4.2}%
-\contentsline {chapter}{\numberline {5}\bfseries {\scshape {Conclusions}}}{17}{chapter.5}%
+\contentsline {chapter}{\numberline {2}\bfseries {\scshape {Theoretical aspects}}}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}\bfseries {\scshape {Jets and algorithms}}}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}\bfseries {\scshape {Boosted particles and fat jets}}}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.3}\bfseries {\scshape {Fat jet substructure: N-subjettiness}}}{9}{section.2.3}%
+\contentsline {section}{\numberline {2.4}\bfseries {\scshape {The LHC and the ATLAS detector}}}{12}{section.2.4}%
+\contentsline {chapter}{\numberline {3}\bfseries {\scshape {Sample generation and machine learning techniques}}}{16}{chapter.3}%
+\contentsline {section}{\numberline {3.1}\bfseries {\scshape {Generation of signal and background events}}}{16}{section.3.1}%
+\contentsline {section}{\numberline {3.2}\bfseries {\scshape {Machine learning implementation}}}{18}{section.3.2}%
+\contentsline {chapter}{\numberline {4}\bfseries {\scshape {Results}}}{19}{chapter.4}%
+\contentsline {chapter}{\numberline {5}\bfseries {\scshape {Conclusions}}}{20}{chapter.5}%

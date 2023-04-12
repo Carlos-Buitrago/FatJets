@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex Thesis_Document"] 1680639813 "Thesis_Document.aux" "Thesis_Document.bbl" "Thesis_Document" 1680726369 0
-  "./Thesis_bib.bib" 1680635873 27108 ebaa3b9d77d5e4ed3d7cc6d0e15fe732 ""
+["bibtex Thesis_Document"] 1681249849 "Thesis_Document.aux" "Thesis_Document.bbl" "Thesis_Document" 1681268822 0
+  "./Thesis_bib.bib" 1680883999 40772 4537b654d5cad4b9d01faa4a9f87a82f ""
   "/usr/share/texmf-dist/bibtex/bst/natbib/unsrtnat.bst" 1680514707 24550 a41a6405f4de768c43e871d9fbce2bc8 ""
-  "Thesis_Document.aux" 1680726369 9943 f560f4479afc4d6c95f556d19ef7e190 "pdflatex"
+  "Thesis_Document.aux" 1681268822 10569 760eb46436b127d9d79fff4d1d3546ae "pdflatex"
   (generated)
   "Thesis_Document.bbl"
   "Thesis_Document.blg"
   (rewritten before read)
-["pdflatex"] 1680726368 "Thesis_Document.tex" "Thesis_Document.pdf" "Thesis_Document" 1680726369 2
+["pdflatex"] 1681268821 "Thesis_Document.tex" "Thesis_Document.pdf" "Thesis_Document" 1681268822 0
   "/home/carlos/.texlive/texmf-var/fonts/pk/ljfour/public/cm-mf-extra-bold/cmbcsc10.657pk" 1676060557 12344 242fc6e29e6b2649dbc50bc4416ed5a1 ""
   "/home/carlos/.texlive/texmf-var/fonts/pk/ljfour/public/cm-mf-extra-bold/cmbcsc10.864pk" 1676060556 17544 5bc8f62612294c2be35862fbd32fb270 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1680514707 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -126,8 +126,12 @@
   "/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty" 1680514707 22555 6d8e155cfef6d82c3d5c742fea7c992e ""
   "/usr/share/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty" 1680514707 13815 760b0c02f691ea230f5359c4e1de23a7 ""
   "/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1680514707 30429 213676d4c7327a21d91ddaed900e7b81 ""
+  "/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty" 1680514707 6107 5cfea8a675c58918b8c04be10261e48c ""
+  "/usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty" 1680514707 4674 257c150d9d5c2fbc229303c8beaf6228 ""
   "/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg" 1680514707 678 4792914a8f45be57bb98413425e4c7af ""
   "/usr/share/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty" 1680514707 5766 13a9e8766c47f30327caf893ece86ac8 ""
+  "/usr/share/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex" 1678900920 95525 6fd0552101a6b1f9b7a84b402ec435ba ""
+  "/usr/share/texmf-dist/tex/latex/lipsum/lipsum.sty" 1678900920 14690 c2c754218a7108db7823a4839c1bc3cd ""
   "/usr/share/texmf-dist/tex/latex/microtype/microtype-pdftex.def" 1680514707 48246 c3eed060aba663f58af3ff756e83f2bd ""
   "/usr/share/texmf-dist/tex/latex/microtype/microtype.cfg" 1680514707 26842 05a01d67d23e805520393a049533b8c0 ""
   "/usr/share/texmf-dist/tex/latex/microtype/microtype.sty" 1680514707 98531 f79ec363f3014ada2cb766715926ecc9 ""
@@ -156,16 +160,16 @@
   "Chapters//../Figures/Theory/eflow_QCD.png" 1680554672 24043 71a1362743452e670470ed2494c2d893 ""
   "Chapters//../Figures/Theory/eflow_W.png" 1680554645 24329 39bdb98f0ed887282e0fb3e591177998 ""
   "Chapters//../Figures/Theory/hadronization.png" 1679189153 33643 47777ffc4a0120ac012ca59b0005b31e ""
-  "Chapters/Conclusions.tex" 1680626861 1061 3aa4d004394cb7a2ae5d1881133155e1 ""
-  "Chapters/Datasets.tex" 1680726367 2029 e8c172dd401c42f2c226bd7b00b47e4f ""
-  "Chapters/Introduction.tex" 1679071324 820 82ef7539721ee5bb7a8c66a3cc4d9ab8 ""
-  "Chapters/Results.tex" 1680580539 876 94fc6a696bdaa464b935958a893f794b ""
-  "Chapters/Theory.tex" 1680639812 22102 d3126b33d48746464ae400498f2fb273 ""
-  "Thesis_Document.aux" 1680726369 9943 f560f4479afc4d6c95f556d19ef7e190 "pdflatex"
-  "Thesis_Document.bbl" 1680639813 7795 40cc500087a1f6219960196a2d369f83 "bibtex Thesis_Document"
-  "Thesis_Document.out" 1680726369 2574 31c50c485df86dfa773a31f52b76b25a "pdflatex"
-  "Thesis_Document.tex" 1680580659 8772 d8f1a42b9057683783a9e792032cf342 ""
-  "Thesis_Document.toc" 1680726369 1527 cc4b7bba82db08459235d3f2be21551a "pdflatex"
+  "Chapters/Conclusions.tex" 1681265594 1677 a623cb16bfd4ae9f963cf25c1ae388db ""
+  "Chapters/Datasets.tex" 1680980214 5674 8255359183951923d3a675a047ac5f78 ""
+  "Chapters/Introduction.tex" 1681268820 4587 7f3a97861103dd3e88a402269eb74c67 ""
+  "Chapters/Results.tex" 1681094575 833 87c9df3df37ad6a346243dada110538e ""
+  "Chapters/Theory.tex" 1681094454 22057 6c5595744da07c7b21d27deb25c104ea ""
+  "Thesis_Document.aux" 1681268822 10569 760eb46436b127d9d79fff4d1d3546ae "pdflatex"
+  "Thesis_Document.bbl" 1681249849 11098 b14c5ebdc0ffd3e1028249337d4b8be7 "bibtex Thesis_Document"
+  "Thesis_Document.out" 1681268822 2052 1e43a3345a8db4d4eb612973d7e6172a "pdflatex"
+  "Thesis_Document.tex" 1680974280 8789 efce6ad11e716c89a5d5170efac44d41 ""
+  "Thesis_Document.toc" 1681268822 1206 b40c422324a990e0fc9c0affae1ba05e "pdflatex"
   (generated)
   "Thesis_Document.aux"
   "Thesis_Document.log"
