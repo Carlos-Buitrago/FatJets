@@ -1,4 +1,4 @@
-\begin{thebibliography}{33}
+\begin{thebibliography}{37}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -216,5 +216,30 @@ Andrew~J. Larkoski, Simone Marzani, Gregory Soyez, and Jesse Thaler.
 \newblock \emph{Journal of High Energy Physics}, 2014\penalty0 (5):\penalty0 146, May 2014.
 \newblock ISSN 1029-8479.
 \newblock \doi{10.1007/JHEP05(2014)146}.
+
+\bibitem[Li et~al.(2016)Li, Patrick, Sharma, and Williams]{Li2016}
+Jinmian Li, Riley Patrick, Pankaj Sharma, and Anthony~G. Williams.
+\newblock Boosting the charged {{Higgs}} search prospects using jet substructure at the {{LHC}}.
+\newblock \emph{Journal of High Energy Physics}, 2016\penalty0 (11):\penalty0 164, November 2016.
+\newblock ISSN 1029-8479.
+\newblock \doi{10.1007/JHEP11(2016)164}.
+
+\bibitem[Cagnotta et~al.(2022)Cagnotta, Carnevali, and De~Iorio]{Cagnotta2022}
+Antimo Cagnotta, Francesco Carnevali, and Agostino De~Iorio.
+\newblock Machine {{Learning Applications}} for {{Jet Tagging}} in the {{CMS Experiment}}.
+\newblock \emph{Applied Sciences}, 12\penalty0 (20):\penalty0 10574, January 2022.
+\newblock ISSN 2076-3417.
+\newblock \doi{10.3390/app122010574}.
+
+\bibitem[Hoecker et~al.(2009)Hoecker, Speckmayer, Stelzer, Therhaag, {von Toerne}, Voss, Backes, Carli, Cohen, Christov, Dannheim, Danielowski, {Henrot-Versille}, Jachowski, Kraszewski, Krasznahorkay~Jr., Kruk, Mahalalel, Ospanov, Prudent, Robert, Schouten, Tegenfeldt, Voigt, Voss, Wolter, and Zemla]{Hoecker2009}
+A.~Hoecker, P.~Speckmayer, J.~Stelzer, J.~Therhaag, E.~{von Toerne}, H.~Voss, M.~Backes, T.~Carli, O.~Cohen, A.~Christov, D.~Dannheim, K.~Danielowski, S.~{Henrot-Versille}, M.~Jachowski, K.~Kraszewski, A.~Krasznahorkay~Jr., M.~Kruk, Y.~Mahalalel, R.~Ospanov, X.~Prudent, A.~Robert, D.~Schouten, F.~Tegenfeldt, A.~Voigt, K.~Voss, M.~Wolter, and A.~Zemla.
+\newblock {{TMVA}} - {{Toolkit}} for {{Multivariate Data Analysis}}, July 2009.
+
+\bibitem[Brun and Rademakers(1997)]{Brun1997}
+Rene Brun and Fons Rademakers.
+\newblock {{ROOT}} \textemdash{} {{An}} object oriented data analysis framework.
+\newblock \emph{Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment}, 389\penalty0 (1):\penalty0 81--86, April 1997.
+\newblock ISSN 0168-9002.
+\newblock \doi{10.1016/S0168-9002(97)00048-X}.
 
 \end{thebibliography}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.3)  11 APR 2023 22:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.3)  13 APR 2023 17:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -912,7 +912,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
 
-) (./Chapters/Results.tex
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -921,19 +935,32 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [18]
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+
+ []
+
+) (./Chapters/Results.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[19]
 Chapter 4.
-) (./Chapters/Conclusions.tex [19
+) (./Chapters/Conclusions.tex [20
 
 ]
 Chapter 5.
-) [20
+) [21
 
 ] (./Thesis_Document.bbl
 Underfull \hbox (badness 6510) in paragraph at lines 55--58
 []\OT1/cmr/m/n/10 (+20) CMS Col-lab-o-ra-tion.  W, Z, and Higgs bosons as por-tals to ex-otic physics.
  []
 
-[21
+[22
 
 ]
 
@@ -943,23 +970,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[22{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]) [23] (./Thesis_Document.aux)
+[23{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]) [24] (./Thesis_Document.aux)
 Package rerunfilecheck Info: File `Thesis_Document.out' has not changed.
 (rerunfilecheck)             Checksum: 1E43A3345A8DB4D4EB612973D7E6172A;2052.
  ) 
 Here is how much of TeX's memory you used:
- 17540 strings out of 476025
- 287280 string characters out of 5796533
+ 17575 strings out of 476025
+ 287700 string characters out of 5796533
  1866388 words of memory out of 5000000
- 37390 multiletter control sequences out of 15000+600000
- 534805 words of font info for 210 fonts, out of 8000000 for 9000
+ 37404 multiletter control sequences out of 15000+600000
+ 535399 words of font info for 218 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,13n,106p,1544b,707s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/carlos/.texlive/texmf-var/fonts/pk/ljfour/public/cm-mf-extra-bold/cmbcsc10.864pk> </home/carlos/.texlive/texmf-var/fonts/pk/ljfour/public/cm-mf-extra-bold/cmbcsc10.657pk></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on Thesis_Document.pdf (25 pages, 1074761 bytes).
+Output written on Thesis_Document.pdf (26 pages, 1081641 bytes).
 PDF statistics:
- 463 PDF objects out of 1000 (max. 8388607)
- 312 compressed objects within 4 object streams
- 82 named destinations out of 1000 (max. 500000)
+ 478 PDF objects out of 1000 (max. 8388607)
+ 326 compressed objects within 4 object streams
+ 87 named destinations out of 1000 (max. 500000)
  47228 words of extra memory for PDF output out of 51595 (max. 10000000)
 
