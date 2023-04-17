@@ -8,10 +8,10 @@
 
 Method         : DL::DNN_CPU
 TMVA Release   : 4.2.1         [262657]
-ROOT Release   : 6.26/10       [399882]
+ROOT Release   : 6.28/02       [400386]
 Creator        : carlos
-Date           : Fri Feb 17 07:44:58 2023
-Host           : Linux blakkheim 6.0.11-arch1-1 #1 SMP PREEMPT_DYNAMIC Fri, 02 Dec 2022 17:25:31 +0000 x86_64 GNU/Linux
+Date           : Sun Apr 16 17:36:58 2023
+Host           : Linux kgizdov 6.2.6-arch1-1 #1 SMP PREEMPT_DYNAMIC Mon, 13 Mar 2023 17:02:08 +0000 x86_64 GNU/Linux
 Dir            : /home/carlos/Documents/FatJets
 Training events: 450000
 Analysis type  : [Classification]

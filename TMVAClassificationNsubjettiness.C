@@ -86,9 +86,9 @@ int TMVAClassificationNsubjettiness( TString myMethodList = "" )
    Use["CutsSA"]          = 0;
    //
    // 1-dimensional likelihood ("naive Bayes estimator")
-   Use["Likelihood"]      = 0;
+   Use["Likelihood"]      = 1;
    Use["LikelihoodD"]     = 0; // the "D" extension indicates decorrelated input variables (see option strings)
-   Use["LikelihoodPCA"]   = 0; // the "PCA" extension indicates PCA-transformed input variables (see option strings)
+   Use["LikelihoodPCA"]   = 1; // the "PCA" extension indicates PCA-transformed input variables (see option strings)
    Use["LikelihoodKDE"]   = 0;
    Use["LikelihoodMIX"]   = 0;
    //
@@ -98,17 +98,17 @@ int TMVAClassificationNsubjettiness( TString myMethodList = "" )
    Use["PDERSPCA"]        = 0;
    Use["PDEFoam"]         = 0;
    Use["PDEFoamBoost"]    = 0; // uses generalised MVA method boosting
-   Use["KNN"]             = 0; // k-nearest neighbour method
+   Use["KNN"]             = 1; // k-nearest neighbour method
    //
    // Linear Discriminant Analysis
-   Use["LD"]              = 0; // Linear Discriminant identical to Fisher
+   Use["LD"]              = 1; // Linear Discriminant identical to Fisher
    Use["Fisher"]          = 0;
    Use["FisherG"]         = 0;
    Use["BoostedFisher"]   = 0; // uses generalised MVA method boosting
    Use["HMatrix"]         = 0;
    //
    // Function Discriminant analysis
-   Use["FDA_GA"]          = 0; // minimisation of user-defined function using Genetics Algorithm
+   Use["FDA_GA"]          = 1; // minimisation of user-defined function using Genetics Algorithm
    Use["FDA_SA"]          = 0;
    Use["FDA_MC"]          = 0;
    Use["FDA_MT"]          = 0;
@@ -118,7 +118,7 @@ int TMVAClassificationNsubjettiness( TString myMethodList = "" )
    // Neural Networks (all are feed-forward Multilayer Perceptrons)
    Use["MLP"]             = 0; // Recommended ANN
    Use["MLPBFGS"]         = 0; // Recommended ANN with optional training method
-   Use["MLPBNN"]          = 0; // Recommended ANN with BFGS training method and bayesian regulator
+   Use["MLPBNN"]          = 1; // Recommended ANN with BFGS training method and bayesian regulator
    Use["CFMlpANN"]        = 0; // Depreciated ANN from ALEPH
    Use["TMlpANN"]         = 0; // ROOT's own ANN
 #ifdef R__HAS_TMVAGPU
@@ -144,7 +144,7 @@ int TMVAClassificationNsubjettiness( TString myMethodList = "" )
    Use["BDTF"]            = 0; // allow usage of fisher discriminant for node splitting
    //
    // Friedman's RuleFit method, ie, an optimised series of cuts ("rules")
-   Use["RuleFit"]         = 0;
+   Use["RuleFit"]         = 1;
    // ---------------------------------------------------------------
 
    std::cout << std::endl;
@@ -176,8 +176,8 @@ int TMVAClassificationNsubjettiness( TString myMethodList = "" )
    // (it is also possible to use ASCII format as input -> see TMVA Users Guide)
    TFile *input1(0);
    TFile *input2(0);
-   TString fname1 = "./pp_tt_hadronic_14TeV500kEvtsGenCutT350_CutQCD350_InclusiveCut350_delphes_events.root";
-   /* TString fname1 = "./pp_WW_hadronic_14TeV500kEvtsGenCutW350_CutQCD350_InclusiveCut350_delphes_events.root"; */
+   /* TString fname1 = "./pp_tt_hadronic_14TeV500kEvtsGenCutT350_CutQCD350_InclusiveCut350_delphes_events.root"; */
+   TString fname1 = "./pp_WW_hadronic_14TeV500kEvtsGenCutW350_CutQCD350_InclusiveCut350_delphes_events.root";
    TString fname2 = "./pp_QCD_14TeV500kEvtsGenCutQCD350_InclusiveCut350_delphes_events.root";
    if (!gSystem->AccessPathName( fname1 ) && !gSystem->AccessPathName( fname2 )) {
       input1 = TFile::Open( fname1 ); // check if file in local directory exists
