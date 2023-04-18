@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex Thesis_Document"] 1681746647 "Thesis_Document.aux" "Thesis_Document.bbl" "Thesis_Document" 1681750208 0
+["bibtex Thesis_Document"] 1681785261 "Thesis_Document.aux" "Thesis_Document.bbl" "Thesis_Document" 1681785719 0
   "./Thesis_bib.bib" 1681350123 48539 875b47a0d6404baa1caaa2c02a04ad20 ""
   "/usr/share/texmf-dist/bibtex/bst/natbib/unsrtnat.bst" 1680514707 24550 a41a6405f4de768c43e871d9fbce2bc8 ""
-  "Thesis_Document.aux" 1681750208 17247 66fb4fd14bf84a54cb0462ce1e6cf2c1 "pdflatex"
+  "Thesis_Document.aux" 1681785719 18767 a80fea7815f0322cb2e815d989ad5c3f "pdflatex"
   (generated)
   "Thesis_Document.bbl"
   "Thesis_Document.blg"
   (rewritten before read)
-["pdflatex"] 1681750207 "Thesis_Document.tex" "Thesis_Document.pdf" "Thesis_Document" 1681750208 0
+["pdflatex"] 1681785718 "Thesis_Document.tex" "Thesis_Document.pdf" "Thesis_Document" 1681785719 0
   "/home/carlos/.texlive/texmf-var/fonts/pk/ljfour/public/cm-mf-extra-bold/cmbcsc10.657pk" 1676060557 12344 242fc6e29e6b2649dbc50bc4416ed5a1 ""
   "/home/carlos/.texlive/texmf-var/fonts/pk/ljfour/public/cm-mf-extra-bold/cmbcsc10.864pk" 1676060556 17544 5bc8f62612294c2be35862fbd32fb270 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1680514707 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -162,6 +162,10 @@
   "Chapters//../Figures/Results/W_distributions/W_tau3_distribution.pdf" 1681570618 15883 1b732732f78e4d4db8eb532e611f88fa ""
   "Chapters//../Figures/Results/W_distributions/W_tau43_distribution.pdf" 1681571043 15793 32981bb395bcd6aaa95b8ca937310d08 ""
   "Chapters//../Figures/Results/W_distributions/W_tau4_distribution.pdf" 1681570676 15742 70c466773962dcfab8df0b4f915eeb69 ""
+  "Chapters//../Figures/Results/mass/W_mass_nomass.pdf" 1681762288 17345 8b9c1df6d92176b09cf76f93e741612a ""
+  "Chapters//../Figures/Results/mass/top_mass_nomass.pdf" 1681762287 17662 e8e871816360f076e7c29c0f1ce16e66 ""
+  "Chapters//../Figures/Results/multibody/W_multibody.pdf" 1681785100 17358 4a13bdefff984042eec7df496bb0471a ""
+  "Chapters//../Figures/Results/multibody/top_multibody.pdf" 1681785100 17691 6da5a6e741fd5aef0ae9ee0981099929 ""
   "Chapters//../Figures/Results/multiple_classifiers/W_multipleclassifiers.pdf" 1681686851 19069 9eec185b03adebdb2b3ec567f6a1a4c6 ""
   "Chapters//../Figures/Results/multiple_classifiers/top_multipleclassifiers.pdf" 1681686851 19337 3e04b5b436d382797cad858e0e7774c7 ""
   "Chapters//../Figures/Results/overtraining/W_overtraining_BDT.png" 1681746548 69746 6858fbaba583ba46653fcfc279291183 ""
@@ -186,13 +190,13 @@
   "Chapters/Conclusions.tex" 1681265594 1677 a623cb16bfd4ae9f963cf25c1ae388db ""
   "Chapters/Datasets.tex" 1681431670 9229 b01849c1ac38674eb45d28bbee303bb0 ""
   "Chapters/Introduction.tex" 1681268820 4587 7f3a97861103dd3e88a402269eb74c67 ""
-  "Chapters/Results.tex" 1681750206 14102 ce6ad16ec4ffb7489244ba71c0a49b4c ""
+  "Chapters/Results.tex" 1681785716 16983 bfcff263797403a4ad9ca2bd1f752d5e ""
   "Chapters/Theory.tex" 1681094454 22057 6c5595744da07c7b21d27deb25c104ea ""
-  "Thesis_Document.aux" 1681750208 17247 66fb4fd14bf84a54cb0462ce1e6cf2c1 "pdflatex"
-  "Thesis_Document.bbl" 1681746647 13048 3775e6645cc4715e42fa6c30c492b14f "bibtex Thesis_Document"
-  "Thesis_Document.out" 1681750208 2052 1e43a3345a8db4d4eb612973d7e6172a "pdflatex"
+  "Thesis_Document.aux" 1681785719 18767 a80fea7815f0322cb2e815d989ad5c3f "pdflatex"
+  "Thesis_Document.bbl" 1681785261 13048 3775e6645cc4715e42fa6c30c492b14f "bibtex Thesis_Document"
+  "Thesis_Document.out" 1681785719 2052 1e43a3345a8db4d4eb612973d7e6172a "pdflatex"
   "Thesis_Document.tex" 1681608501 8808 9e91f34058bb9edba9487be67364e94b ""
-  "Thesis_Document.toc" 1681750208 1206 c29492d1a550f9c6ad37d473be79befc "pdflatex"
+  "Thesis_Document.toc" 1681785719 1206 35e840b543911598d3f86cffc430c8a4 "pdflatex"
   (generated)
   "Thesis_Document.aux"
   "Thesis_Document.log"

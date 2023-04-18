@@ -223,8 +223,49 @@ Before moving forward it is important to verify that the chosen classifiers are 
         \label{fig:overtraining}
 \end{figure}
 
-Up until now the fat jet mass has been used alongside the $N$-subjettiness variables as an input variable in the classifier training. This is because the mass works as a great discriminant variable, as has been shown already. However, in order to further examine the tagging performance of the $N$-subjettiness jet shape, a classification based on the $\tau_N$ variables alone is carried out. The results of the 
+Up until now the fat jet mass has been used alongside the $N$-subjettiness variables as an input variable in the classifier training. This is because the mass works as a great discriminant variable, as has been shown already. However, in order to further examine the tagging performance of the $N$-subjettiness jet shape, a classification based on the $\tau_N$ variables alone is carried out. The ROC curves obtained both with and without using fat jet mass information for the classification are plotted for each case in figure \ref{fig:ROC_mass_nomass}. \\
 
+\begin{figure}[h]
+     \centering
+     \begin{subfigure}[h]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{../Figures/Results/mass/top_mass_nomass.pdf}
+          \caption{}
+         \label{fig:top_mass_nomass}
+     \end{subfigure}
+     \begin{subfigure}[h]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{../Figures/Results/mass/W_mass_nomass.pdf}
+          \caption{}
+         \label{fig:W_mass_nomass}
+     \end{subfigure}
+     \caption{ROC curves for (a) boosted top tagging (b) boosted $W$ tagging with and without including the fat jet mass as an input variable.}
+     \label{fig:ROC_mass_nomass}
+\end{figure}
+
+As evidenced by the respective ROC curves, the fat jet mass has a noticeable contribution to the tagging performance. This corroborates that using both substructure variables in conjunction is optimal. However, it is also worth noticing the remarkable discriminating job that the $\tau_N$ can do on their own, which confirms that they are not dependant on the mass in order to carry out a classification. \\
+
+So far the full set of $\tau_N$ values with $N = 1,\dots,4$ have been used. The impact of the number of $\tau_N$ variables used as input for the classifier training will now be addressed. In order to do so, the model is trained first using only the fat jet $\tau_1$ value (plus the fat jet mass) then the following $\tau_N$ variables are added, one at a time until $\tau_4$ is reached and the original set is achieved. The ROC curves obtained through this process are presented in figure \ref{fig:ROC_multibody}. \\
+
+\begin{figure}[h]
+     \centering
+     \begin{subfigure}[h]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{../Figures/Results/multibody/top_multibody.pdf}
+          \caption{}
+         \label{fig:top_multibody}
+     \end{subfigure}
+     \begin{subfigure}[h]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{../Figures/Results/multibody/W_multibody.pdf}
+          \caption{}
+         \label{fig:W_multibody}
+     \end{subfigure}
+     \caption{ROC curves for (a) boosted top tagging (b) boosted $W$ tagging using different number of fat jet $\tau_N$ variables (and fat jet mass) as input.}
+     \label{fig:ROC_multibody}
+\end{figure}
+
+This time the tagging performance was plotted using the BDT method only for simplicity. However, the same behaviour is observed when the trained algorithm is the DNN. As the number of $\tau_N$ inputs is increased, the gain in performance decreases notably to the point where the model gets saturated with information. This supports the initial decision of selecting the full set of $\tau_N$ input variables as those up to $N = 4$.
 
 
 

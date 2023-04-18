@@ -8,10 +8,10 @@
 
 Method         : DL::DNN_CPU
 TMVA Release   : 4.2.1         [262657]
-ROOT Release   : 6.26/10       [399882]
+ROOT Release   : 6.28/02       [400386]
 Creator        : carlos
-Date           : Fri Feb 17 07:44:58 2023
-Host           : Linux blakkheim 6.0.11-arch1-1 #1 SMP PREEMPT_DYNAMIC Fri, 02 Dec 2022 17:25:31 +0000 x86_64 GNU/Linux
+Date           : Mon Apr 17 20:37:03 2023
+Host           : Linux kgizdov 6.2.6-arch1-1 #1 SMP PREEMPT_DYNAMIC Mon, 13 Mar 2023 17:02:08 +0000 x86_64 GNU/Linux
 Dir            : /home/carlos/Documents/FatJets
 Training events: 450000
 Analysis type  : [Classification]
@@ -41,12 +41,10 @@ ValidationSize: "20%" [Part of the training data to use for validation. Specify 
 
 #VAR -*-*-*-*-*-*-*-*-*-*-*-* variables *-*-*-*-*-*-*-*-*-*-*-*-
 
-NVar 5
+NVar 3
 FatJet.Mass[0]                mass                          mass                          Mass                                                            'F'    [-2.15791860683e-05,958.863342285]
 FatJet.Tau[0][0]              tau1                          tau1                          Tau1                                                            'F'    [0,0.651854932308]
 FatJet.Tau[0][1]              tau2                          tau2                          Tau2                                                            'F'    [0,0.437282085419]
-FatJet.Tau[0][2]              tau3                          tau3                          Tau3                                                            'F'    [0,0.278652787209]
-FatJet.Tau[0][3]              tau4                          tau4                          Tau4                                                            'F'    [0,0.230273008347]
 NSpec 0
 
 
@@ -90,10 +88,10 @@ class ReadDNN_CPU : public IClassifierReader {
    ReadDNN_CPU( std::vector<std::string>& theInputVars )
       : IClassifierReader(),
         fClassName( "ReadDNN_CPU" ),
-        fNvars( 5 )
+        fNvars( 3 )
    {
       // the training input variables
-      const char* inputVars[] = { "FatJet.Mass[0]", "FatJet.Tau[0][0]", "FatJet.Tau[0][1]", "FatJet.Tau[0][2]", "FatJet.Tau[0][3]" };
+      const char* inputVars[] = { "FatJet.Mass[0]", "FatJet.Tau[0][0]", "FatJet.Tau[0][1]" };
 
       // sanity checks
       if (theInputVars.size() <= 0) {
@@ -123,17 +121,11 @@ class ReadDNN_CPU : public IClassifierReader {
       fVmax[1] = 0.99999988079071;
       fVmin[2] = -1;
       fVmax[2] = 1;
-      fVmin[3] = -1;
-      fVmax[3] = 1;
-      fVmin[4] = -1;
-      fVmax[4] = 1;
 
       // initialize input variable types
       fType[0] = 'F';
       fType[1] = 'F';
       fType[2] = 'F';
-      fType[3] = 'F';
-      fType[4] = 'F';
 
       // initialize constants
       Initialize();
@@ -159,8 +151,8 @@ class ReadDNN_CPU : public IClassifierReader {
 
    // input variable transformation
 
-   double fOff_1[3][5];
-   double fScal_1[3][5];
+   double fOff_1[3][3];
+   double fScal_1[3][3];
    void InitTransform_1();
    void Transform_1( std::vector<double> & iv, int sigOrBgd ) const;
    void InitTransform();
@@ -174,15 +166,15 @@ class ReadDNN_CPU : public IClassifierReader {
    char   GetType( int ivar ) const { return fType[ivar]; }
 
    // normalisation of input variables
-   double fVmin[5];
-   double fVmax[5];
+   double fVmin[3];
+   double fVmax[3];
    double NormVariable( double x, double xmin, double xmax ) const {
       // normalise to output range: [-1, 1]
       return 2*(x - xmin)/(xmax - xmin) - 1.0;
    }
 
    // type of input variable: 'F' or 'I'
-   char   fType[5];
+   char   fType[3];
 
    // initialize internal variables
    void Initialize();
@@ -211,8 +203,8 @@ inline double ReadDNN_CPU::GetMvaValue( const std::vector<double>& inputValues )
 //_______________________________________________________________________
 inline void ReadDNN_CPU::InitTransform_1()
 {
-   double fMin_1[3][5];
-   double fMax_1[3][5];
+   double fMin_1[3][3];
+   double fMax_1[3][3];
    // Normalization transformation, initialisation
    fMin_1[0][0] = -2.15791860683e-05;
    fMax_1[0][0] = 958.863342285;
@@ -250,30 +242,6 @@ inline void ReadDNN_CPU::InitTransform_1()
    fMax_1[2][2] = 0.437282085419;
    fScal_1[2][2] = 2.0/(fMax_1[2][2]-fMin_1[2][2]);
    fOff_1[2][2] = fMin_1[2][2]*fScal_1[2][2]+1.;
-   fMin_1[0][3] = 0;
-   fMax_1[0][3] = 0.235909253359;
-   fScal_1[0][3] = 2.0/(fMax_1[0][3]-fMin_1[0][3]);
-   fOff_1[0][3] = fMin_1[0][3]*fScal_1[0][3]+1.;
-   fMin_1[1][3] = 0;
-   fMax_1[1][3] = 0.278652787209;
-   fScal_1[1][3] = 2.0/(fMax_1[1][3]-fMin_1[1][3]);
-   fOff_1[1][3] = fMin_1[1][3]*fScal_1[1][3]+1.;
-   fMin_1[2][3] = 0;
-   fMax_1[2][3] = 0.278652787209;
-   fScal_1[2][3] = 2.0/(fMax_1[2][3]-fMin_1[2][3]);
-   fOff_1[2][3] = fMin_1[2][3]*fScal_1[2][3]+1.;
-   fMin_1[0][4] = 0;
-   fMax_1[0][4] = 0.165978565812;
-   fScal_1[0][4] = 2.0/(fMax_1[0][4]-fMin_1[0][4]);
-   fOff_1[0][4] = fMin_1[0][4]*fScal_1[0][4]+1.;
-   fMin_1[1][4] = 0;
-   fMax_1[1][4] = 0.230273008347;
-   fScal_1[1][4] = 2.0/(fMax_1[1][4]-fMin_1[1][4]);
-   fOff_1[1][4] = fMin_1[1][4]*fScal_1[1][4]+1.;
-   fMin_1[2][4] = 0;
-   fMax_1[2][4] = 0.230273008347;
-   fScal_1[2][4] = 2.0/(fMax_1[2][4]-fMin_1[2][4]);
-   fOff_1[2][4] = fMin_1[2][4]*fScal_1[2][4]+1.;
 }
 
 //_______________________________________________________________________
@@ -284,7 +252,7 @@ inline void ReadDNN_CPU::Transform_1( std::vector<double>& iv, int cls) const
    if (2 > 1 ) cls = 2;
       else cls = 2;
    }
-   const int nVar = 5;
+   const int nVar = 3;
 
    // get indices of used variables
 
@@ -297,22 +265,18 @@ inline void ReadDNN_CPU::Transform_1( std::vector<double>& iv, int cls) const
       indicesGet.push_back( 0);
       indicesGet.push_back( 1);
       indicesGet.push_back( 2);
-      indicesGet.push_back( 3);
-      indicesGet.push_back( 4);
    }
    if ( indicesPut.empty() ) {
       indicesPut.reserve(fNvars);
       indicesPut.push_back( 0);
       indicesPut.push_back( 1);
       indicesPut.push_back( 2);
-      indicesPut.push_back( 3);
-      indicesPut.push_back( 4);
    }
 
    static std::vector<double> dv;
    dv.resize(nVar);
    for (int ivar=0; ivar<nVar; ivar++) dv[ivar] = iv[indicesGet.at(ivar)];
-   for (int ivar=0;ivar<5;ivar++) {
+   for (int ivar=0;ivar<3;ivar++) {
       double offset = fOff_1[cls][ivar];
       double scale  = fScal_1[cls][ivar];
       iv[indicesPut.at(ivar)] = scale*dv[ivar]-offset;
