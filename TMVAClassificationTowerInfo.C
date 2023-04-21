@@ -176,8 +176,8 @@ int TMVAClassificationTowerInfo( TString myMethodList = "" )
    // (it is also possible to use ASCII format as input -> see TMVA Users Guide)
    TFile *input1(0);
    TFile *input2(0);
-   TString fname1 = "./pp_tt_hadronic_14TeV500kEvtsGenCutT350_CutQCD350_InclusiveCut350_delphes_events.root";
-   /* TString fname1 = "./pp_WW_hadronic_14TeV500kEvtsGenCutW350_CutQCD350_InclusiveCut350_delphes_events.root"; */
+   /* TString fname1 = "./pp_tt_hadronic_14TeV500kEvtsGenCutT350_CutQCD350_InclusiveCut350_delphes_events.root"; */
+   TString fname1 = "./pp_WW_hadronic_14TeV500kEvtsGenCutW350_CutQCD350_InclusiveCut350_delphes_events.root";
    TString fname2 = "./pp_QCD_14TeV500kEvtsGenCutQCD350_InclusiveCut350_delphes_events.root";
    if (!gSystem->AccessPathName( fname1 ) && !gSystem->AccessPathName( fname2 )) {
       input1 = TFile::Open( fname1 ); // check if file in local directory exists
@@ -195,7 +195,7 @@ int TMVAClassificationTowerInfo( TString myMethodList = "" )
 
    // Register the training and test trees
 
-   TTree *signalTree     = (TTree*)input1->Get("Delphes;12");
+   TTree *signalTree     = (TTree*)input1->Get("Delphes;2");
    TTree *background     = (TTree*)input2->Get("Delphes;9");
 
    // Create a ROOT output file where TMVA will store ntuples, histograms, etc.
@@ -226,27 +226,27 @@ int TMVAClassificationTowerInfo( TString myMethodList = "" )
    // note that you may also use variable expressions, such as: "3*var1/var2*abs(var3)"
  // [all types of expressions that can also be parsed by TTree::Draw( "expression" )]
 
-   /* dataloader->AddVariable( "towerNumberTotal := myTowerNumberTotal", "TowerNumberTotal", "", 'I' ); */
+   dataloader->AddVariable( "towerNumberTotal := myTowerNumberTotal", "TowerNumberTotal", "", 'I' );
    /* dataloader->AddVariable( "trackNumberTotal := myTrackNumberTotal", "TrackNumberTotal", "", 'I' ); */
-   dataloader->AddVariable( "particleNumberTotal := myParticleNumberTotal", "ParticleNumberTotal", "", 'I' );
+   /* dataloader->AddVariable( "particleNumberTotal := myParticleNumberTotal", "ParticleNumberTotal", "", 'I' ); */
 
-   /* dataloader->AddVariable( "towerNumber20 := myTowerNumber20", "TowerNumber20", "", 'I' ); */
+   dataloader->AddVariable( "towerNumber20 := myTowerNumber20", "TowerNumber20", "", 'I' );
    /* dataloader->AddVariable( "trackNumber50 := myTrackNumber50", "TrackNumber50", "", 'I' ); */
    /* dataloader->AddVariable( "particleNumber350 := myParticleNumber350", "ParticleNumber350", "", 'I' ); */
 
-   dataloader->AddVariable( "particleNumber100 := myParticleNumber100", "ParticleNumber100", "", 'I' );
+   /* dataloader->AddVariable( "particleNumber100 := myParticleNumber100", "ParticleNumber100", "", 'I' ); */
 
-   /* dataloader->AddVariable( "towerET := myTowerET[]", "TowerET", "", 'F' ); */
-   /* dataloader->AddVariable( "towerEta := myTowerEta[]", "TowerEta", "", 'F' ); */
-   /* dataloader->AddVariable( "towerPhi := myTowerPhi[]", "TowerPhi", "", 'F' ); */
+   dataloader->AddVariable( "towerET := myTowerET[]", "TowerET", "", 'F' );
+   dataloader->AddVariable( "towerEta := myTowerEta[]", "TowerEta", "", 'F' );
+   dataloader->AddVariable( "towerPhi := myTowerPhi[]", "TowerPhi", "", 'F' );
 
    /* dataloader->AddVariable( "trackPT := myTrackPT[]", "TrackPT", "", 'F' ); */
    /* dataloader->AddVariable( "trackEta := myTrackEta[]", "TrackEta", "", 'F' ); */
    /* dataloader->AddVariable( "trackPhi := myTrackPhi[]", "TrackPhi", "", 'F' ); */
    
-   dataloader->AddVariable( "particlePT := myParticlePT[]", "ParticlePT", "", 'F' );
-   dataloader->AddVariable( "particleEta := myParticleEta[]", "ParticleEta", "", 'F' );
-   dataloader->AddVariable( "particlePhi := myParticlePhi[]", "ParticlePhi", "", 'F' );
+   /* dataloader->AddVariable( "particlePT := myParticlePT[]", "ParticlePT", "", 'F' ); */
+   /* dataloader->AddVariable( "particleEta := myParticleEta[]", "ParticleEta", "", 'F' ); */
+   /* dataloader->AddVariable( "particlePhi := myParticlePhi[]", "ParticlePhi", "", 'F' ); */
 
    // ALL VARIABLES REFER TO THE LEADING FATJET
    /* dataloader->AddVariable( "mass := FatJet.Mass[0]", "Mass", "", 'F' ); */

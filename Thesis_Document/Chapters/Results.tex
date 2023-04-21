@@ -265,7 +265,30 @@ So far the full set of $\tau_N$ values with $N = 1,\dots,4$ have been used. The 
      \label{fig:ROC_multibody}
 \end{figure}
 
-This time the tagging performance was plotted using the BDT method only for simplicity. However, the same behaviour is observed when the trained algorithm is the DNN. As the number of $\tau_N$ inputs is increased, the gain in performance decreases notably to the point where the model gets saturated with information. This supports the initial decision of selecting the full set of $\tau_N$ input variables as those up to $N = 4$.
+This time the tagging performance was plotted using the BDT method only for simplicity. However, the same behaviour is observed when the trained algorithm is the DNN. As the number of $\tau_N$ inputs is increased, the gain in performance decreases notably to the point where the model gets saturated with information. This supports the initial decision of selecting the full set of $\tau_N$ input variables as those up to $N = 4$. \\
+
+Finally, the tagging performance of the substructure variables used until now will be compared to that of other variables which are commonly used in multiple tagging methods. The variables considered for the comparison are those related to the constituents of the jets (in this case of the fat jets) being reconstructed. In this instance, the fat jet constituents refer to the calorimeter tower information, namely the total number of towers in each fat jet, the number of those towers with $E_T > 20$\;GeV and their cinematic information ($E_T$, $\eta$ and $\phi$ values). The exact same machine learning implementation used previously for the tagging based on substructure variables is used once again taking these constituent variables as an input. The tagging performance obtained in this way can be seen in figure \ref{fig:ROC_constituents}, together with the performance obtained earlier using substructure information.\\  
+
+\begin{figure}[h]
+     \centering
+     \begin{subfigure}[h]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{../Figures/Results/constituents/top_constituents.pdf}
+          \caption{}
+         \label{fig:top_constituents}
+     \end{subfigure}
+     \begin{subfigure}[h]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{../Figures/Results/constituents/W_constituents.pdf}
+          \caption{}
+         \label{fig:W_constituents}
+     \end{subfigure}
+     \caption{ROC curves for (a) boosted top tagging (b) boosted $W$ tagging using information from the fat jet substructure and from the calorimeter towers as input variables.}
+     \label{fig:ROC_constituents}
+\end{figure}
+
+The full set of cinematic variables for all towers in each event can not be used due to hardware limitations. Therefore, only the cinematic information of constituents with $E_T$ above the threshold is included. The contribution of the information of towers with lower $E_T$ is expected to be negligible nonetheless. As can be seen from the ROC curves presented above, a far better tagging performance is obtained when the substructure variables are used for the classifier training. This exhibits an advantage of these variables over the ones related to the fat jet constituents: much more information useful for discrimination is contained in a smaller number of variables. This is crucial for machine learning methods in general, where the aim is to have the algorithms learn as much as possible during the training process using a smaller input size, in order to avoid overtraining or running into hardware limitations. 
+
 
 
 

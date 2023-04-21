@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.3)  17 APR 2023 21:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.3)  21 APR 2023 10:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -894,17 +894,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--30
 [16
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 35--36
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
@@ -916,22 +921,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 46--47
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 48--49
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
 
@@ -943,7 +943,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
@@ -1191,13 +1191,10 @@ Package pdftex.def Info: Chapters//../Figures/Results/multibody/W_multibody.pdf 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+Underfull \hbox (badness 10000) in paragraph at lines 268--269
 
-[26 <./Chapters//../Figures/Results/mass/top_mass_nomass.pdf, page is rotated 90 degrees> <./Chapters//../Figures/Results/mass/W_mass_nomass.pdf, page is rotated 90 degrees>]) (./Chapters/Conclusions.tex
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1205,16 +1202,49 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[27 <./Chapters//../Figures/Results/multibody/top_multibody.pdf, page is rotated 90 degrees> <./Chapters//../Figures/Results/multibody/W_multibody.pdf, page is rotated 90 degrees>]
+[26 <./Chapters//../Figures/Results/mass/top_mass_nomass.pdf, page is rotated 90 degrees> <./Chapters//../Figures/Results/mass/W_mass_nomass.pdf, page is rotated 90 degrees>]
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
+
+ []
+
+<Chapters//../Figures/Results/constituents/top_constituents.pdf, id=1235, 569.12625pt x 410.53375pt>
+File: Chapters//../Figures/Results/constituents/top_constituents.pdf Graphic file (type pdf)
+<use Chapters//../Figures/Results/constituents/top_constituents.pdf>
+Package pdftex.def Info: Chapters//../Figures/Results/constituents/top_constituents.pdf  used on input line 276.
+(pdftex.def)             Requested size: 212.47618pt x 153.26697pt.
+<Chapters//../Figures/Results/constituents/W_constituents.pdf, id=1236, 569.12625pt x 410.53375pt>
+File: Chapters//../Figures/Results/constituents/W_constituents.pdf Graphic file (type pdf)
+<use Chapters//../Figures/Results/constituents/W_constituents.pdf>
+Package pdftex.def Info: Chapters//../Figures/Results/constituents/W_constituents.pdf  used on input line 282.
+(pdftex.def)             Requested size: 212.47618pt x 153.26697pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[27 <./Chapters//../Figures/Results/multibody/top_multibody.pdf, page is rotated 90 degrees> <./Chapters//../Figures/Results/multibody/W_multibody.pdf, page is rotated 90 degrees>]) (./Chapters/Conclusions.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[28 <./Chapters//../Figures/Results/constituents/top_constituents.pdf, page is rotated 90 degrees> <./Chapters//../Figures/Results/constituents/W_constituents.pdf, page is rotated 90 degrees>]
 Chapter 5.
-) [28
+) [29
 
 ] (./Thesis_Document.bbl
 Underfull \hbox (badness 6510) in paragraph at lines 55--58
 []\OT1/cmr/m/n/10 (+20) CMS Col-lab-o-ra-tion.  W, Z, and Higgs bosons as por-tals to ex-otic physics.
  []
 
-[29
+[30
 
 ]
 
@@ -1224,23 +1254,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[30{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]) [31] (./Thesis_Document.aux)
+[31{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]) [32] (./Thesis_Document.aux)
 Package rerunfilecheck Info: File `Thesis_Document.out' has not changed.
 (rerunfilecheck)             Checksum: 1E43A3345A8DB4D4EB612973D7E6172A;2052.
  ) 
 Here is how much of TeX's memory you used:
- 17958 strings out of 476025
- 306799 string characters out of 5796533
+ 17981 strings out of 476025
+ 308100 string characters out of 5796533
  1866388 words of memory out of 5000000
- 37731 multiletter control sequences out of 15000+600000
- 535399 words of font info for 218 fonts, out of 8000000 for 9000
+ 37752 multiletter control sequences out of 15000+600000
+ 535273 words of font info for 216 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,13n,106p,1544b,709s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/carlos/.texlive/texmf-var/fonts/pk/ljfour/public/cm-mf-extra-bold/cmbcsc10.864pk> </home/carlos/.texlive/texmf-var/fonts/pk/ljfour/public/cm-mf-extra-bold/cmbcsc10.657pk></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on Thesis_Document.pdf (33 pages, 1687650 bytes).
+Output written on Thesis_Document.pdf (34 pages, 1716184 bytes).
 PDF statistics:
- 1508 PDF objects out of 1728 (max. 8388607)
- 769 compressed objects within 8 object streams
- 101 named destinations out of 1000 (max. 500000)
- 47358 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 1604 PDF objects out of 1728 (max. 8388607)
+ 811 compressed objects within 9 object streams
+ 103 named destinations out of 1000 (max. 500000)
+ 47368 words of extra memory for PDF output out of 51595 (max. 10000000)
 
