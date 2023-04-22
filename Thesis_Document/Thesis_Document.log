@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.3)  21 APR 2023 10:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.3)  21 APR 2023 20:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1237,14 +1237,47 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [28 <./Chapters//../Figures/Results/constituents/top_constituents.pdf, page is rotated 90 degrees> <./Chapters//../Figures/Results/constituents/W_constituents.pdf, page is rotated 90 degrees>]
 Chapter 5.
-) [29
 
-] (./Thesis_Document.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+
+ []
+
+[29
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[30] (./Thesis_Document.bbl
 Underfull \hbox (badness 6510) in paragraph at lines 55--58
 []\OT1/cmr/m/n/10 (+20) CMS Col-lab-o-ra-tion.  W, Z, and Higgs bosons as por-tals to ex-otic physics.
  []
 
-[30
+[31
 
 ]
 
@@ -1254,23 +1287,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[31{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]) [32] (./Thesis_Document.aux)
+[32{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]) [33] (./Thesis_Document.aux)
 Package rerunfilecheck Info: File `Thesis_Document.out' has not changed.
 (rerunfilecheck)             Checksum: 1E43A3345A8DB4D4EB612973D7E6172A;2052.
  ) 
 Here is how much of TeX's memory you used:
- 17981 strings out of 476025
- 308100 string characters out of 5796533
+ 17984 strings out of 476025
+ 308121 string characters out of 5796533
  1866388 words of memory out of 5000000
  37752 multiletter control sequences out of 15000+600000
- 535273 words of font info for 216 fonts, out of 8000000 for 9000
+ 535323 words of font info for 217 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,13n,106p,1544b,709s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/carlos/.texlive/texmf-var/fonts/pk/ljfour/public/cm-mf-extra-bold/cmbcsc10.864pk> </home/carlos/.texlive/texmf-var/fonts/pk/ljfour/public/cm-mf-extra-bold/cmbcsc10.657pk></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on Thesis_Document.pdf (34 pages, 1716184 bytes).
+Output written on Thesis_Document.pdf (35 pages, 1718437 bytes).
 PDF statistics:
- 1604 PDF objects out of 1728 (max. 8388607)
- 811 compressed objects within 9 object streams
- 103 named destinations out of 1000 (max. 500000)
+ 1609 PDF objects out of 1728 (max. 8388607)
+ 815 compressed objects within 9 object streams
+ 104 named destinations out of 1000 (max. 500000)
  47368 words of extra memory for PDF output out of 51595 (max. 10000000)
 

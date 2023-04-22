@@ -19,15 +19,27 @@
 \schapter{Conclusions}
 \vspace{20pt}
 
-We can look at m-body subjettiness ($\tau_1^{(1)},\tau_1^{(0.5)},\tau_1^{(2)},\tau_2^{(1)},\tau_2^{(0.5)},\tau_2^{(2)}$).
+From the initial distributions obtained for the different fat jet substructure variables studied, the discriminant capabilities of the $N$-subjettiness variables for the identification of boosted particles was already evident. This is especially noticeable when the ratios $\tau_{N+1}/\tau_N$ are taken into account, which exhibited a large separation between signal and background. Regarding this separation, $\tau_3/\tau_2$ presented a better discrimination for the top signal and $\tau_2/\tau_1$ presented a better one for the $W$ signal. This is a direct consequence of the $N$-subjettiness jet shape definition being related to the number of subjets in the jet. For both the boosted top and boosted $W$ signals as the value of $N$ increased, the separation between signal and background noticeably decreased. \\
 
-A better study can be done by analysing the ideal parameters in the grooming techniques used before generating the samples. 
+A tagging method based on a multivariate analysis using the fat jet substructure variables being considered was carried out. Multiple classifiers were trained using the signal and background datasets described in section \ref{sect:event-generation-chain}. The variables used as input were the fat jet $\tau_1$, $\tau_2$, $\tau_3$, $\tau_4$ and the fat jet mass. The best tagging performance was obtained with the boosted decision tree algorithm. Therefore, it was chosen as the preferred method moving forward. \\
 
-Following the hand rule for the radius, a better analysis could be done by studying the effect of decreasing the $R$ of the reconstructed fat jets as the $p_T$ of the boosted particles increases.
+The tagging method was implemented with and without using the fat jet mass as an input variable in order to evaluate the performance of the $\tau_N$ variables alone. By doing so, the discriminant capabilities of the fat jet $N$-subjettiness were observed once more. Nonetheless, the performance gained by including the fat jet mass in the training was considerable. Therefore it is ideal to use it as an input in conjunction with the $\tau_N$ variables. \\
 
-For simplicity the cut used in the $W$ analysis was the same as for the top analysis, a better study could use a lower $p_T$ cut for the $W$, because the Lorentz boost is achieved at lower $p_T$ values for this particle.
+The tagging performance improved as the number of $\tau_N$ variables used as input increased. However the gain in performance decreased notably with each $\tau_N$ added, and eventually the model being trained got saturated. This backed up our initial decision of using $\tau_N$ variables until $N = 4$. \\
 
-The performance of the tagging algorithm could be further studied by delving into the architecture of the different TMVA analyses, specially into those that seemed to work the best (BDT and DNN).
+The same tagging method was implemented using the fat jet constituent number and kinematics (which are other commonly employed variables in jet tagging) as input for the classifier training. A better performance was achieved with the fat jet substructure variables originally used. Moreover, due to the large input size of constituent variables a hardware obstacle was encountered. The input size was a lot smaller for the substructure variables, which contained more information useful for the classification. This is an important aspect that needs to be considered when training an algorithm, since we want for it to learn as much as possible with a small input size. \\  
+
+The performance obtained with the tagging method proposed could be further improved in various ways. A separate analysis on the fat jet reconstruction could be carried out in order to examine which grooming parameters should be chosen to optimize the tagging procedure. These could be relevant for the method proposed in this study since the jet cleaning alters its substructure. The $R$ parameter of the reconstructed fat jets should be also considered in further studies. The impact of this parameter on the tagging performance for different kinematic regions of the boosted particles should be examined, since the boost factor of the mother particle determines the magnitude of the collimation of its decay products. 
+
+% We can look at m-body subjettiness ($\tau_1^{(1)},\tau_1^{(0.5)},\tau_1^{(2)},\tau_2^{(1)},\tau_2^{(0.5)},\tau_2^{(2)}$).
+
+% A better study can be done by analysing the ideal parameters in the grooming techniques used before generating the samples. 
+
+% Following the hand rule for the radius, a better analysis could be done by studying the effect of decreasing the $R$ of the reconstructed fat jets as the $p_T$ of the boosted particles increases.
+
+% For simplicity the cut used in the $W$ analysis was the same as for the top analysis, a better study could use a lower $p_T$ cut for the $W$, because the Lorentz boost is achieved at lower $p_T$ values for this particle.
+
+% The performance of the tagging algorithm could be further studied by delving into the architecture of the different TMVA analyses, specially into those that seemed to work the best (BDT and DNN).
 
 
 
