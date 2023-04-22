@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex Thesis_Document"] 1682108840 "Thesis_Document.aux" "Thesis_Document.bbl" "Thesis_Document" 1682126247 0
+["bibtex Thesis_Document"] 1682108840 "Thesis_Document.aux" "Thesis_Document.bbl" "Thesis_Document" 1682183926 0
   "./Thesis_bib.bib" 1681350123 48539 875b47a0d6404baa1caaa2c02a04ad20 ""
   "/usr/share/texmf-dist/bibtex/bst/natbib/unsrtnat.bst" 1680514707 24550 a41a6405f4de768c43e871d9fbce2bc8 ""
-  "Thesis_Document.aux" 1682126246 19588 6245923aca61c3c801f043ed48ca4995 "pdflatex"
+  "Thesis_Document.aux" 1682183926 19588 6245923aca61c3c801f043ed48ca4995 "pdflatex"
   (generated)
   "Thesis_Document.bbl"
   "Thesis_Document.blg"
   (rewritten before read)
-["pdflatex"] 1682126245 "Thesis_Document.tex" "Thesis_Document.pdf" "Thesis_Document" 1682126247 0
+["pdflatex"] 1682183925 "Thesis_Document.tex" "Thesis_Document.pdf" "Thesis_Document" 1682183926 0
   "/home/carlos/.texlive/texmf-var/fonts/pk/ljfour/public/cm-mf-extra-bold/cmbcsc10.657pk" 1676060557 12344 242fc6e29e6b2649dbc50bc4416ed5a1 ""
   "/home/carlos/.texlive/texmf-var/fonts/pk/ljfour/public/cm-mf-extra-bold/cmbcsc10.864pk" 1676060556 17544 5bc8f62612294c2be35862fbd32fb270 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1680514707 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -194,11 +194,11 @@
   "Chapters/Introduction.tex" 1681853407 4616 d08d48cdbc34b4467ddaa3897f652cc1 ""
   "Chapters/Results.tex" 1682090110 19580 8c274daa17dceaebf2b41a194af42921 ""
   "Chapters/Theory.tex" 1681094454 22057 6c5595744da07c7b21d27deb25c104ea ""
-  "Thesis_Document.aux" 1682126246 19588 6245923aca61c3c801f043ed48ca4995 "pdflatex"
+  "Thesis_Document.aux" 1682183926 19588 6245923aca61c3c801f043ed48ca4995 "pdflatex"
   "Thesis_Document.bbl" 1682108840 13048 3775e6645cc4715e42fa6c30c492b14f "bibtex Thesis_Document"
-  "Thesis_Document.out" 1682126246 2052 1e43a3345a8db4d4eb612973d7e6172a "pdflatex"
-  "Thesis_Document.tex" 1681608501 8808 9e91f34058bb9edba9487be67364e94b ""
-  "Thesis_Document.toc" 1682126246 1206 e453cab15071e5826c8df600c92dda58 "pdflatex"
+  "Thesis_Document.out" 1682183926 2052 1e43a3345a8db4d4eb612973d7e6172a "pdflatex"
+  "Thesis_Document.tex" 1682183923 9723 aef0e3eb45203f19e6fc51dee9b45ca4 ""
+  "Thesis_Document.toc" 1682183926 1206 e453cab15071e5826c8df600c92dda58 "pdflatex"
   (generated)
   "Thesis_Document.aux"
   "Thesis_Document.log"
