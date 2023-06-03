@@ -1,4 +1,4 @@
-\begin{thebibliography}{37}
+\begin{thebibliography}{40}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -156,6 +156,24 @@ Richard~D. Ball, Valerio Bertone, Stefano Carrazza, Luigi~Del Debbio, Stefano Fo
 \newblock \emph{The European Physical Journal C}, 77\penalty0 (10):\penalty0 663, October 2017.
 \newblock ISSN 1434-6052.
 \newblock \doi{10.1140/epjc/s10052-017-5199-5}.
+
+\bibitem[{de Jong}(2009)]{deJong2009}
+P.~{de Jong}.
+\newblock Top {{Physics}} at the {{LHC}}, February 2009.
+
+\bibitem[Quadt(2006)]{Quadt2006}
+A.~Quadt.
+\newblock Top quark physics at hadron colliders.
+\newblock \emph{The European Physical Journal C - Particles and Fields}, 48\penalty0 (3):\penalty0 835--1000, December 2006.
+\newblock ISSN 1434-6044, 1434-6052.
+\newblock \doi{10.1140/epjc/s2006-02631-6}.
+
+\bibitem[da~Silva and {collaboration}(2013)]{Silva2013}
+Pedro~Ferreira da~Silva and the~CMS {collaboration}.
+\newblock Precision measurements in the top quark sector with the {{CMS}} experiment at the {{LHC}}.
+\newblock \emph{Journal of Physics: Conference Series}, 447\penalty0 (1):\penalty0 012033, July 2013.
+\newblock ISSN 1742-6596.
+\newblock \doi{10.1088/1742-6596/447/1/012033}.
 
 \bibitem[Maltoni and Stelzer(2003)]{Maltoni2003}
 Fabio Maltoni and Tim Stelzer.

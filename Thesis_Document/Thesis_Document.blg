@@ -6,45 +6,45 @@ Database file #1: Thesis_bib.bib
 Warning--empty journal in Bruning2004
 Warning--empty institution in Lopes2022
 Warning--empty journal in Airapetian1999
-You've used 37 entries,
+You've used 40 entries,
             2481 wiz_defined-function locations,
-            832 strings with 11893 characters,
-and the built_in function-call counts, 15188 in all, are:
-= -- 1221
-> -- 977
-< -- 19
-+ -- 368
-- -- 294
-* -- 1368
-:= -- 2592
-add.period$ -- 163
-call.type$ -- 37
-change.case$ -- 74
-chr.to.int$ -- 37
-cite$ -- 40
-duplicate$ -- 678
-empty$ -- 1245
-format.name$ -- 350
-if$ -- 3114
+            857 strings with 12416 characters,
+and the built_in function-call counts, 16221 in all, are:
+= -- 1319
+> -- 1006
+< -- 22
++ -- 382
+- -- 302
+* -- 1444
+:= -- 2751
+add.period$ -- 175
+call.type$ -- 40
+change.case$ -- 80
+chr.to.int$ -- 40
+cite$ -- 43
+duplicate$ -- 730
+empty$ -- 1351
+format.name$ -- 363
+if$ -- 3337
 int.to.chr$ -- 1
-int.to.str$ -- 38
-missing$ -- 33
-newline$ -- 245
-num.names$ -- 111
-pop$ -- 242
+int.to.str$ -- 41
+missing$ -- 35
+newline$ -- 263
+num.names$ -- 120
+pop$ -- 265
 preamble$ -- 1
-purify$ -- 37
+purify$ -- 40
 quote$ -- 0
-skip$ -- 366
+skip$ -- 398
 stack$ -- 0
-substring$ -- 484
-swap$ -- 104
+substring$ -- 536
+swap$ -- 113
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 256
+type$ -- 277
 warning$ -- 3
-while$ -- 109
+while$ -- 118
 width$ -- 0
-write$ -- 581
+write$ -- 625
 (There were 3 warnings)
