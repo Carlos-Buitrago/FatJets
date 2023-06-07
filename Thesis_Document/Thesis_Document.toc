@@ -8,5 +8,5 @@
 \contentsline {chapter}{\numberline {3}\bfseries {\scshape {Sample generation and machine learning techniques}}}{16}{chapter.3}%
 \contentsline {section}{\numberline {3.1}\bfseries {\scshape {Generation of signal and background events}}}{16}{section.3.1}%
 \contentsline {section}{\numberline {3.2}\bfseries {\scshape {Machine learning implementation}}}{20}{section.3.2}%
-\contentsline {chapter}{\numberline {4}\bfseries {\scshape {Results}}}{22}{chapter.4}%
-\contentsline {chapter}{\numberline {5}\bfseries {\scshape {Conclusions}}}{31}{chapter.5}%
+\contentsline {chapter}{\numberline {4}\bfseries {\scshape {Results}}}{23}{chapter.4}%
+\contentsline {chapter}{\numberline {5}\bfseries {\scshape {Conclusions}}}{32}{chapter.5}%
